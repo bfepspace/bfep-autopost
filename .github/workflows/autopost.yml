@@ -1,24 +1,38 @@
 name: autopost
+# Один запуск работает ~5,5 ч: каждые 5 минут публикует всё, чему пора,
+# и в конце сам запускает следующий. Cron — запасной вариант, если цепочка оборвётся.
 on:
   schedule:
     - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
-concurrency: autopost
+  actions: write
+concurrency:
+  group: autopost
+  cancel-in-progress: false
 jobs:
   post:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
-      - name: Публикация в Telegram
+      - name: Публикация в Telegram (цикл ~5,5 ч)
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-        run: python3 post.py
-      - name: Сохранить, что уже опубликовано
-        if: always()
         run: |
           git config user.name "bfep-autopost"
           git config user.email "autopost@bfep.space"
-          git add posted.json
-          git diff --cached --quiet || (git commit -m "posted $(date -u +%FT%TZ)" && git push)
+          end=$(( $(date +%s) + 330*60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            git pull -q --rebase || true
+            python3 post.py || true
+            git add posted.json
+            git diff --cached --quiet || (git commit -qm "posted $(date -u +%FT%TZ)" && git push -q) || true
+            sleep 300
+          done
+      - name: Запустить следующий цикл
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run autopost.yml --ref main -R ${{ github.repository }}
