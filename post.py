@@ -2,7 +2,9 @@
 import datetime, json, os, subprocess, sys
 
 CHAT = os.environ.get("TG_CHAT", "@bestfuneveningapp")
-TOKEN = os.environ["TG_BOT_TOKEN"]
+TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+if not TOKEN and "--dry" not in sys.argv:
+    print("Нет секрета TG_BOT_TOKEN — пропускаю"); sys.exit(0)
 LATE_LIMIT = datetime.timedelta(hours=6)  # опоздавшее больше чем на 6 ч не публикуем
 
 now = datetime.datetime.now(datetime.timezone.utc)
