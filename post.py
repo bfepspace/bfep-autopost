@@ -14,7 +14,8 @@ dry = "--dry" in sys.argv
 
 if not dry:  # проверка токена: имя бота и права в канале видны в логе
     me = subprocess.run(["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/getMe"], capture_output=True, text=True).stdout
-    print("бот:", json.loads(me or "{}").get("result", {}).get("username", "ТОКЕН НЕ ПОДХОДИТ"))
+    me = json.loads(me or "{}")
+    print("бот:", me.get("result", {}).get("username") or f"ТОКЕН НЕ ПОДХОДИТ ({me.get('error_code')} {me.get('description')}, длина {len(TOKEN)}, пробелы: {TOKEN != TOKEN.strip()})")
 
 def send(item):
     method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage"}[item["type"]]
