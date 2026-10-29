@@ -12,6 +12,10 @@ schedule = json.load(open("schedule.json", encoding="utf-8"))
 posted = json.load(open("posted.json", encoding="utf-8")) if os.path.exists("posted.json") else {}
 dry = "--dry" in sys.argv
 
+if not dry:  # проверка токена: имя бота и права в канале видны в логе
+    me = subprocess.run(["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/getMe"], capture_output=True, text=True).stdout
+    print("бот:", json.loads(me or "{}").get("result", {}).get("username", "ТОКЕН НЕ ПОДХОДИТ"))
+
 def send(item):
     method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage"}[item["type"]]
     args = ["curl", "-sS", "--fail-with-body", "--retry", "3",
