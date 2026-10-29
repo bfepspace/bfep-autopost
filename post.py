@@ -16,6 +16,10 @@ if not dry:  # проверка токена: имя бота и права в �
     me = subprocess.run(["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/getMe"], capture_output=True, text=True).stdout
     me = json.loads(me or "{}")
     print("бот:", me.get("result", {}).get("username") or f"ТОКЕН НЕ ПОДХОДИТ ({me.get('error_code')} {me.get('description')}, длина {len(TOKEN)}, пробелы: {TOKEN != TOKEN.strip()})")
+    if me.get("ok"):
+        cm = json.loads(subprocess.run(["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/getChatMember", "-d", f"chat_id={CHAT}", "-d", f"user_id={me['result']['id']}"], capture_output=True, text=True).stdout or "{}")
+        r = cm.get("result", {})
+        print("в канале:", r.get("status"), "может публиковать:", r.get("can_post_messages"), cm.get("description", ""))
 
 def send(item):
     method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage"}[item["type"]]
