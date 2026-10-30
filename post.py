@@ -24,14 +24,14 @@ if not dry:  # проверка токена: имя бота и права в �
 def send(item):
     method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage"}[item["type"]]
     args = ["curl", "-sS", "--fail-with-body", "--retry", "3",
-            f"https://api.telegram.org/bot{TOKEN}/{method}", "-F", f"chat_id={CHAT}"]
+            f"https://api.telegram.org/bot{TOKEN}/{method}", "--form-string", f"chat_id={CHAT}"]
     if item["type"] == "text":
-        args += ["-F", "text=" + item["caption"]]
+        args += ["--form-string", "text=" + item["caption"]]
     else:
-        args += ["-F", f"{item['type']}=@{item['file']}", "-F", "caption=<-"]
+        args += ["-F", f"{item['type']}=@{item['file']}", "--form-string", "caption=" + item.get("caption", "")]
         if item["type"] == "video":
             args += ["-F", "supports_streaming=true"]
-    r = subprocess.run(args, input=item.get("caption", ""), capture_output=True, text=True)
+    r = subprocess.run(args, capture_output=True, text=True)
     res = json.loads(r.stdout or "{}")
     if not res.get("ok"):
         raise RuntimeError(f"{item['id']}: {r.stdout or r.stderr}")
