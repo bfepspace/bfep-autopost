@@ -24,6 +24,29 @@ if not dry:  # проверка токена: имя бота и права в �
         r = cm.get("result", {})
         print("в канале:", r.get("status"), "может публиковать:", r.get("can_post_messages"), cm.get("description", ""))
 
+def tg(method, **params):
+    args = ["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/{method}"]
+    for k, v in params.items():
+        args += ["--form-string", f"{k}={v}"]
+    return json.loads(subprocess.run(args, capture_output=True, text=True).stdout or "{}").get("result")
+
+def linked_chat():
+    """Чат обсуждения канала — туда идут посты с "to": "chat" (квиз-вечер)."""
+    return (tg("getChat", chat_id=CHAT) or {}).get("linked_chat_id")
+
+if not dry and TOKEN:  # раз в день — число подписчиков в stats.json
+    stats = json.load(open("stats.json", encoding="utf-8")) if os.path.exists("stats.json") else {}
+    day = (now + datetime.timedelta(hours=4)).date().isoformat()  # дата по Дубаю
+    if day not in stats:
+        n = tg("getChatMemberCount", chat_id=CHAT)
+        if n:
+            stats[day] = {"channel": n}
+            chat = linked_chat()
+            if chat:
+                stats[day]["chat"] = tg("getChatMemberCount", chat_id=chat)
+            json.dump(stats, open("stats.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            print("подписчики:", stats[day])
+
 def buttons(item):
     """Кнопки под постом (включаются в config.json: "buttons": true)."""
     if not CONFIG.get("buttons") or item.get("buttons") is False or item["type"] == "poll":
@@ -32,10 +55,23 @@ def buttons(item):
            {"text": "📤 Отправить другу", "url": SHARE}]]
     return ["--form-string", "reply_markup=" + json.dumps({"inline_keyboard": kb}, ensure_ascii=False)]
 
+def quiz_results(item):
+    """Итоги квиз-вечера: кто сколько ответил верно (счёт ведёт bot.py в bot_state.json)."""
+    st = json.load(open("bot_state.json", encoding="utf-8")) if os.path.exists("bot_state.json") else {}
+    res = sorted(st.get("quiz", {}).get(item["quiz"], {}).items(), key=lambda kv: -kv[1])[:5]
+    medals = ["🥇", "🥈", "🥉", "4.", "5."]
+    rows = "\n".join(f"{medals[i]} {st.get('names', {}).get(u, 'участник')} — {p}" for i, (u, p) in enumerate(res))
+    return item["caption"].replace("{top}", rows or "в этот раз без победителя — ждём вас в следующую субботу!")
+
 def send(item):
-    method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage", "poll": "sendPoll"}[item["type"]]
+    method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage", "poll": "sendPoll", "quiz_results": "sendMessage"}[item["type"]]
+    chat = linked_chat() if item.get("to") == "chat" else CHAT
+    if not chat:
+        raise RuntimeError(f"{item['id']}: у канала нет чата обсуждения")
     args = ["curl", "-sS", "--fail-with-body", "--retry", "3",
-            f"https://api.telegram.org/bot{TOKEN}/{method}", "--form-string", f"chat_id={CHAT}"]
+            f"https://api.telegram.org/bot{TOKEN}/{method}", "--form-string", f"chat_id={chat}"]
+    if item["type"] == "quiz_results":
+        item = dict(item, type="text", caption=quiz_results(item))
     args += buttons(item)
     if item["type"] == "poll":  # опрос или викторина (quiz: correct — номер верного ответа с 0)
         args += ["--form-string", "question=" + item["question"],
@@ -44,6 +80,8 @@ def send(item):
             args += ["--form-string", "type=quiz", "--form-string", f"correct_option_id={item['correct']}"]
             if item.get("explanation"):
                 args += ["--form-string", "explanation=" + item["explanation"]]
+        if item.get("to") == "chat":  # в чате опрос не анонимный — так бот видит, кто ответил верно
+            args += ["--form-string", "is_anonymous=false"]
     elif item["type"] == "text":
         args += ["--form-string", "text=" + item["caption"]]
     else:
@@ -54,6 +92,10 @@ def send(item):
     res = json.loads(r.stdout or "{}")
     if not res.get("ok"):
         raise RuntimeError(f"{item['id']}: {r.stdout or r.stderr}")
+    if item.get("quiz") and "poll" in res["result"]:  # запомнить верный ответ для подсчёта в bot.py
+        st = json.load(open("bot_state.json", encoding="utf-8")) if os.path.exists("bot_state.json") else {}
+        st.setdefault("quiz_polls", {})[res["result"]["poll"]["id"]] = {"quiz": item["quiz"], "correct": item["correct"]}
+        json.dump(st, open("bot_state.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return res["result"]["message_id"]
 
 errors = 0

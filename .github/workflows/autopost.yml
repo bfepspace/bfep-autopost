@@ -27,7 +27,7 @@ jobs:
           while [ "$(date +%s)" -lt "$end" ]; do
             git pull -q --rebase || true
             python3 post.py || true
-            git add posted.json bot_state.json 2>/dev/null || git add posted.json
+            git add posted.json; git add bot_state.json stats.json 2>/dev/null || true
             git diff --cached --quiet || (git commit -qm "posted $(date -u +%FT%TZ)" && git push -q) || true
             python3 bot.py 300 || sleep 60  # бот слушает чат 5 минут (если выключен — просто ждёт)
           done

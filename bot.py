@@ -145,7 +145,18 @@ def on_join(upd):
             state["invites"][uid]["count"] += 1
             add_score({"id": int(uid), "first_name": state["names"].get(uid, "участник")}, 5)
 
+def on_poll_answer(pa):
+    """Ответ на вопрос квиз-вечера: +1 в квизе и +2 очка недели за верный."""
+    q = state.get("quiz_polls", {}).get(pa["poll_id"])
+    user = pa.get("user")
+    if q and user and pa["option_ids"] == [q["correct"]]:
+        board = state.setdefault("quiz", {}).setdefault(q["quiz"], {})
+        board[str(user["id"])] = board.get(str(user["id"]), 0) + 1
+        add_score(user, 2)
+
 def handle(upd):
+    if "poll_answer" in upd:
+        return on_poll_answer(upd["poll_answer"])
     if "chat_member" in upd:
         return on_join(upd)
     msg = upd.get("message")
@@ -171,7 +182,7 @@ def handle(upd):
 end = time.time() + RUN_FOR
 while time.time() < end:
     ups = api("getUpdates", offset=state["offset"], timeout=max(1, min(50, int(end - time.time()))),
-              allowed_updates=["message", "chat_member"]) or []
+              allowed_updates=["message", "chat_member", "poll_answer"]) or []
     for u in ups:
         state["offset"] = u["update_id"] + 1
         try:
