@@ -6,6 +6,9 @@ TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 if not TOKEN and "--dry" not in sys.argv:
     print("Нет секрета TG_BOT_TOKEN — пропускаю"); sys.exit(0)
 LATE_LIMIT = datetime.timedelta(hours=6)  # опоздавшее больше чем на 6 ч не публикуем
+CONFIG = json.load(open("config.json", encoding="utf-8")) if os.path.exists("config.json") else {}
+SHARE = "https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fbestfuneveningapp&text=" + \
+        "%D0%97%D0%B0%D0%B3%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B8%20%D0%B8%D0%B3%D1%80%D1%8B%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%20%F0%9F%8E%B2"  # «Загадки и игры для компании 🎲»
 
 now = datetime.datetime.now(datetime.timezone.utc)
 schedule = json.load(open("schedule.json", encoding="utf-8"))
@@ -21,11 +24,27 @@ if not dry:  # проверка токена: имя бота и права в �
         r = cm.get("result", {})
         print("в канале:", r.get("status"), "может публиковать:", r.get("can_post_messages"), cm.get("description", ""))
 
+def buttons(item):
+    """Кнопки под постом (включаются в config.json: "buttons": true)."""
+    if not CONFIG.get("buttons") or item.get("buttons") is False or item["type"] == "poll":
+        return []
+    kb = [[{"text": "▶️ Сыграть", "url": "https://bfep.space/app/?s=tg-post-btn"},
+           {"text": "📤 Отправить другу", "url": SHARE}]]
+    return ["--form-string", "reply_markup=" + json.dumps({"inline_keyboard": kb}, ensure_ascii=False)]
+
 def send(item):
-    method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage"}[item["type"]]
+    method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage", "poll": "sendPoll"}[item["type"]]
     args = ["curl", "-sS", "--fail-with-body", "--retry", "3",
             f"https://api.telegram.org/bot{TOKEN}/{method}", "--form-string", f"chat_id={CHAT}"]
-    if item["type"] == "text":
+    args += buttons(item)
+    if item["type"] == "poll":  # опрос или викторина (quiz: correct — номер верного ответа с 0)
+        args += ["--form-string", "question=" + item["question"],
+                 "--form-string", "options=" + json.dumps(item["options"], ensure_ascii=False)]
+        if "correct" in item:
+            args += ["--form-string", "type=quiz", "--form-string", f"correct_option_id={item['correct']}"]
+            if item.get("explanation"):
+                args += ["--form-string", "explanation=" + item["explanation"]]
+    elif item["type"] == "text":
         args += ["--form-string", "text=" + item["caption"]]
     else:
         args += ["-F", f"{item['type']}=@{item['file']}", "--form-string", "caption=" + item.get("caption", "")]
