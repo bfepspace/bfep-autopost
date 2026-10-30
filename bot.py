@@ -15,6 +15,7 @@ if not TOKEN or not CONFIG.get("interactive"):
 state = json.load(open(STATE_FILE, encoding="utf-8")) if os.path.exists(STATE_FILE) else {}
 state.setdefault("offset", 0); state.setdefault("riddles", {}); state.setdefault("scores", {})
 state.setdefault("names", {}); state.setdefault("invites", {}); state.setdefault("recent", [])
+state["recent"] = [n for n in state["recent"] if n not in ("Group", "Telegram", "Channel")]
 
 def api(method, **params):
     args = ["curl", "-sS", "--max-time", "70", f"https://api.telegram.org/bot{TOKEN}/{method}"]
@@ -157,6 +158,8 @@ def handle(upd):
             api("sendMessage", chat_id=msg["chat"]["id"], reply_markup=play("welcome"),
                 text=f"👋 {m.get('first_name', '')}, добро пожаловать в Best Fun Evening!\nКаждый день в 10:00 — загадка, угадывай первым. Команды: /help")
     user = msg.get("from") or {}
+    if user.get("is_bot") or user.get("id") in (777000, 1087968824, 136817688):  # служебные отправители: канал, анонимный админ
+        user = {}
     if user.get("first_name") and msg["chat"]["type"] != "private":
         state["recent"] = ([user["first_name"]] + [n for n in state["recent"] if n != user["first_name"]])[:20]
     text = msg.get("text", "")
