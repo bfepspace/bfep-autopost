@@ -57,7 +57,11 @@ def top(n=5):
 def riddle_answer(date):
     """Ответ на загадку берём из подписи следующей загадки в schedule.json («✅ Ответ на вчерашнюю: …»)."""
     nxt = (datetime.date.fromisoformat(date) + datetime.timedelta(days=1)).isoformat()
-    for item in json.load(open("schedule.json", encoding="utf-8")):
+    schedule = json.load(open("schedule.json", encoding="utf-8"))
+    for item in schedule:  # ответ можно указать прямо у загадки: "answer"
+        if item["id"] == f"z-{date}" and item.get("answer"):
+            return item["answer"]
+    for item in schedule:
         if item["id"] == f"z-{nxt}":
             m = re.search(r"Ответ на вчерашнюю:\s*(.+?)\.?\n", item["caption"])
             return m.group(1) if m else None
