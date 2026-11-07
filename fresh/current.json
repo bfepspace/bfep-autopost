@@ -1,0 +1,1266 @@
+{
+ "v": 1,
+ "deck": "current",
+ "published": "2026-11-07",
+ "built_from": [
+  "fresh-2026-11-07"
+ ],
+ "items": [
+  {
+   "id": "f261107-12",
+   "cat": "space",
+   "age": 0,
+   "emoji": "⭐",
+   "from": "2026-11-07",
+   "expires": "2026-12-22",
+   "answer": {
+    "en": "Betelgeuse",
+    "ru": "Бетельгейзе",
+    "de": "Beteigeuze",
+    "es": "Betelgeuse",
+    "fr": "Bételgeuse",
+    "zh": "参宿四"
+   },
+   "clues": {
+    "en": [
+     "🔴 Red giant star",
+     "🏹 Shoulder of Orion",
+     "💥 Will explode one day",
+     "📉 Dimmed strangely in 2019",
+     "👯 Has a hidden companion",
+     "🌀 Its gas is pulled out of shape",
+     "📡 Seen with radio telescopes"
+    ],
+    "ru": [
+     "Красный гигант",
+     "Плечо Ориона",
+     "Однажды взорвётся",
+     "Странно потускнела в 2019-м",
+     "У неё скрытый спутник",
+     "Её газ вытягивает",
+     "Изучали радиотелескопами"
+    ],
+    "de": [
+     "Roter Riesenstern",
+     "Schulter des Orion",
+     "Wird eines Tages explodieren",
+     "Wurde 2019 seltsam dunkler",
+     "Hat einen versteckten Begleiter",
+     "Ihr Gas wird verzerrt",
+     "Mit Radioteleskopen beobachtet"
+    ],
+    "es": [
+     "Estrella gigante roja",
+     "Hombro de Orión",
+     "Algún día explotará",
+     "Se apagó de forma rara en 2019",
+     "Tiene una compañera oculta",
+     "Su gas se deforma",
+     "Observada con radiotelescopios"
+    ],
+    "fr": [
+     "Étoile géante rouge",
+     "Épaule d’Orion",
+     "Explosera un jour",
+     "A étrangement pâli en 2019",
+     "A un compagnon caché",
+     "Son gaz est déformé",
+     "Observée aux radiotélescopes"
+    ],
+    "zh": [
+     "红巨星",
+     "猎户座的肩膀",
+     "终有一天会爆炸",
+     "2019年离奇变暗",
+     "有一颗隐藏的伴星",
+     "它的气体被拉变形",
+     "用射电望远镜观测"
+    ]
+   },
+   "fact": {
+    "en": "Radio telescopes showed that the atmosphere of this red giant in Orion is being pulled out of shape, most likely by a hidden companion star.",
+    "ru": "Радиотелескопы показали: атмосферу этого красного гиганта в Орионе вытягивает, скорее всего, скрытая звезда-спутник.",
+    "de": "Radioteleskope zeigen: Die Atmosphäre dieses Roten Riesen im Orion wird verformt – wohl von einem versteckten Begleitstern.",
+    "es": "Los radiotelescopios mostraron que la atmósfera de esta gigante roja de Orión se deforma, probablemente por una estrella compañera oculta.",
+    "fr": "Des radiotélescopes montrent que l’atmosphère de cette géante rouge d’Orion est déformée, sans doute par une étoile compagne cachée.",
+    "zh": "射电望远镜显示，猎户座这颗红巨星的大气正被拉变形，很可能是一颗隐藏的伴星造成的。"
+   },
+   "sources": [
+    {
+     "title": "Betelgeuse is disturbed by its companion star",
+     "outlet": "Universe Today",
+     "url": "https://www.universetoday.com/articles/betelgeuse-is-disturbed-by-its-companion-star",
+     "date": "2026-10-28"
+    },
+    {
+     "title": "Betelgeuse atmosphere",
+     "outlet": "Sci.News",
+     "url": "https://www.sci.news/astronomy/betelgeuse-atmosphere-15161.html",
+     "date": "2026-10-28"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-07"
+  },
+  {
+   "id": "f261107-11",
+   "cat": "culture",
+   "age": 0,
+   "emoji": "🌌",
+   "from": "2026-11-07",
+   "expires": "2027-01-06",
+   "answer": {
+    "en": "The Starry Night",
+    "ru": "Звёздная ночь",
+    "de": "Sternennacht",
+    "es": "La noche estrellada",
+    "fr": "La Nuit étoilée",
+    "zh": "星月夜"
+   },
+   "clues": {
+    "en": [
+     "🎨 Famous swirly sky painting",
+     "🌻 Same artist as Sunflowers",
+     "🌙 Shows a crescent Moon",
+     "🌲 A dark cypress in front",
+     "🇫🇷 Painted in Provence",
+     "🔭 Astronomers dated its sky",
+     "✨ Venus and the Hyades"
+    ],
+    "ru": [
+     "Знаменитая картина с вихрями в небе",
+     "Тот же художник, что и «Подсолнухи»",
+     "На ней серп Луны",
+     "Тёмный кипарис на переднем плане",
+     "Написана в Провансе",
+     "Астрономы датировали её небо",
+     "Венера и Гиады"
+    ],
+    "de": [
+     "Berühmtes Bild mit wirbelndem Himmel",
+     "Vom Maler der „Sonnenblumen“",
+     "Zeigt eine Mondsichel",
+     "Eine dunkle Zypresse vorne",
+     "In der Provence gemalt",
+     "Astronomen datierten den Himmel",
+     "Venus und die Hyaden"
+    ],
+    "es": [
+     "Famoso cuadro de cielo en remolinos",
+     "Del pintor de «Los girasoles»",
+     "Aparece una luna creciente",
+     "Un ciprés oscuro delante",
+     "Pintado en la Provenza",
+     "Astrónomos fecharon su cielo",
+     "Venus y las Híades"
+    ],
+    "fr": [
+     "Célèbre tableau au ciel tourbillonnant",
+     "Du peintre des « Tournesols »",
+     "On y voit un croissant de Lune",
+     "Un cyprès sombre au premier plan",
+     "Peint en Provence",
+     "Des astronomes ont daté son ciel",
+     "Vénus et les Hyades"
+    ],
+    "zh": [
+     "著名的漩涡天空油画",
+     "与《向日葵》同一位画家",
+     "画着一弯新月",
+     "前景有一棵深色柏树",
+     "在普罗旺斯画成",
+     "天文学家推算出画中星空的日期",
+     "金星和毕星团"
+    ]
+   },
+   "fact": {
+    "en": "Scientists matched Van Gogh’s famous painting to the real dawn sky of about 22 July 1889, with a crescent Moon, Venus and a star cluster.",
+    "ru": "Учёные сопоставили знаменитую картину Ван Гога с настоящим предрассветным небом около 22 июля 1889 года: серп Луны, Венера и звёздное скопление.",
+    "de": "Forscher ordneten Van Goghs berühmtes Bild dem echten Morgenhimmel um den 22. Juli 1889 zu: Mondsichel, Venus und ein Sternhaufen.",
+    "es": "Científicos relacionaron el famoso cuadro de Van Gogh con el cielo real del amanecer del 22 de julio de 1889: luna creciente, Venus y un cúmulo de estrellas.",
+    "fr": "Des chercheurs ont relié le célèbre tableau de Van Gogh au vrai ciel d’aube du 22 juillet 1889 environ : croissant de Lune, Vénus et un amas d’étoiles.",
+    "zh": "科学家把梵高的名画与1889年7月22日前后真实的黎明星空对上了：一弯新月、金星和一个星团。"
+   },
+   "sources": [
+    {
+     "title": "Van Gogh's 'The Starry Night' depicts the sky on July 22, 1889, researchers find",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/astronomy/van-goghs-the-starry-night-depicts-the-sky-on-july-22-1889-researchers-find",
+     "date": "2026-10-22"
+    },
+    {
+     "title": "New study traces van Gogh's famed 'Starry Night' to an actual night sky from 1889",
+     "outlet": "AP via WCAX",
+     "url": "https://www.wcax.com/2026/10/22/new-study-traces-van-goghs-famed-starry-night-an-actual-night-sky-1889/",
+     "date": "2026-10-22"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-08"
+  },
+  {
+   "id": "f261107-10",
+   "cat": "sport",
+   "age": 0,
+   "emoji": "🏃",
+   "from": "2026-11-07",
+   "expires": "2026-12-07",
+   "answer": {
+    "en": "Marathon",
+    "ru": "Марафон",
+    "de": "Marathon",
+    "es": "Maratón",
+    "fr": "Marathon",
+    "zh": "马拉松"
+   },
+   "clues": {
+    "en": [
+     "🏃 A 42-kilometre race",
+     "🏛️ Named after a Greek town",
+     "🗽 New York held its 50th",
+     "👟 About 60,000 runners",
+     "🌉 Crosses five boroughs",
+     "🇸🇪 A Swede won on debut",
+     "🇰🇪 Kenyan won the women’s race"
+    ],
+    "ru": [
+     "Забег на 42 километра",
+     "Назван по греческому городку",
+     "В Нью-Йорке прошёл 50-й",
+     "Около 60 000 бегунов",
+     "Через пять районов города",
+     "Швед победил в дебютном забеге",
+     "У женщин победила кенийка"
+    ],
+    "de": [
+     "Ein 42-Kilometer-Lauf",
+     "Nach einem griechischen Ort benannt",
+     "New York richtete den 50. aus",
+     "Rund 60.000 Läufer",
+     "Durch fünf Stadtbezirke",
+     "Ein Schwede siegte beim Debüt",
+     "Bei den Frauen siegte eine Kenianerin"
+    ],
+    "es": [
+     "Una carrera de 42 kilómetros",
+     "Lleva el nombre de un pueblo griego",
+     "Nueva York celebró el número 50",
+     "Unos 60.000 corredores",
+     "Cruza cinco distritos",
+     "Un sueco ganó en su debut",
+     "Una keniana ganó en mujeres"
+    ],
+    "fr": [
+     "Une course de 42 kilomètres",
+     "Porte le nom d’une ville grecque",
+     "New York a fêté sa 50e édition",
+     "Environ 60 000 coureurs",
+     "Traverse cinq arrondissements",
+     "Un Suédois a gagné pour ses débuts",
+     "Une Kényane a gagné chez les femmes"
+    ],
+    "zh": [
+     "42公里长跑",
+     "以希腊小镇命名",
+     "纽约举办了第50届",
+     "约6万名跑者",
+     "穿过五个区",
+     "瑞典人首次参赛就夺冠",
+     "肯尼亚选手赢得女子组"
+    ]
+   },
+   "fact": {
+    "en": "At New York’s 50th race on 1 November, Sweden’s Andreas Almgren won in his very first race of this distance, and Kenya’s Sheila Chepkirui won the women’s race.",
+    "ru": "На 50-м забеге в Нью-Йорке 1 ноября швед Андреас Альмгрен победил в первом же забеге на эту дистанцию, у женщин первой стала кенийка Шейла Чепкируи.",
+    "de": "Beim 50. Lauf in New York am 1. November siegte der Schwede Andreas Almgren bei seinem allerersten Rennen dieser Länge, bei den Frauen Sheila Chepkirui.",
+    "es": "En la 50.ª carrera de Nueva York, el 1 de noviembre, el sueco Andreas Almgren ganó en su primera prueba de esta distancia; en mujeres, la keniana Sheila Chepkirui.",
+    "fr": "Le 1er novembre, à la 50e course de New York, le Suédois Andreas Almgren a gagné pour sa toute première sur cette distance ; chez les femmes, la Kényane Sheila Chepkirui.",
+    "zh": "11月1日纽约第50届比赛中，瑞典人安德烈亚斯·阿尔姆格伦首次跑这个距离就夺冠，女子冠军是肯尼亚的希拉·切普基鲁伊。"
+   },
+   "sources": [
+    {
+     "title": "New York City Marathon: Sweden's Almgren and Kenya's Chepkirui win as 60,000 take part",
+     "outlet": "AP via KUNC",
+     "url": "https://www.kunc.org/npr-news/2026-11-01/new-york-city-marathon-swedens-almgren-and-kenyas-chepkirui-win-as-60-000-take-part",
+     "date": "2026-11-01"
+    },
+    {
+     "title": "What Happened At The 2026 New York City Marathon?",
+     "outlet": "The Running Channel",
+     "url": "https://therunningchannel.com/what-happened-new-york-marathon-2026/",
+     "date": "2026-11-02"
+    }
+   ],
+   "checked": "2026-11-06",
+   "wyr": {
+    "en": [
+     "run 42 km through New York",
+     "swim across a lake in the Alps"
+    ],
+    "ru": [
+     "пробежать 42 км по Нью-Йорку",
+     "переплыть озеро в Альпах"
+    ],
+    "de": [
+     "42 km durch New York laufen",
+     "einen See in den Alpen durchschwimmen"
+    ],
+    "es": [
+     "correr 42 km por Nueva York",
+     "cruzar a nado un lago de los Alpes"
+    ],
+    "fr": [
+     "courir 42 km dans New York",
+     "traverser à la nage un lac des Alpes"
+    ],
+    "zh": [
+     "在纽约跑完42公里",
+     "游过阿尔卑斯山的一个湖"
+    ]
+   },
+   "daily": "2026-11-09"
+  },
+  {
+   "id": "f261107-09",
+   "cat": "records",
+   "age": 0,
+   "emoji": "📜",
+   "from": "2026-11-07",
+   "expires": "2027-01-06",
+   "answer": {
+    "en": "Voynich manuscript",
+    "ru": "Рукопись Войнича",
+    "de": "Voynich-Manuskript",
+    "es": "Manuscrito Voynich",
+    "fr": "Manuscrit de Voynich",
+    "zh": "伏尼契手稿"
+   },
+   "clues": {
+    "en": [
+     "❓ A book nobody can read",
+     "🌿 Strange plant drawings",
+     "🔐 Unbroken secret code",
+     "🔀 Pages bound in wrong order",
+     "🏛️ Kept at Yale",
+     "🕰️ Made in the 1400s",
+     "🧑‍💼 Named after a book dealer"
+    ],
+    "ru": [
+     "Книга, которую никто не может прочесть",
+     "Странные рисунки растений",
+     "Неразгаданный шифр",
+     "Страницы сшиты не по порядку",
+     "Хранится в Йельском университете",
+     "Создана в XV веке",
+     "Названа по имени книготорговца"
+    ],
+    "de": [
+     "Ein Buch, das niemand lesen kann",
+     "Seltsame Pflanzenbilder",
+     "Ungeknackter Geheimcode",
+     "Seiten falsch gebunden",
+     "Liegt in Yale",
+     "Entstanden im 15. Jahrhundert",
+     "Nach einem Buchhändler benannt"
+    ],
+    "es": [
+     "Un libro que nadie sabe leer",
+     "Extraños dibujos de plantas",
+     "Código secreto sin descifrar",
+     "Páginas cosidas en mal orden",
+     "Se guarda en Yale",
+     "Hecho en el siglo XV",
+     "Lleva el nombre de un librero"
+    ],
+    "fr": [
+     "Un livre que personne ne sait lire",
+     "D’étranges dessins de plantes",
+     "Code secret jamais percé",
+     "Pages reliées dans le désordre",
+     "Conservé à Yale",
+     "Réalisé au XVe siècle",
+     "Porte le nom d’un libraire"
+    ],
+    "zh": [
+     "一本谁也读不懂的书",
+     "奇怪的植物插图",
+     "未被破解的密码",
+     "书页装订顺序错了",
+     "收藏在耶鲁大学",
+     "十五世纪写成",
+     "以一位书商的名字命名"
+    ]
+   },
+   "fact": {
+    "en": "A new study suggests that the mysterious book no one can read was bound with its pages in the wrong order back in the 1400s.",
+    "ru": "Новое исследование: таинственную книгу, которую никто не может прочесть, ещё в XV веке сшили с перепутанными страницами.",
+    "de": "Eine neue Studie legt nahe: Das rätselhafte, unlesbare Buch wurde schon im 15. Jahrhundert mit vertauschten Seiten gebunden.",
+    "es": "Un nuevo estudio sugiere que el misterioso libro que nadie sabe leer se encuadernó con las páginas desordenadas ya en el siglo XV.",
+    "fr": "Une étude suggère que ce mystérieux livre illisible a été relié avec ses pages dans le désordre dès le XVe siècle.",
+    "zh": "一项新研究认为，这本谁也读不懂的神秘之书早在十五世纪装订时就把书页顺序弄错了。"
+   },
+   "sources": [
+    {
+     "title": "Undeciphered Voynich manuscript may have been bound out of order, study finds",
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/archaeology/undeciphered-voynich-manuscript-may-have-been-bound-out-of-order-study-finds",
+     "date": "2026-10-20"
+    },
+    {
+     "title": "No wonder we can't read the Voynich manuscript: its pages are probably out of order",
+     "outlet": "Gizmodo",
+     "url": "https://gizmodo.com/no-wonder-we-cant-read-the-voynich-manuscript-its-pages-are-probably-out-of-order-2000829044",
+     "date": "2026-10-21"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-10"
+  },
+  {
+   "id": "f261107-08",
+   "cat": "records",
+   "age": 0,
+   "emoji": "🎃",
+   "from": "2026-11-07",
+   "expires": "2026-11-30",
+   "answer": {
+    "en": "Jack-o’-lantern",
+    "ru": "Тыква-фонарь",
+    "de": "Kürbislaterne",
+    "es": "Linterna de calabaza",
+    "fr": "Citrouille-lanterne",
+    "zh": "南瓜灯"
+   },
+   "clues": {
+    "en": [
+     "🎃 Carved for Halloween",
+     "🕯️ Glows from inside",
+     "😀 Has a carved face",
+     "⚖️ Record one weighs 1.4 tonnes",
+     "🧙 Carved in the town of Salem",
+     "🔪 Took 32 hours of carving",
+     "🥔 Once made from turnips"
+    ],
+    "ru": [
+     "Её вырезают на Хеллоуин",
+     "Светится изнутри",
+     "У неё вырезано лицо",
+     "Рекордная весит 1,4 тонны",
+     "Вырезали в городе Сейлем",
+     "Резали 32 часа",
+     "Раньше делали из репы"
+    ],
+    "de": [
+     "Zu Halloween geschnitzt",
+     "Leuchtet von innen",
+     "Hat ein geschnitztes Gesicht",
+     "Die Rekordhalterin wiegt 1,4 Tonnen",
+     "In der Stadt Salem geschnitzt",
+     "32 Stunden Schnitzarbeit",
+     "Früher aus Rüben gemacht"
+    ],
+    "es": [
+     "Se talla en Halloween",
+     "Brilla por dentro",
+     "Tiene una cara tallada",
+     "La del récord pesa 1,4 toneladas",
+     "Tallada en la ciudad de Salem",
+     "32 horas de tallado",
+     "Antes se hacía con nabos"
+    ],
+    "fr": [
+     "Sculptée pour Halloween",
+     "Brille de l’intérieur",
+     "A un visage sculpté",
+     "La record pèse 1,4 tonne",
+     "Sculptée dans la ville de Salem",
+     "32 heures de sculpture",
+     "Autrefois faite avec des navets"
+    ],
+    "zh": [
+     "万圣节时雕刻",
+     "从里面发光",
+     "刻着一张脸",
+     "纪录保持者重1.4吨",
+     "在塞勒姆镇雕刻",
+     "雕了32个小时",
+     "最早用芜菁做"
+    ]
+   },
+   "fact": {
+    "en": "A pumpkin weighing about 1,431 kg was carved in Salem, USA, and became the heaviest jack-o’-lantern ever recorded.",
+    "ru": "Тыкву весом около 1431 кг превратили в фонарь в Сейлеме (США) — это самая тяжёлая тыква-фонарь в истории.",
+    "de": "Ein etwa 1.431 kg schwerer Kürbis wurde in Salem (USA) geschnitzt – die schwerste Kürbislaterne aller Zeiten.",
+    "es": "Una calabaza de unos 1.431 kg se talló en Salem (EE. UU.) y es la calabaza de Halloween más pesada de la historia.",
+    "fr": "Une citrouille d’environ 1 431 kg a été sculptée à Salem (États-Unis) : la citrouille-lanterne la plus lourde jamais vue.",
+    "zh": "一个约1431公斤的南瓜在美国塞勒姆被雕成灯，成为史上最重的南瓜灯。"
+   },
+   "sources": [
+    {
+     "title": "Heaviest pumpkin dons carved costume in Salem to turn into heftiest jack o'lantern ever",
+     "outlet": "Guinness World Records",
+     "url": "https://www.guinnessworldrecords.com/news/commercial/2026/10/heaviest-pumpkin-dons-carved-costume-in-salem-to-turn-into-heftiest-jack-o-lantern-ever",
+     "date": "2026-10-30"
+    },
+    {
+     "title": "World-record jack-o'-lantern debuts in Salem",
+     "outlet": "Boston.com",
+     "url": "https://www.boston.com/news/local-news/2026/10/28/chicken-finger-king-debuts-world-record-jack-o-lantern-in-salem/",
+     "date": "2026-10-28"
+    }
+   ],
+   "checked": "2026-11-06",
+   "wyr": {
+    "en": [
+     "carve a pumpkin as heavy as a car",
+     "grow the world’s biggest sunflower"
+    ],
+    "ru": [
+     "вырезать фонарь из тыквы весом с машину",
+     "вырастить самый высокий подсолнух в мире"
+    ],
+    "de": [
+     "einen Kürbis so schwer wie ein Auto schnitzen",
+     "die größte Sonnenblume der Welt züchten"
+    ],
+    "es": [
+     "tallar una calabaza que pesa como un coche",
+     "cultivar el girasol más alto del mundo"
+    ],
+    "fr": [
+     "sculpter une citrouille aussi lourde qu’une voiture",
+     "faire pousser le plus grand tournesol du monde"
+    ],
+    "zh": [
+     "雕一个和汽车一样重的南瓜",
+     "种出世界上最高的向日葵"
+    ]
+   },
+   "daily": "2026-11-11"
+  },
+  {
+   "id": "f261107-07",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🤸",
+   "from": "2026-11-07",
+   "expires": "2026-12-22",
+   "answer": {
+    "en": "Snake",
+    "ru": "Змея",
+    "de": "Schlange",
+    "es": "Serpiente",
+    "fr": "Serpent",
+    "zh": "蛇"
+   },
+   "clues": {
+    "en": [
+     "🐣 Legless reptile",
+     "👅 Flicks a forked tongue",
+     "🤸 Does cartwheels",
+     "🛞 Rolls away like a wheel",
+     "🏃 Four times faster that way",
+     "🌿 Its kind is named after a reed",
+     "🌏 Lives in Southeast Asia"
+    ],
+    "ru": [
+     "Рептилия без ног",
+     "Высовывает раздвоенный язык",
+     "Делает «колесо»",
+     "Укатывается, как колесо",
+     "Так вчетверо быстрее",
+     "Вид назван в честь тростника",
+     "Живёт в Юго-Восточной Азии"
+    ],
+    "de": [
+     "Reptil ohne Beine",
+     "Züngelt mit gespaltener Zunge",
+     "Schlägt Räder",
+     "Rollt davon wie ein Rad",
+     "So viermal schneller",
+     "Ihre Art ist nach Schilf benannt",
+     "Lebt in Südostasien"
+    ],
+    "es": [
+     "Reptil sin patas",
+     "Saca una lengua bífida",
+     "Hace la rueda",
+     "Se aleja rodando como una rueda",
+     "Así va cuatro veces más rápido",
+     "Su especie lleva el nombre de un junco",
+     "Vive en el sudeste asiático"
+    ],
+    "fr": [
+     "Reptile sans pattes",
+     "Sort une langue fourchue",
+     "Fait la roue",
+     "S’enfuit en roulant comme une roue",
+     "Quatre fois plus rapide ainsi",
+     "Son espèce porte le nom du roseau",
+     "Vit en Asie du Sud-Est"
+    ],
+    "zh": [
+     "没有腿的爬行动物",
+     "吐着分叉的舌头",
+     "会侧手翻",
+     "像车轮一样滚走",
+     "这样快四倍",
+     "这一种以芦苇命名",
+     "生活在东南亚"
+    ]
+   },
+   "fact": {
+    "en": "A study showed that the tiny dwarf reed snake escapes danger by rolling its body like a wheel, about four times faster than it slithers.",
+    "ru": "Учёные показали: крошечная карликовая тростниковая змея спасается от опасности, катясь колесом, — примерно вчетверо быстрее, чем ползком.",
+    "de": "Eine Studie zeigt: Die winzige Zwerg-Schilfnatter flieht vor Gefahr, indem sie wie ein Rad rollt – etwa viermal schneller als beim Kriechen.",
+    "es": "Un estudio mostró que una diminuta serpiente de los juncos huye rodando como una rueda, unas cuatro veces más rápido que reptando.",
+    "fr": "Une étude montre qu’un minuscule serpent des roseaux fuit le danger en roulant comme une roue, environ quatre fois plus vite qu’en rampant.",
+    "zh": "研究发现，一种小小的矮芦苇蛇遇到危险会像车轮一样滚走，速度约是爬行的四倍。"
+   },
+   "sources": [
+    {
+     "title": "Watch bizarre snake 'cartwheel' away from danger at more than 12 feet per second",
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/animals/snakes/watch-bizarre-snake-cartwheel-away-from-danger-at-more-than-12-feet-per-second",
+     "date": "2026-10-22"
+    },
+    {
+     "title": "This snake cartwheels to escape danger",
+     "outlet": "Popular Science",
+     "url": "https://www.popsci.com/environment/dwarf-reed-snake-rolling-video/",
+     "date": "2026-10-19"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-12"
+  },
+  {
+   "id": "f261107-06",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🐍",
+   "from": "2026-11-07",
+   "expires": "2026-12-22",
+   "answer": {
+    "en": "Eel",
+    "ru": "Угорь",
+    "de": "Aal",
+    "es": "Anguila",
+    "fr": "Anguille",
+    "zh": "鳗鱼"
+   },
+   "clues": {
+    "en": [
+     "🐍 Slippery snake-like fish",
+     "⚡ One kind gives electric shocks",
+     "🍣 Served grilled in Japan",
+     "🏔️ Crowd at an underwater mountain",
+     "🔢 Almost three million counted",
+     "🇦🇺 Gathering off Tasmania",
+     "🧺 The basketwork kind"
+    ],
+    "ru": [
+     "Скользкая рыба, похожая на змею",
+     "Один вид бьёт током",
+     "В Японии его едят жареным",
+     "Толпа у подводной горы",
+     "Насчитали почти три миллиона",
+     "Собираются у Тасмании",
+     "Вид с «плетёным» названием"
+    ],
+    "de": [
+     "Glitschiger, schlangenartiger Fisch",
+     "Eine Art verteilt Stromschläge",
+     "In Japan gegrillt serviert",
+     "Menge an einem Unterwasserberg",
+     "Fast drei Millionen gezählt",
+     "Treffen vor Tasmanien",
+     "Die „Korbflecht“-Art"
+    ],
+    "es": [
+     "Pez resbaladizo con forma de serpiente",
+     "Un tipo da descargas eléctricas",
+     "En Japón se sirve a la parrilla",
+     "Multitud junto a una montaña submarina",
+     "Contaron casi tres millones",
+     "Se reúnen frente a Tasmania",
+     "La especie «de cestería»"
+    ],
+    "fr": [
+     "Poisson glissant en forme de serpent",
+     "Une espèce donne des décharges",
+     "Servie grillée au Japon",
+     "Foule autour d’une montagne sous-marine",
+     "Près de trois millions comptés",
+     "Rassemblement au large de la Tasmanie",
+     "L’espèce dite « vannerie »"
+    ],
+    "zh": [
+     "像蛇一样滑溜的鱼",
+     "有一种会放电",
+     "在日本常被烤着吃",
+     "聚集在海底山周围",
+     "数出近三百万条",
+     "聚在塔斯马尼亚外海",
+     "“编篮”品种"
+    ]
+   },
+   "fact": {
+    "en": "Australian scientists counted about 2.8 million basketwork eels gathered around one underwater mountain south of Tasmania.",
+    "ru": "Австралийские учёные насчитали около 2,8 миллиона угрей, собравшихся у одной подводной горы к югу от Тасмании.",
+    "de": "Australische Forscher zählten rund 2,8 Millionen Aale an einem einzigen Unterwasserberg südlich von Tasmanien.",
+    "es": "Científicos australianos contaron unos 2,8 millones de anguilas reunidas junto a una montaña submarina al sur de Tasmania.",
+    "fr": "Des scientifiques australiens ont compté environ 2,8 millions d’anguilles autour d’une montagne sous-marine au sud de la Tasmanie.",
+    "zh": "澳大利亚科学家在塔斯马尼亚以南的一座海底山周围数出约280万条鳗鱼。"
+   },
+   "sources": [
+    {
+     "title": "2.8 Million Eels Have Gathered Around a Single Deep-Sea Mountain Off The Coast of Australia",
+     "outlet": "ScienceAlert",
+     "url": "https://www.sciencealert.com/?p=226236",
+     "date": "2026-10-28"
+    },
+    {
+     "title": "2.8 million eels gather near an Australian mountain every year",
+     "outlet": "WION",
+     "url": "https://www.wionews.com/trending/2-8-million-eels-gather-near-an-australian-mountain-every-year-1793177733734",
+     "date": "2026-10-28"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-13"
+  },
+  {
+   "id": "f261107-05",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🐟",
+   "from": "2026-11-07",
+   "expires": "2026-12-22",
+   "answer": {
+    "en": "Barreleye fish",
+    "ru": "Бочкоглаз",
+    "de": "Gespensterfisch",
+    "es": "Pez de cabeza transparente",
+    "fr": "Poisson à tête transparente",
+    "zh": "桶眼鱼"
+   },
+   "clues": {
+    "en": [
+     "🫙 See-through head",
+     "👀 Tube-shaped green eyes",
+     "🌊 Lives in the deep sea",
+     "🎥 First filmed in 4K",
+     "🎯 Eyes rotate upward",
+     "🌗 Twilight-zone dweller",
+     "🇺🇸 Seen off California"
+    ],
+    "ru": [
+     "Прозрачная голова",
+     "Зелёные глаза-трубки",
+     "Живёт в глубинах океана",
+     "Впервые снят в 4K",
+     "Глаза поворачиваются вверх",
+     "Обитатель сумеречной зоны",
+     "Замечен у берегов Калифорнии"
+    ],
+    "de": [
+     "Durchsichtiger Kopf",
+     "Röhrenförmige grüne Augen",
+     "Lebt in der Tiefsee",
+     "Erstmals in 4K gefilmt",
+     "Augen drehen sich nach oben",
+     "Bewohner der Dämmerzone",
+     "Vor Kalifornien gesichtet"
+    ],
+    "es": [
+     "Cráneo como de cristal",
+     "Ojos verdes en forma de tubo",
+     "Vive en las profundidades",
+     "Grabado por primera vez en 4K",
+     "Sus ojos giran hacia arriba",
+     "Habitante de la zona crepuscular",
+     "Visto frente a California"
+    ],
+    "fr": [
+     "Crâne comme du verre",
+     "Yeux verts en forme de tubes",
+     "Vit dans les grands fonds",
+     "Filmé pour la 1re fois en 4K",
+     "Ses yeux pivotent vers le haut",
+     "Habitant de la zone crépusculaire",
+     "Vu au large de la Californie"
+    ],
+    "zh": [
+     "透明的脑袋",
+     "管状的绿眼睛",
+     "生活在深海",
+     "首次被拍成4K视频",
+     "眼睛能向上转",
+     "“暮光区”的居民",
+     "在加州外海被发现"
+    ]
+   },
+   "fact": {
+    "en": "In late October, ocean scientists in California filmed the rare barreleye, a fish with a see-through head and green tube eyes, in 4K for the first time.",
+    "ru": "В конце октября океанологи в Калифорнии впервые сняли в 4K редкую рыбу с прозрачной головой и зелёными глазами-трубками.",
+    "de": "Ende Oktober filmten Meeresforscher in Kalifornien erstmals in 4K den seltenen Fisch mit durchsichtigem Kopf und grünen Röhrenaugen.",
+    "es": "A finales de octubre, científicos de California grabaron en 4K por primera vez a este raro pez de cabeza transparente y ojos verdes de tubo.",
+    "fr": "Fin octobre, des océanologues californiens ont filmé pour la première fois en 4K ce poisson rare à tête transparente et aux yeux verts en tube.",
+    "zh": "10月底，加州海洋科学家首次用4K拍到这种头部透明、长着绿色管状眼睛的罕见鱼。"
+   },
+   "sources": [
+    {
+     "title": "Rare glob-eyed fish spotted in ocean's twilight zone",
+     "outlet": "Popular Science",
+     "url": "https://www.popsci.com/environment/barreleye-fish-4k-video/",
+     "date": "2026-10-29"
+    },
+    {
+     "title": "Mysterious deep-sea fish with eerie appearance captured on camera",
+     "outlet": "Fox Weather",
+     "url": "https://www.foxweather.com/earth-space/rarely-seen-deep-sea-fish-barreleye-fish-california-video",
+     "date": "2026-10-31"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-14"
+  },
+  {
+   "id": "f261107-04",
+   "cat": "engineering",
+   "age": 0,
+   "emoji": "☀️",
+   "from": "2026-11-07",
+   "expires": "2026-12-07",
+   "answer": {
+    "en": "Solar panel",
+    "ru": "Солнечная панель",
+    "de": "Solarmodul",
+    "es": "Panel solar",
+    "fr": "Panneau solaire",
+    "zh": "太阳能板"
+   },
+   "clues": {
+    "en": [
+     "☀️ Turns sunlight into power",
+     "🏠 Often seen on rooftops",
+     "🛰️ Space station upgrade",
+     "🧑‍🚀 Fitted during a spacewalk",
+     "📜 Unrolls like a carpet",
+     "🇨🇦 A Canadian helped fit it",
+     "8️⃣ The eighth and last one"
+    ],
+    "ru": [
+     "Превращает солнечный свет в ток",
+     "Часто стоит на крышах",
+     "Обновление космической станции",
+     "Ставили в открытом космосе",
+     "Разворачивается, как ковёр",
+     "Помогал канадский астронавт",
+     "Восьмая и последняя"
+    ],
+    "de": [
+     "Macht aus Sonnenlicht Strom",
+     "Oft auf Hausdächern",
+     "Neues für die Raumstation",
+     "Beim Weltraumspaziergang montiert",
+     "Rollt sich aus wie ein Teppich",
+     "Ein Kanadier half mit",
+     "Das achte und letzte"
+    ],
+    "es": [
+     "Convierte la luz del sol en energía",
+     "Se ve a menudo en tejados",
+     "Mejora de la estación espacial",
+     "Instalado en un paseo espacial",
+     "Se desenrolla como una alfombra",
+     "Ayudó un astronauta canadiense",
+     "La octava y última"
+    ],
+    "fr": [
+     "Transforme le soleil en électricité",
+     "Souvent posé sur les toits",
+     "Nouveauté pour la station spatiale",
+     "Posé lors d’une sortie dans l’espace",
+     "Se déroule comme un tapis",
+     "Un Canadien a aidé",
+     "La huitième et dernière"
+    ],
+    "zh": [
+     "把阳光变成电",
+     "常装在屋顶上",
+     "空间站升级",
+     "太空行走时安装",
+     "像地毯一样展开",
+     "一位加拿大宇航员参与安装",
+     "第八块，也是最后一块"
+    ]
+   },
+   "fact": {
+    "en": "In two spacewalks on 29 October and 5 November, astronauts fitted the last new roll-out solar arrays on the International Space Station.",
+    "ru": "За два выхода в открытый космос, 29 октября и 5 ноября, астронавты установили последние новые раскатывающиеся солнечные батареи на МКС.",
+    "de": "Bei zwei Außeneinsätzen am 29. Oktober und 5. November montierten Astronauten die letzten neuen ausrollbaren Solarflügel an der ISS.",
+    "es": "En dos paseos espaciales, el 29 de octubre y el 5 de noviembre, los astronautas instalaron los últimos paneles enrollables nuevos en la EEI.",
+    "fr": "Lors de deux sorties, le 29 octobre et le 5 novembre, des astronautes ont installé les derniers nouveaux panneaux déroulables sur l’ISS.",
+    "zh": "10月29日和11月5日两次太空行走中，宇航员为国际空间站装好了最后一批新型卷展式太阳翼。"
+   },
+   "sources": [
+    {
+     "title": "'We got it done!' Spacewalking astronauts finish installing next-gen ISS solar arrays",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/space-exploration/international-space-station/we-got-it-done-spacewalking-astronauts-finish-installing-next-gen-iss-solar-arrays",
+     "date": "2026-11-05"
+    },
+    {
+     "title": "Weekly ISS update: one solar array to go after Kutryk's spacewalk",
+     "outlet": "SpaceQ",
+     "url": "https://spaceq.ca/weekly-iss-update-one-solar-array-to-go-after-kutryks-spacewalk/",
+     "date": "2026-11-01"
+    }
+   ],
+   "checked": "2026-11-06",
+   "wyr": {
+    "en": [
+     "spend a night on the space station",
+     "spend a night in a deep-sea base"
+    ],
+    "ru": [
+     "переночевать на космической станции",
+     "переночевать на глубоководной базе"
+    ],
+    "de": [
+     "eine Nacht auf der Raumstation verbringen",
+     "eine Nacht in einer Tiefseestation verbringen"
+    ],
+    "es": [
+     "pasar una noche en la estación espacial",
+     "pasar una noche en una base en el fondo del mar"
+    ],
+    "fr": [
+     "passer une nuit dans la station spatiale",
+     "passer une nuit dans une base sous-marine"
+    ],
+    "zh": [
+     "在空间站过一夜",
+     "在深海基地过一夜"
+    ]
+   },
+   "daily": "2026-11-15"
+  },
+  {
+   "id": "f261107-03",
+   "cat": "science",
+   "age": 0,
+   "emoji": "🐦‍⬛",
+   "from": "2026-11-07",
+   "expires": "2026-12-22",
+   "answer": {
+    "en": "Crow",
+    "ru": "Ворона",
+    "de": "Krähe",
+    "es": "Cuervo",
+    "fr": "Corneille",
+    "zh": "乌鸦"
+   },
+   "clues": {
+    "en": [
+     "🐦 Clever black bird",
+     "🌾 Chased off crop fields",
+     "⚡ Decides in a blink",
+     "🏃 Twice as quick as people",
+     "🔴 Pecks at a touchscreen",
+     "🐛 Paid in mealworms",
+     "🇩🇪 Tested in a German lab"
+    ],
+    "ru": [
+     "Умная чёрная птица",
+     "Её пугает огородное пугало",
+     "Решает в мгновение ока",
+     "Вдвое быстрее людей",
+     "Клюёт сенсорный экран",
+     "Награда — мучные черви",
+     "Опыты в немецкой лаборатории"
+    ],
+    "de": [
+     "Kluger schwarzer Vogel",
+     "Die Vogelscheuche soll sie verjagen",
+     "Entscheidet im Nu",
+     "Doppelt so schnell wie Menschen",
+     "Pickt auf einen Touchscreen",
+     "Belohnt mit Mehlwürmern",
+     "In einem deutschen Labor getestet"
+    ],
+    "es": [
+     "Pájaro negro muy listo",
+     "El espantapájaros la ahuyenta",
+     "Decide en un abrir y cerrar de ojos",
+     "El doble de rápido que las personas",
+     "Picotea una pantalla táctil",
+     "Premiado con gusanos",
+     "Probado en un laboratorio alemán"
+    ],
+    "fr": [
+     "Oiseau noir très malin",
+     "L’épouvantail est là pour elle",
+     "Décide en un clin d’œil",
+     "Deux fois plus rapide que nous",
+     "Picore un écran tactile",
+     "Payé en vers de farine",
+     "Testé dans un labo allemand"
+    ],
+    "zh": [
+     "聪明的黑色鸟",
+     "稻草人要吓跑它",
+     "一眨眼就做决定",
+     "比人快一倍",
+     "啄触摸屏",
+     "奖励是面包虫",
+     "在德国实验室接受测试"
+    ]
+   },
+   "fact": {
+    "en": "Scientists in Tübingen found that carrion crows decide which way dots are moving in about a quarter of a second, roughly twice as fast as people.",
+    "ru": "Учёные из Тюбингена выяснили: чёрная ворона решает, куда движутся точки, примерно за четверть секунды — почти вдвое быстрее человека.",
+    "de": "Forscher in Tübingen fanden heraus: Rabenkrähen erkennen in etwa einer Viertelsekunde, wohin sich Punkte bewegen – etwa doppelt so schnell wie Menschen.",
+    "es": "Científicos de Tubinga vieron que la corneja negra decide hacia dónde se mueven unos puntos en un cuarto de segundo, casi el doble de rápido que nosotros.",
+    "fr": "À Tübingen, des chercheurs ont vu que la corneille noire juge le sens de points en un quart de seconde environ, presque deux fois plus vite que nous.",
+    "zh": "德国图宾根的科学家发现，小嘴乌鸦大约四分之一秒就能判断光点的移动方向，几乎比人快一倍。"
+   },
+   "sources": [
+    {
+     "title": "Crows may make lightning-fast decisions, sometimes twice as fast as humans",
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints",
+     "date": "2026-10-22"
+    },
+    {
+     "title": "Crows can make visual decisions twice as fast as humans, finds study",
+     "outlet": "ThePrint",
+     "url": "https://theprint.in/science/crows-can-make-visual-decisions-twice-as-fast-as-humans-finds-study/3081735/",
+     "date": "2026-10-26"
+    }
+   ],
+   "checked": "2026-11-06",
+   "wyr": {
+    "en": [
+     "react twice as fast as everyone else",
+     "see in the dark like an owl"
+    ],
+    "ru": [
+     "реагировать вдвое быстрее всех",
+     "видеть в темноте, как сова"
+    ],
+    "de": [
+     "doppelt so schnell reagieren wie alle anderen",
+     "im Dunkeln sehen wie eine Eule"
+    ],
+    "es": [
+     "reaccionar el doble de rápido que los demás",
+     "ver en la oscuridad como un búho"
+    ],
+    "fr": [
+     "réagir deux fois plus vite que tout le monde",
+     "voir dans le noir comme un hibou"
+    ],
+    "zh": [
+     "反应比所有人快一倍",
+     "像猫头鹰一样在黑暗中看清"
+    ]
+   },
+   "daily": "2026-11-16"
+  },
+  {
+   "id": "f261107-02",
+   "cat": "space",
+   "age": 0,
+   "emoji": "🔴",
+   "from": "2026-11-07",
+   "expires": "2027-01-06",
+   "answer": {
+    "en": "Phobos",
+    "ru": "Фобос",
+    "de": "Phobos",
+    "es": "Fobos",
+    "fr": "Phobos",
+    "zh": "火卫一"
+   },
+   "clues": {
+    "en": [
+     "🔴 Moon of the red planet",
+     "🥔 Lumpy potato shape",
+     "👬 Its sibling is Deimos",
+     "🇯🇵 Japanese mission flies there",
+     "🥄 Soil to be brought to Earth",
+     "🛻 A rover named after a comic dog",
+     "😨 Greek word for fear"
+    ],
+    "ru": [
+     "Спутник Красной планеты",
+     "Похож на картофелину",
+     "Его брат — Деймос",
+     "Туда летит японская миссия",
+     "Его грунт привезут на Землю",
+     "Марсоход назван в честь пса из комикса",
+     "По-гречески — «страх»"
+    ],
+    "de": [
+     "Mond des Roten Planeten",
+     "Wie eine knubbelige Kartoffel",
+     "Sein Geschwister heißt Deimos",
+     "Eine japanische Mission fliegt hin",
+     "Boden soll zur Erde kommen",
+     "Rover nach einem Comic-Hund benannt",
+     "Griechisch für „Furcht“"
+    ],
+    "es": [
+     "Luna del planeta rojo",
+     "Con forma de patata",
+     "Su hermano es Deimos",
+     "Una misión japonesa va hacia allí",
+     "Traerán su suelo a la Tierra",
+     "Un róver con nombre de perro de cómic",
+     "En griego significa «miedo»"
+    ],
+    "fr": [
+     "Lune de la planète rouge",
+     "En forme de patate",
+     "Son frère s’appelle Deimos",
+     "Une mission japonaise s’y rend",
+     "Son sol sera rapporté sur Terre",
+     "Un rover au nom d’un chien de BD",
+     "« Peur » en grec"
+    ],
+    "zh": [
+     "红色星球的卫星",
+     "形状像土豆",
+     "它的兄弟叫火卫二",
+     "日本探测器正飞往那里",
+     "土壤将被带回地球",
+     "巡视车以漫画小狗命名",
+     "希腊语意为“恐惧”"
+    ]
+   },
+   "fact": {
+    "en": "On 19 October Japan launched the MMX mission to a moon of Mars. It carries the rover Idefix and should bring soil back to Earth in 2031.",
+    "ru": "19 октября Япония запустила миссию MMX к спутнику Марса. На борту марсоход «Идефикс», грунт должен вернуться на Землю в 2031 году.",
+    "de": "Am 19. Oktober startete Japan die Mission MMX zu einem Marsmond. Sie bringt den Rover Idefix mit und soll 2031 Boden zur Erde zurückbringen.",
+    "es": "El 19 de octubre Japón lanzó la misión MMX hacia una luna de Marte. Lleva el róver Idefix y traerá suelo a la Tierra en 2031.",
+    "fr": "Le 19 octobre, le Japon a lancé la mission MMX vers une lune de Mars. Elle emporte le rover Idéfix et doit rapporter du sol sur Terre en 2031.",
+    "zh": "10月19日，日本发射MMX任务飞往火星的一颗卫星。它带着“伊德菲克斯”巡视车，计划2031年把土壤带回地球。"
+   },
+   "sources": [
+    {
+     "title": "Japan launches historic MMX sample-return mission to Mars' moon Phobos",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/japan-launches-historic-mmx-sample-return-mission-to-mars-moon-phobos",
+     "date": "2026-10-19"
+    },
+    {
+     "title": "MMX mission successfully launched – Idefix rover on its way to Martian moon Phobos",
+     "outlet": "DLR",
+     "url": "https://dlr.de/en/latest/news/2026/mmx-mission-successfully-launched-idefix-rover-is-on-its-way-to-martian-moon-phobos",
+     "date": "2026-10-19"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-17"
+  },
+  {
+   "id": "f261107-01",
+   "cat": "space",
+   "age": 0,
+   "emoji": "🪨",
+   "from": "2026-11-07",
+   "expires": "2026-12-22",
+   "answer": {
+    "en": "Dimorphos",
+    "ru": "Диморф",
+    "de": "Dimorphos",
+    "es": "Dimorfo",
+    "fr": "Dimorphos",
+    "zh": "迪莫弗斯"
+   },
+   "clues": {
+    "en": [
+     "🪨 Small asteroid moonlet",
+     "💥 Hit on purpose in 2022",
+     "🛡️ Planetary defence test",
+     "👯 Orbits a bigger partner",
+     "🚀 European probe’s target",
+     "📸 First seen as a separate dot",
+     "🔤 Its partner is Didymos"
+    ],
+    "ru": [
+     "Маленькая луна астероида",
+     "В 2022 году в него врезались нарочно",
+     "Проверка защиты Земли",
+     "Кружит вокруг старшего соседа",
+     "Цель европейского зонда",
+     "Впервые виден отдельной точкой",
+     "Его сосед — Дидим"
+    ],
+    "de": [
+     "Kleiner Asteroidenmond",
+     "2022 absichtlich gerammt",
+     "Test zur Planetenabwehr",
+     "Umkreist einen größeren Partner",
+     "Ziel einer europäischen Sonde",
+     "Erstmals als eigener Punkt gesehen",
+     "Sein Partner heißt Didymos"
+    ],
+    "es": [
+     "Pequeña luna de un asteroide",
+     "Chocaron contra él a propósito en 2022",
+     "Prueba de defensa planetaria",
+     "Gira alrededor de un socio mayor",
+     "Objetivo de una sonda europea",
+     "Visto por fin como un punto aparte",
+     "Su compañero es Dídimo"
+    ],
+    "fr": [
+     "Petite lune d’astéroïde",
+     "Percuté exprès en 2022",
+     "Test de défense planétaire",
+     "Tourne autour d’un plus gros voisin",
+     "Cible d’une sonde européenne",
+     "Vu pour la 1re fois comme un point à part",
+     "Son voisin s’appelle Didymos"
+    ],
+    "zh": [
+     "小行星的小卫星",
+     "2022年被故意撞击",
+     "行星防御试验",
+     "绕着更大的伙伴转",
+     "欧洲探测器的目标",
+     "首次被拍成单独的光点",
+     "它的伙伴叫迪迪莫斯"
+    ]
+   },
+   "fact": {
+    "en": "Europe’s Hera probe has, for the first time, seen the little asteroid moon Dimorphos apart from its partner Didymos. Close-up photos are due on 25 November.",
+    "ru": "Европейский зонд «Гера» впервые увидел маленькую луну Диморф отдельно от её астероида Дидима. Снимки крупным планом ждут 25 ноября.",
+    "de": "Die europäische Sonde Hera hat den kleinen Asteroidenmond Dimorphos erstmals getrennt von Didymos gesehen. Nahaufnahmen folgen am 25. November.",
+    "es": "La sonda europea Hera ha visto por primera vez la pequeña luna Dimorfo separada de su asteroide Dídimo. Las fotos de cerca llegarán el 25 de noviembre.",
+    "fr": "La sonde européenne Hera a vu pour la première fois la petite lune Dimorphos séparée de Didymos. Les gros plans sont attendus le 25 novembre.",
+    "zh": "欧洲“赫拉”探测器首次把小卫星迪莫弗斯和它的伙伴迪迪莫斯分开拍到。近距离照片预计11月25日发布。"
+   },
+   "sources": [
+    {
+     "title": "Dimorphos in sight: Europe's Hera probe gets its 1st look at battered space rock",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/space-exploration/asteroid-comet-missions/dimorphos-in-sight-europes-hera-probe-gets-its-1st-look-at-battered-space-rock-photo",
+     "date": "2026-11-03"
+    },
+    {
+     "title": "First light: Hera resolves two asteroids instead of one",
+     "outlet": "ESA",
+     "url": "https://www.esa.int/Safety_Security/Hera/First_light_Hera_resolves_two_asteroids_instead_of_one",
+     "date": "2026-10-30"
+    }
+   ],
+   "checked": "2026-11-06",
+   "daily": "2026-11-18"
+  }
+ ]
+}

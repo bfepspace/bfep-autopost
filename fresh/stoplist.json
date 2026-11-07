@@ -1,0 +1,11 @@
+{
+  "_note": "Модуль «Свежее»: слова, при которых карточка не проходит проверку. topics — по всему тексту (политика, трагедии, страшное). marks — чужие торговые марки, по ответу и подсказкам. Исключение для конкретной карточки — поле allow:[слово] с причиной в note.",
+  "topics": [
+    "election","elections","president","prime minister","minister","parliament","senate","congress","government","war","army","military","missile","weapon","bomb","attack","terror","killed","kill","dead","death","died","dies","crash","disaster","earthquake","flood","wildfire","hurricane","victim","victims","murder","shooting","police","arrest","prison","sanction","sanctions","protest","refugee","epidemic","pandemic","outbreak","virus","cancer","tumour","tumor","suicide","drug","drugs","alcohol","beer","wine","vodka","casino","betting","gambling","sex","nude","religion",
+    "выборы","президент","премьер","министр","парламент","правительство","война","армия","военн","ракетный удар","оружие","бомба","теракт","атака","погиб","убит","смерть","умер","скончал","катастроф","авари","землетрясени","наводнени","пожар","ураган","жертв","убийств","стрельб","полици","арест","тюрьм","санкци","протест","беженц","эпидеми","пандеми","вирус","рак ","самоубий","наркот","алкогол","пиво","вино","водк","казино","ставк","секс","религи"
+  ],
+  "marks": [
+    "apple","iphone","ipad","google","android","tesla","chatgpt","openai","gemini","claude","netflix","disney","marvel","pixar","coca-cola","pepsi","nike","adidas","samsung","microsoft","windows","meta","facebook","instagram","tiktok","youtube","whatsapp","telegram","lego","barbie","pokemon","pokémon","nintendo","playstation","xbox","fifa","uefa","nba","nfl","olympic","olympics","olympiad","spacex","starship","starlink","amazon","blue origin","boeing","airbus","ferrari","mcdonald","starbucks","red bull","time's up","monikers","activity","alias","taboo",
+    "айфон","гугл","тесла","нетфликс","дисней","марвел","лего","барби","покемон","олимпи","фифа","старлинк"
+  ]
+}
