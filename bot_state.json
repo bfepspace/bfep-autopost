@@ -46,5 +46,11 @@
  "scores": {},
  "names": {},
  "invites": {},
- "recent": []
+ "recent": [],
+ "quiz_polls": {
+  "5438127490994282254": {
+   "quiz": "2026-11-07",
+   "correct": 2
+  }
+ }
 }
