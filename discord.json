@@ -3,7 +3,7 @@
   "id": "dc-meet-D",
   "at_utc": "2026-11-09T07:00:00Z",
   "dubai": "09.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo D** 👋 The strong dad, 38. Competes with everyone. Even the kettle.\nHero 1 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-D-en-v2.0.mp4"
  },
@@ -11,7 +11,7 @@
   "id": "dc-meet-A",
   "at_utc": "2026-11-09T11:30:00Z",
   "dubai": "09.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo A** 👋 The astronaut, 27. Dreams of the stars. Even at noon.\nHero 2 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-A-en-v2.0.mp4"
  },
@@ -19,7 +19,7 @@
   "id": "dc-R107",
   "at_utc": "2026-11-09T17:30:00Z",
   "dubai": "09.11 21:30",
-  "hold": true,
+  "hold": false,
   "text": "Phone died mid-game? Grab a tablet or open the laptop, the game goes on 📱💻 **The whole evening on any screen.**",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-R107-any-device-en-v1.0.mp4"
  },
@@ -27,7 +27,7 @@
   "id": "dc-meet-C",
   "at_utc": "2026-11-10T07:00:00Z",
   "dubai": "10.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo C** 👋 The sweetheart, 22. Shy. But spins the bottle first.\nHero 3 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-C-en-v2.0.mp4"
  },
@@ -35,7 +35,7 @@
   "id": "dc-meet-E",
   "at_utc": "2026-11-10T11:30:00Z",
   "dubai": "10.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo E** 👋 The grandpa, 71. Knew the answer before the question.\nHero 4 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-E-en-v2.0.mp4"
  },
@@ -43,7 +43,7 @@
   "id": "dc-meet-F",
   "at_utc": "2026-11-11T07:00:00Z",
   "dubai": "11.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo F** 👋 The athlete, 24. Keeps score. Even on the Wheel.\nHero 5 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-F-en-v2.0.mp4"
  },
@@ -51,7 +51,7 @@
   "id": "dc-meet-G",
   "at_utc": "2026-11-11T11:30:00Z",
   "dubai": "11.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo G** 👋 The grandma, 69. Feeds you till you lose.\nHero 6 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-G-en-v2.0.mp4"
  },
@@ -59,7 +59,7 @@
   "id": "dc-meet-H",
   "at_utc": "2026-11-12T07:00:00Z",
   "dubai": "12.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo H** 👋 The kind soul, 30. Rolls the dice for luck and seconds.\nHero 7 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-H-en-v2.0.mp4"
  },
@@ -67,7 +67,7 @@
   "id": "dc-meet-J",
   "at_utc": "2026-11-12T11:30:00Z",
   "dubai": "12.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo J** 👋 The chatterbox, 15. Invites everyone! Even the neighbors.\nHero 8 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-J-en-v2.0.mp4"
  },
@@ -75,7 +75,7 @@
   "id": "dc-meet-K",
   "at_utc": "2026-11-13T07:00:00Z",
   "dubai": "13.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo K** 👋 The wacky chef, 33. Cucumber pie. Why not?\nHero 9 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-K-en-v2.0.mp4"
  },
@@ -83,7 +83,7 @@
   "id": "dc-meet-L",
   "at_utc": "2026-11-13T11:30:00Z",
   "dubai": "13.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo L** 👋 The bluffing mom, 37. Honesty: ??? Let’s check.\nHero 10 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-L-en-v2.0.mp4"
  },
@@ -91,7 +91,7 @@
   "id": "dc-meet-M",
   "at_utc": "2026-11-14T07:00:00Z",
   "dubai": "14.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo M** 👋 The brainiac, 19. Three clues. He needs one.\nHero 11 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-M-en-v2.0.mp4"
  },
@@ -99,7 +99,7 @@
   "id": "dc-meet-N",
   "at_utc": "2026-11-14T11:30:00Z",
   "dubai": "14.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo N** 👋 The evening host, 28. The evening starts. He’s hosting.\nHero 12 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-N-en-v2.0.mp4"
  },
@@ -107,7 +107,7 @@
   "id": "dc-meet-P",
   "at_utc": "2026-11-15T07:00:00Z",
   "dubai": "15.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo P** 👋 The gamer, 20. One more round. Then bed. Probably.\nHero 13 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-P-en-v2.0.mp4"
  },
@@ -115,7 +115,7 @@
   "id": "dc-meet-R",
   "at_utc": "2026-11-15T11:30:00Z",
   "dubai": "15.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo R** 👋 The rocker, 26. Turn it up! Louder.\nHero 14 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-R-en-v2.0.mp4"
  },
@@ -123,7 +123,7 @@
   "id": "dc-meet-S",
   "at_utc": "2026-11-16T07:00:00Z",
   "dubai": "16.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo S** 👋 The fashionista, 25. Truth or dare? Outfit first.\nHero 15 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-S-en-v2.0.mp4"
  },
@@ -131,7 +131,7 @@
   "id": "dc-meet-T",
   "at_utc": "2026-11-16T11:30:00Z",
   "dubai": "16.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo T** 👋 The traveler, 29. Pack the games, hit the road.\nHero 16 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-T-en-v2.0.mp4"
  },
@@ -139,7 +139,7 @@
   "id": "dc-meet-U",
   "at_utc": "2026-11-17T07:00:00Z",
   "dubai": "17.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo U** 👋 The student, 20. I wrote it all down. All of it.\nHero 17 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-U-en-v2.0.mp4"
  },
@@ -147,7 +147,7 @@
   "id": "dc-meet-V",
   "at_utc": "2026-11-17T11:30:00Z",
   "dubai": "17.11 15:30",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo V** 👋 The artist, 23. I’ll paint your evening. Some on the sofa.\nHero 18 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-V-en-v2.0.mp4"
  },
@@ -155,7 +155,7 @@
   "id": "dc-meet-W",
   "at_utc": "2026-11-18T07:00:00Z",
   "dubai": "18.11 11:00",
-  "hold": true,
+  "hold": false,
   "text": "**Meet Beezoo W** 👋 The champion, 27. The trophy won’t win itself.\nHero 19 of 19. Which Beezoo are you? 👇",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-W-en-v2.0.mp4"
  }
