@@ -23,6 +23,8 @@ if not dry:  # проверка токена: имя бота и права в �
         cm = json.loads(subprocess.run(["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/getChatMember", "-d", f"chat_id={CHAT}", "-d", f"user_id={me['result']['id']}"], capture_output=True, text=True).stdout or "{}")
         r = cm.get("result", {})
         print("в канале:", r.get("status"), "может публиковать:", r.get("can_post_messages"), cm.get("description", ""))
+        ch = json.loads(subprocess.run(["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/getChat", "-d", f"chat_id={CHAT}"], capture_output=True, text=True).stdout or "{}").get("result", {})
+        print("канал:", ch.get("title"), "@" + str(ch.get("username")), ch.get("id"))
 
 def tg(method, **params):
     args = ["curl", "-sS", f"https://api.telegram.org/bot{TOKEN}/{method}"]
@@ -65,7 +67,7 @@ def quiz_results(item):
 
 def send(item):
     method = {"video": "sendVideo", "photo": "sendPhoto", "text": "sendMessage", "poll": "sendPoll", "quiz_results": "sendMessage"}[item["type"]]
-    chat = linked_chat() if item.get("to") == "chat" else CHAT
+    chat = linked_chat() if item.get("to") == "chat" else item.get("chat", CHAT)  # "chat": "@другой_канал"
     if not chat:
         raise RuntimeError(f"{item['id']}: у канала нет чата обсуждения")
     args = ["curl", "-sS", "--fail-with-body", "--retry", "3",
@@ -92,6 +94,8 @@ def send(item):
     res = json.loads(r.stdout or "{}")
     if not res.get("ok"):
         raise RuntimeError(f"{item['id']}: {r.stdout or r.stderr}")
+    if item.get("pin"):  # "pin": true — закрепить пост
+        print("закреплено:", tg("pinChatMessage", chat_id=chat, message_id=res["result"]["message_id"], disable_notification="true"))
     if item.get("quiz") and "poll" in res["result"]:  # запомнить верный ответ для подсчёта в bot.py
         st = json.load(open("bot_state.json", encoding="utf-8")) if os.path.exists("bot_state.json") else {}
         st.setdefault("quiz_polls", {})[res["result"]["poll"]["id"]] = {"quiz": item["quiz"], "correct": item["correct"]}
