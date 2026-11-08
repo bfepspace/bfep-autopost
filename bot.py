@@ -112,7 +112,7 @@ def on_riddle_reply(msg):
 def on_command(msg, cmd, arg):
     user = msg["from"]
     if cmd in ("start", "help", "помощь"):
-        reply(msg, "Привет! Я бот Best Fun Evening 🎲\n\n/riddle — загадка\n/dice — бросить кубик\n/wheel а, б, в — колесо решений\n"
+        reply(msg, "Привет! Я бот BEEZOO Space 🎲\n\n/riddle — загадка\n/dice — бросить кубик\n/wheel а, б, в — колесо решений\n"
                    "/who — кто сегодня … (выберу случайного)\n/top — очки недели\n/invite — твоя ссылка для друзей", "start")
     elif cmd in ("riddle", "загадка"):
         r = random.choice(CONFIG.get("riddles") or [["Что идёт, не двигаясь с места?", "время"]])
@@ -171,7 +171,7 @@ def handle(upd):
     for m in msg.get("new_chat_members", []):
         if not m.get("is_bot"):
             api("sendMessage", chat_id=msg["chat"]["id"], reply_markup=play("welcome"),
-                text=f"👋 {m.get('first_name', '')}, добро пожаловать в Best Fun Evening!\nКаждый день в 10:00 — загадка, угадывай первым. Команды: /help")
+                text=f"👋 {m.get('first_name', '')}, добро пожаловать в BEEZOO Space!\nКаждый день в 10:00 — загадка, угадывай первым. Команды: /help")
     user = msg.get("from") or {}
     if user.get("is_bot") or user.get("id") in (777000, 1087968824, 136817688):  # служебные отправители: канал, анонимный админ
         user = {}
