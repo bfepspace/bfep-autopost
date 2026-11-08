@@ -21,6 +21,10 @@ jobs:
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         run: |
           git config user.name "bfep-autopost"
           git config user.email "autopost@bfep.space"
@@ -29,7 +33,8 @@ jobs:
             git pull -q --rebase || true
             python3 post.py || true
             python3 discord_post.py || true  # Discord BEEZOO по discord.json
-            git add posted.json; git add bot_state.json stats.json posted_discord.json 2>/dev/null || true
+            python3 x_post.py || true  # X @beezoospace по x.json
+            git add posted.json; git add bot_state.json stats.json posted_discord.json posted_x.json 2>/dev/null || true
             git diff --cached --quiet || (git commit -qm "posted $(date -u +%FT%TZ)" && git push -q) || true
             python3 bot.py 300 || sleep 60  # бот слушает чат 5 минут (если выключен — просто ждёт)
           done
