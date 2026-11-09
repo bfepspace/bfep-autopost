@@ -1,6 +1,6 @@
 # bfep-autopost
 
-Автопубликация в Telegram-канал t.me/bestfuneveningapp через бота @bestfuneveningapp_bot.
+Автопубликация в Telegram-канал t.me/beezoospace через бота @bestfuneveningapp_bot.
 
 - `schedule.json` — расписание (время в UTC; Дубай = UTC+4), подпись и файл.
 - `posted.json` — что уже опубликовано (пишет робот).

@@ -3,7 +3,7 @@
 import datetime, json, os, random, re, subprocess, sys, time
 
 TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-CHANNEL = os.environ.get("TG_CHAT", "@bestfuneveningapp")
+CHANNEL = os.environ.get("TG_CHAT", "@beezoospace")
 CONFIG = json.load(open("config.json", encoding="utf-8")) if os.path.exists("config.json") else {}
 RUN_FOR = int(sys.argv[1]) if len(sys.argv) > 1 else 300
 APP = "https://bfep.space/app/?s=tg-chat-"

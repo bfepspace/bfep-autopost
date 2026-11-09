@@ -1,13 +1,13 @@
 """Публикует в Telegram-канал всё, чему по schedule.json уже пора (бот: секрет TG_BOT_TOKEN)."""
 import datetime, json, os, subprocess, sys
 
-CHAT = os.environ.get("TG_CHAT", "@bestfuneveningapp")
+CHAT = os.environ.get("TG_CHAT", "@beezoospace")
 TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 if not TOKEN and "--dry" not in sys.argv:
     print("Нет секрета TG_BOT_TOKEN — пропускаю"); sys.exit(0)
 LATE_LIMIT = datetime.timedelta(hours=6)  # опоздавшее больше чем на 6 ч не публикуем
 CONFIG = json.load(open("config.json", encoding="utf-8")) if os.path.exists("config.json") else {}
-SHARE = "https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fbestfuneveningapp&text=" + \
+SHARE = "https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fbeezoospace&text=" + \
         "%D0%97%D0%B0%D0%B3%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B8%20%D0%B8%D0%B3%D1%80%D1%8B%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%20%F0%9F%8E%B2"  # «Загадки и игры для компании 🎲»
 
 now = datetime.datetime.now(datetime.timezone.utc)
