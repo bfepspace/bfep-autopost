@@ -34,7 +34,7 @@ jobs:
             python3 post.py || true
             python3 discord_post.py || true  # Discord BEEZOO по discord.json
             python3 x_post.py || true  # X @beezoospace по x.json
-            git add posted.json; git add bot_state.json stats.json posted_discord.json posted_x.json 2>/dev/null || true
+            for f in posted.json bot_state.json stats.json posted_discord.json posted_x.json; do [ -f "$f" ] && git add "$f"; done; true  # по одному: отсутствующий файл не должен срывать git add остальных
             git diff --cached --quiet || (git commit -qm "posted $(date -u +%FT%TZ)" && git push -q) || true
             python3 bot.py 300 || sleep 60  # бот слушает чат 5 минут (если выключен — просто ждёт)
           done

@@ -88,7 +88,11 @@ for item in schedule:
     try:
         tid = send(item)
     except Exception as e:
-        print("X ошибка", item["id"], e); continue
+        print("X ошибка", item["id"], e)
+        if " 401" in str(e):  # диагностика: ключи вообще принимаются?
+            try: print("X ключи OK, аккаунт:", call("GET", "/users/me").get("data", {}).get("username"))
+            except Exception as e2: print("X ключи НЕ принимаются:", e2)
+        continue
     posted[item["id"]] = {"tweet_id": tid, "at": now.isoformat()}; changed = True
     print("X:", item["id"], tid)
 if changed:
