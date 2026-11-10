@@ -36,6 +36,10 @@ def call(method, path, query=None, body=None, ctype="application/json"):
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"X {method} {path} → {e.code}: {e.read()[:400]!r}")
 
+if "--check" in sys.argv:  # проверка ключей без публикации (workflow x-check)
+    try: print("X ключи OK, аккаунт:", call("GET", "/users/me").get("data", {}).get("username")); sys.exit(0)
+    except RuntimeError as e: print("X ключи НЕ принимаются:", e); sys.exit(1)
+
 def multipart(fields, fname, data):
     b = "----beezoo" + secrets.token_hex(8)
     out = b""
