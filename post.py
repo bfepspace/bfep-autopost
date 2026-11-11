@@ -82,6 +82,8 @@ def send(item):
             args += ["--form-string", "type=quiz", "--form-string", f"correct_option_id={item['correct']}"]
             if item.get("explanation"):
                 args += ["--form-string", "explanation=" + item["explanation"]]
+        if item.get("multiple"):  # можно выбрать несколько вариантов
+            args += ["--form-string", "allows_multiple_answers=true"]
         if item.get("to") == "chat":  # в чате опрос не анонимный — так бот видит, кто ответил верно
             args += ["--form-string", "is_anonymous=false"]
     elif item["type"] == "text":
