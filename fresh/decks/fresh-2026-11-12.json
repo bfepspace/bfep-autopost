@@ -1,0 +1,1461 @@
+{
+ "v": 1,
+ "deck": "fresh-2026-11-12",
+ "published": "2026-11-12",
+ "status": "draft",
+ "_note": "Колода недели 12.11. Каждый факт — два источника разных редакций; ключевые перепроверены поиском 11.11. Жалоб ⚑ на колоду 07.11 не поступало. Публикация — после OK Аркадия.",
+ "items": [
+  {
+   "id": "f261112-01",
+   "cat": "space",
+   "age": 0,
+   "emoji": "🚀",
+   "from": "2026-11-12",
+   "expires": "2026-12-12",
+   "answer": {
+    "en": "Voyager 1",
+    "ru": "Вояджер-1",
+    "de": "Voyager 1",
+    "es": "Voyager 1",
+    "fr": "Voyager 1",
+    "zh": "旅行者1号"
+   },
+   "clues": {
+    "en": [
+     "🚀 Launched back in 1977",
+     "💿 Carries a golden record",
+     "🌌 Farthest human-made object",
+     "⏳ Signals take a whole day",
+     "🧭 In interstellar space since 2012",
+     "📻 A tiny 23-watt transmitter",
+     "🔭 Has a twin with number 2"
+    ],
+    "ru": [
+     "Запущен ещё в 1977 году",
+     "Везёт золотую пластинку",
+     "Самый далёкий объект людей",
+     "Сигнал идёт целые сутки",
+     "В межзвёздном пространстве с 2012",
+     "Передатчик всего на 23 ватта",
+     "У него есть близнец под номером 2"
+    ],
+    "de": [
+     "Schon 1977 gestartet",
+     "Trägt eine goldene Schallplatte",
+     "Fernstes Menschenwerk",
+     "Signale brauchen einen Tag",
+     "Seit 2012 im interstellaren Raum",
+     "Winziger 23-Watt-Sender",
+     "Hat einen Zwilling mit Nummer 2"
+    ],
+    "es": [
+     "Lanzada en 1977",
+     "Lleva un disco de oro",
+     "El objeto humano más lejano",
+     "Su señal tarda un día entero",
+     "En el espacio interestelar desde 2012",
+     "Un transmisor de solo 23 vatios",
+     "Tiene un gemelo con el número 2"
+    ],
+    "fr": [
+     "Lancée dès 1977",
+     "Emporte un disque d’or",
+     "L’objet humain le plus lointain",
+     "Son signal met une journée",
+     "Dans l’espace interstellaire depuis 2012",
+     "Un émetteur de 23 watts",
+     "A un jumeau numéro 2"
+    ],
+    "zh": [
+     "1977年发射",
+     "带着一张金唱片",
+     "最远的人造物体",
+     "信号要走整整一天",
+     "2012年进入星际空间",
+     "只有23瓦的发射机",
+     "有个2号双胞胎"
+    ]
+   },
+   "fact": {
+    "en": "NASA’s oldest working probe reaches one light-day from Earth on 18 November: its radio signal now takes a whole day to get home.",
+    "ru": "Старейший работающий зонд NASA 18 ноября удалится на одни световые сутки: его сигнал летит до Земли целый день.",
+    "de": "Die älteste aktive NASA-Sonde ist am 18. November einen Lichttag von der Erde entfernt: Ihr Signal braucht einen ganzen Tag.",
+    "es": "La sonda activa más antigua de la NASA llega el 18 de noviembre a un día luz de la Tierra: su señal tarda un día entero.",
+    "fr": "La plus vieille sonde active de la NASA atteint le 18 novembre un jour-lumière de la Terre : son signal met une journée.",
+    "zh": "NASA最老的在役探测器11月18日距地球一光日：它的信号要整整一天才能回家。"
+   },
+   "wyr": {
+    "en": [
+     "wait two days for every text reply",
+     "send only one text a year"
+    ],
+    "ru": [
+     "ждать ответа на каждое сообщение двое суток",
+     "отправлять одно сообщение в год"
+    ],
+    "de": [
+     "zwei Tage auf jede Antwort warten",
+     "nur eine Nachricht im Jahr schicken"
+    ],
+    "es": [
+     "esperar dos días cada respuesta",
+     "enviar solo un mensaje al año"
+    ],
+    "fr": [
+     "attendre deux jours chaque réponse",
+     "n’envoyer qu’un message par an"
+    ],
+    "zh": [
+     "每条消息都要等两天回复",
+     "一年只能发一条消息"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Voyager 1 is almost one light-day away from Earth",
+     "outlet": "Popular Science",
+     "url": "https://www.popsci.com/science/voyager-1-one-light-day-away/",
+     "date": "2026-11-09"
+    },
+    {
+     "title": "Voyager 1 1 light-day from Earth Nov 17–18 2026",
+     "outlet": "EarthSky",
+     "url": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/",
+     "date": "2026-11-10"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-02",
+   "cat": "space",
+   "age": 0,
+   "emoji": "🌑",
+   "from": "2026-11-12",
+   "expires": "2026-12-27",
+   "answer": {
+    "en": "Mini-moon",
+    "ru": "Мини-луна",
+    "de": "Minimond",
+    "es": "Miniluna",
+    "fr": "Mini-lune",
+    "zh": "迷你月亮"
+   },
+   "clues": {
+    "en": [
+     "🌍 Earth’s temporary companion",
+     "🪨 A space rock caught by gravity",
+     "🧍 About the size of a person",
+     "👋 Leaves around the new year",
+     "🗑️ First mistaken for space junk",
+     "🔭 Found by a Hungarian astronomer",
+     "🏷️ Named 2026 QQ8"
+    ],
+    "ru": [
+     "Временный спутник Земли",
+     "Камень, пойманный притяжением",
+     "Размером примерно с человека",
+     "Улетит к Новому году",
+     "Сначала его приняли за мусор",
+     "Нашёл венгерский астроном",
+     "Обозначение 2026 QQ8"
+    ],
+    "de": [
+     "Vorübergehender Erdbegleiter",
+     "Von der Schwerkraft gefangener Stein",
+     "Etwa so groß wie ein Mensch",
+     "Verschwindet um Neujahr",
+     "Erst für Weltraumschrott gehalten",
+     "Von einem ungarischen Astronomen entdeckt",
+     "Bezeichnung 2026 QQ8"
+    ],
+    "es": [
+     "Compañero temporal de la Tierra",
+     "Roca atrapada por la gravedad",
+     "Del tamaño de una persona",
+     "Se irá hacia Año Nuevo",
+     "Primero lo tomaron por basura espacial",
+     "Lo halló un astrónomo húngaro",
+     "Designado 2026 QQ8"
+    ],
+    "fr": [
+     "Compagnon temporaire de la Terre",
+     "Rocher capturé par la gravité",
+     "De la taille d’un humain",
+     "Repart vers le Nouvel An",
+     "D’abord pris pour un débris",
+     "Trouvé par un astronome hongrois",
+     "Baptisé 2026 QQ8"
+    ],
+    "zh": [
+     "地球的临时伙伴",
+     "被引力抓住的太空石",
+     "大约一个人那么大",
+     "新年前后就离开",
+     "起初被当成太空垃圾",
+     "由匈牙利天文学家发现",
+     "编号2026 QQ8"
+    ]
+   },
+   "fact": {
+    "en": "Earth has caught a person-sized space rock, 2026 QQ8, as a temporary second moon. It will drift away around the new year.",
+    "ru": "Земля поймала камень размером с человека — 2026 QQ8 — и он стал её временной второй луной. Улетит примерно к Новому году.",
+    "de": "Die Erde hat einen menschengroßen Brocken, 2026 QQ8, als zweiten Mond eingefangen. Um Neujahr zieht er weiter.",
+    "es": "La Tierra atrapó una roca del tamaño de una persona, 2026 QQ8, como segunda luna temporal. Se irá hacia Año Nuevo.",
+    "fr": "La Terre a capturé un rocher de taille humaine, 2026 QQ8, comme seconde lune temporaire. Il repartira vers le Nouvel An.",
+    "zh": "地球捕获了一块人那么大的太空石2026 QQ8，成了临时的第二个月亮，新年前后会离开。"
+   },
+   "wyr": {
+    "en": [
+     "have a second moon for a month",
+     "see a ring like Saturn’s for one night"
+    ],
+    "ru": [
+     "иметь вторую луну целый месяц",
+     "одну ночь видеть кольцо, как у Сатурна"
+    ],
+    "de": [
+     "einen Monat lang einen zweiten Mond haben",
+     "eine Nacht lang einen Ring wie Saturn sehen"
+    ],
+    "es": [
+     "tener una segunda luna un mes",
+     "ver un anillo como el de Saturno una noche"
+    ],
+    "fr": [
+     "avoir une seconde lune pendant un mois",
+     "voir un anneau comme Saturne une nuit"
+    ],
+    "zh": [
+     "拥有第二个月亮一个月",
+     "看一晚像土星那样的光环"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Earth has captured a new mini moon — but it won't stick around for long",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/astronomy/earth/earth-has-captured-a-new-mini-moon-but-it-wont-stick-around-for-long",
+     "date": "2026-11-05"
+    },
+    {
+     "title": "Earth has new mini-moon – but it won't be around for long",
+     "outlet": "BBC Sky at Night",
+     "url": "https://www.skyatnightmagazine.com/news/2026-qq8",
+     "date": "2026-11-07"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-03",
+   "cat": "science",
+   "age": 0,
+   "emoji": "🪥",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Toothbrush",
+    "ru": "Зубная щётка",
+    "de": "Zahnbürste",
+    "es": "Cepillo de dientes",
+    "fr": "Brosse à dents",
+    "zh": "牙刷"
+   },
+   "clues": {
+    "en": [
+     "😁 Used every morning and night",
+     "🦠 Fights plaque germs",
+     "⚡ Bristles make electricity",
+     "🔋 Needs no battery",
+     "🧪 Made of bendy smart plastic",
+     "🧹 Removes 99% of germ film",
+     "👥 Tested on 115 adults"
+    ],
+    "ru": [
+     "Ей пользуются утром и вечером",
+     "Борется с налётом и микробами",
+     "Щетинки вырабатывают ток",
+     "Не нужна батарейка",
+     "Из гибкого «умного» пластика",
+     "Убирает 99% микробной плёнки",
+     "Проверили на 115 взрослых"
+    ],
+    "de": [
+     "Morgens und abends benutzt",
+     "Kämpft gegen Belag",
+     "Borsten erzeugen Strom",
+     "Braucht keine Batterie",
+     "Aus biegsamem Spezialkunststoff",
+     "Entfernt 99 % des Keimfilms",
+     "An 115 Erwachsenen getestet"
+    ],
+    "es": [
+     "Se usa mañana y noche",
+     "Lucha contra la placa",
+     "Sus cerdas producen electricidad",
+     "No necesita pila",
+     "De plástico flexible inteligente",
+     "Elimina el 99 % de la biopelícula",
+     "Probado en 115 adultos"
+    ],
+    "fr": [
+     "Utilisée matin et soir",
+     "Combat la plaque",
+     "Ses poils produisent du courant",
+     "Pas besoin de pile",
+     "En plastique souple intelligent",
+     "Retire 99 % du film de germes",
+     "Testée sur 115 adultes"
+    ],
+    "zh": [
+     "早晚都要用",
+     "对抗牙菌斑",
+     "刷毛能发电",
+     "不需要电池",
+     "用会弯曲的智能塑料",
+     "清除99%的细菌膜",
+     "在115名成人身上测试"
+    ]
+   },
+   "fact": {
+    "en": "Scientists made a battery-free toothbrush whose bristles produce electricity when they bend. In lab tests it removed over 99% of plaque.",
+    "ru": "Учёные сделали щётку без батарейки: щетинки дают ток, когда гнутся. В опытах она убрала больше 99% налёта.",
+    "de": "Forscher bauten eine Bürste ohne Batterie, deren Borsten beim Biegen Strom erzeugen. Im Labor entfernte sie über 99 % des Belags.",
+    "es": "Crearon un cepillo sin pila cuyas cerdas generan electricidad al doblarse. En pruebas eliminó más del 99 % de la placa.",
+    "fr": "Des chercheurs ont créé une brosse sans pile dont les poils font du courant en pliant. En labo, elle retire plus de 99 % de la plaque.",
+    "zh": "科学家做出不用电池的牙刷，刷毛一弯就发电，实验中清除了99%以上的牙菌斑。"
+   },
+   "wyr": {
+    "en": [
+     "have a toothbrush that sings",
+     "have one that tells jokes"
+    ],
+    "ru": [
+     "щётку, которая поёт",
+     "щётку, которая рассказывает анекдоты"
+    ],
+    "de": [
+     "eine Zahnbürste, die singt",
+     "eine, die Witze erzählt"
+    ],
+    "es": [
+     "un cepillo que canta",
+     "uno que cuenta chistes"
+    ],
+    "fr": [
+     "une brosse qui chante",
+     "une brosse qui raconte des blagues"
+    ],
+    "zh": [
+     "会唱歌的牙刷",
+     "会讲笑话的牙刷"
+    ]
+   },
+   "sources": [
+    {
+     "title": "This self-powered toothbrush makes electricity to kill cavity-causing bacteria",
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/health/this-self-powered-toothbrush-makes-electricity-to-kill-cavity-causing-bacteria",
+     "date": "2026-11-04"
+    },
+    {
+     "title": "Self-charging toothbrush zaps plaque",
+     "outlet": "New Atlas",
+     "url": "https://newatlas.com/technology/self-charging-toothbrush-zaps-plaque/",
+     "date": "2026-11-04"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-04",
+   "cat": "engineering",
+   "age": 0,
+   "emoji": "✈️",
+   "from": "2026-11-12",
+   "expires": "2026-12-27",
+   "answer": {
+    "en": "Toulouse",
+    "ru": "Тулуза",
+    "de": "Toulouse",
+    "es": "Toulouse",
+    "fr": "Toulouse",
+    "zh": "图卢兹"
+   },
+   "clues": {
+    "en": [
+     "🇫🇷 The French “Pink City”",
+     "✈️ Europe’s big plane-building city",
+     "🏉 Loves rugby",
+     "⏱️ Jet landed after 24 hours",
+     "🇦🇺 Nonstop from Melbourne",
+     "📏 23,155 km in one go",
+     "🏆 New distance world record"
+    ],
+    "ru": [
+     "Французский «Розовый город»",
+     "Столица европейского авиастроения",
+     "Город, влюблённый в регби",
+     "Лайнер сел через 24 часа полёта",
+     "Без посадок из Мельбурна",
+     "23 155 км за один перелёт",
+     "Новый мировой рекорд дальности"
+    ],
+    "de": [
+     "Frankreichs „Rosa Stadt“",
+     "Europas Flugzeugbau-Hauptstadt",
+     "Liebt Rugby",
+     "Jet landete nach 24 Stunden",
+     "Nonstop aus Melbourne",
+     "23.155 km am Stück",
+     "Neuer Weltrekord der Distanz"
+    ],
+    "es": [
+     "La «Ciudad Rosa» de Francia",
+     "Capital europea de los aviones",
+     "Ama el rugby",
+     "El avión aterrizó tras 24 horas",
+     "Sin escalas desde Melbourne",
+     "23.155 km de un tirón",
+     "Nuevo récord mundial de distancia"
+    ],
+    "fr": [
+     "La « Ville rose »",
+     "Capitale européenne des avions",
+     "Fan de rugby",
+     "Avion posé après 24 heures",
+     "Sans escale depuis Melbourne",
+     "23 155 km d’une traite",
+     "Nouveau record du monde de distance"
+    ],
+    "zh": [
+     "法国“粉红之城”",
+     "欧洲飞机制造之都",
+     "热爱橄榄球",
+     "飞机飞了24小时才降落",
+     "从墨尔本直飞",
+     "一口气飞23155公里",
+     "新的距离世界纪录"
+    ]
+   },
+   "fact": {
+    "en": "A passenger jet flew 23,155 km nonstop from Melbourne to this French city in about 24 hours. Guinness has now confirmed it as a distance record.",
+    "ru": "Пассажирский лайнер пролетел 23 155 км без посадок из Мельбурна в этот французский город за 24 часа. Теперь это официальный рекорд дальности.",
+    "de": "Ein Passagierjet flog in rund 24 Stunden 23.155 km nonstop von Melbourne in diese französische Stadt – jetzt offizieller Distanzrekord.",
+    "es": "Un avión de pasajeros voló 23.155 km sin escalas de Melbourne a esta ciudad francesa en unas 24 horas: ya es récord oficial de distancia.",
+    "fr": "Un avion de ligne a volé 23 155 km sans escale de Melbourne à cette ville française en 24 heures environ : record officiel de distance.",
+    "zh": "一架客机约24小时从墨尔本直飞这座法国城市23155公里，现已被确认为距离纪录。"
+   },
+   "wyr": {
+    "en": [
+     "take a 24-hour nonstop flight",
+     "take a 4-day train ride"
+    ],
+    "ru": [
+     "лететь 24 часа без посадок",
+     "ехать 4 дня на поезде"
+    ],
+    "de": [
+     "24 Stunden nonstop fliegen",
+     "4 Tage Zug fahren"
+    ],
+    "es": [
+     "volar 24 horas sin escalas",
+     "viajar 4 días en tren"
+    ],
+    "fr": [
+     "voler 24 heures sans escale",
+     "faire 4 jours de train"
+    ],
+    "zh": [
+     "坐24小时不停的飞机",
+     "坐4天火车"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Airbus A350-1000ULR breaks world distance record",
+     "outlet": "Airbus",
+     "url": "https://www.airbus.com/en/newsroom/press-releases/2026-11-airbus-a350-1000ulr-for-qantas-breaks-world-distance-record",
+     "date": "2026-11-09"
+    },
+    {
+     "title": "Flug kommt ins Guinness Buch der Rekorde",
+     "outlet": "Aerotelegraph",
+     "url": "https://www.aerotelegraph.com/ticker/flug-von-airbus-a350-1000-ulr-kommt-ins-guiness-buch-der-rekorde/gzg62z9",
+     "date": "2026-11-09"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-05",
+   "cat": "engineering",
+   "age": 1,
+   "emoji": "⚡",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Power grid",
+    "ru": "Электросеть",
+    "de": "Stromnetz",
+    "es": "Red eléctrica",
+    "fr": "Réseau électrique",
+    "zh": "电网"
+   },
+   "clues": {
+    "en": [
+     "💡 Brings electricity to homes",
+     "🗼 Pylons and long cables",
+     "⏰ Twitches every 60 seconds",
+     "🌍 Same pulse on five continents",
+     "🔋 Backup batteries to blame",
+     "🔁 They self-test on the minute",
+     "🇩🇪 Traced by German scientists"
+    ],
+    "ru": [
+     "Несёт ток в каждый дом",
+     "Опоры и длинные провода",
+     "Вздрагивает каждые 60 секунд",
+     "Тот же пульс на пяти континентах",
+     "Причина — резервные батареи",
+     "Они проверяют себя ровно в начале минуты",
+     "Разгадали немецкие учёные"
+    ],
+    "de": [
+     "Bringt Strom ins Haus",
+     "Masten und lange Kabel",
+     "Zuckt alle 60 Sekunden",
+     "Gleicher Puls auf fünf Kontinenten",
+     "Schuld sind Notstrom-Akkus",
+     "Sie testen sich zur vollen Minute",
+     "Von deutschen Forschern entschlüsselt"
+    ],
+    "es": [
+     "Lleva la luz a las casas",
+     "Torres y largos cables",
+     "Se estremece cada 60 segundos",
+     "El mismo pulso en cinco continentes",
+     "La culpa es de baterías de respaldo",
+     "Se autoprueban al cambiar de minuto",
+     "Lo descubrieron científicos alemanes"
+    ],
+    "fr": [
+     "Amène le courant chez nous",
+     "Pylônes et longs câbles",
+     "Tressaille toutes les 60 secondes",
+     "Même pouls sur cinq continents",
+     "La faute aux batteries de secours",
+     "Elles s’autotestent à la minute pile",
+     "Percé par des chercheurs allemands"
+    ],
+    "zh": [
+     "把电送到家里",
+     "铁塔和长长的电线",
+     "每60秒抖一下",
+     "五大洲同样的脉动",
+     "罪魁是备用电池",
+     "它们整分钟自检",
+     "由德国科学家破解"
+    ]
+   },
+   "fact": {
+    "en": "Electricity on five continents wobbles slightly every 60 seconds. Scientists found why: backup batteries all run self-tests exactly on the minute.",
+    "ru": "Ток на пяти континентах чуть вздрагивает каждые 60 секунд. Учёные нашли причину: резервные батареи проверяют себя ровно в начале минуты.",
+    "de": "Strom auf fünf Kontinenten schwankt alle 60 Sekunden leicht. Der Grund: Notstrom-Akkus testen sich genau zur vollen Minute.",
+    "es": "La electricidad en cinco continentes oscila cada 60 segundos. La causa: baterías de respaldo que se autoprueban justo al cambiar de minuto.",
+    "fr": "Le courant de cinq continents vacille toutes les 60 secondes. La cause : des batteries de secours qui s’autotestent pile à la minute.",
+    "zh": "五大洲的电每60秒轻轻抖一下。科学家找到原因：备用电池都在整分钟自检。"
+   },
+   "wyr": {
+    "en": [
+     "live a week without electricity",
+     "live a month without the internet"
+    ],
+    "ru": [
+     "неделю без электричества",
+     "месяц без интернета"
+    ],
+    "de": [
+     "eine Woche ohne Strom",
+     "einen Monat ohne Internet"
+    ],
+    "es": [
+     "una semana sin electricidad",
+     "un mes sin internet"
+    ],
+    "fr": [
+     "une semaine sans électricité",
+     "un mois sans internet"
+    ],
+    "zh": [
+     "一周没电",
+     "一个月没网"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Power Grids on 5 Continents Pulse Every 60 Seconds. Scientists Think They Finally Know Why.",
+     "outlet": "ScienceAlert",
+     "url": "https://www.sciencealert.com/power-grids-on-5-continents-pulse-every-60-seconds-scientists-think-they-finally-know-why",
+     "date": "2026-11-10"
+    },
+    {
+     "title": "Rätsel um 60-Sekunden-Pulsschlag im Stromnetz gelöst",
+     "outlet": "Bild der Wissenschaft",
+     "url": "https://wissenschaft.de/artikel/raetsel-um-60-sekunden-pulsschlag-im-stromnetz-geloest",
+     "date": "2026-11-02"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-06",
+   "cat": "tech",
+   "age": 0,
+   "emoji": "🤖",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Robot",
+    "ru": "Робот",
+    "de": "Roboter",
+    "es": "Robot",
+    "fr": "Robot",
+    "zh": "机器人"
+   },
+   "clues": {
+    "en": [
+     "🦾 Mechanical helper",
+     "🧠 Works without a human",
+     "🛰️ Built something in orbit",
+     "🏗️ Assembled an antenna frame",
+     "🧩 Piece by piece, by itself",
+     "🎓 A Californian university project",
+     "🚚 Rode to space on a space tug"
+    ],
+    "ru": [
+     "Механический помощник",
+     "Работает без человека",
+     "Что-то построил на орбите",
+     "Собрал каркас антенны",
+     "Сам, деталь за деталью",
+     "Проект университета в Калифорнии",
+     "Долетел на космическом буксире"
+    ],
+    "de": [
+     "Mechanischer Helfer",
+     "Arbeitet ohne Menschen",
+     "Baute etwas im Orbit",
+     "Montierte einen Antennenrahmen",
+     "Stück für Stück, ganz allein",
+     "Projekt einer Uni in Kalifornien",
+     "Flog mit einem Raumschlepper"
+    ],
+    "es": [
+     "Ayudante mecánico",
+     "Trabaja sin personas",
+     "Construyó algo en órbita",
+     "Montó el marco de una antena",
+     "Pieza a pieza, él solo",
+     "Proyecto de una universidad californiana",
+     "Viajó en un remolcador espacial"
+    ],
+    "fr": [
+     "Aide mécanique",
+     "Travaille sans humain",
+     "A construit en orbite",
+     "A monté un cadre d’antenne",
+     "Pièce par pièce, tout seul",
+     "Projet d’une université californienne",
+     "Voyagé sur un remorqueur spatial"
+    ],
+    "zh": [
+     "机械助手",
+     "不用人也能干活",
+     "在轨道上建造东西",
+     "组装天线框架",
+     "一块一块自己拼",
+     "加州一所大学的项目",
+     "搭太空拖船上天"
+    ]
+   },
+   "fact": {
+    "en": "For the first time, a machine assembled part of a 1.4-metre antenna frame in orbit completely on its own, with no astronaut help.",
+    "ru": "Впервые машина сама, без помощи космонавтов, собрала на орбите часть каркаса антенны размером 1,4 метра.",
+    "de": "Erstmals hat eine Maschine im Orbit ganz allein einen Teil eines 1,4 Meter großen Antennenrahmens montiert – ohne Astronauten.",
+    "es": "Por primera vez, una máquina montó sola en órbita parte del marco de una antena de 1,4 metros, sin ayuda de astronautas.",
+    "fr": "Pour la première fois, une machine a monté seule en orbite une partie d’un cadre d’antenne de 1,4 mètre, sans astronaute.",
+    "zh": "机器首次在轨道上完全自主组装了1.4米天线框架的一部分，没有宇航员帮忙。"
+   },
+   "wyr": {
+    "en": [
+     "have a helper that tidies your room",
+     "have one that cooks dinner"
+    ],
+    "ru": [
+     "помощника, который убирает комнату",
+     "помощника, который готовит ужин"
+    ],
+    "de": [
+     "einen Helfer, der aufräumt",
+     "einen, der kocht"
+    ],
+    "es": [
+     "un ayudante que ordena tu cuarto",
+     "uno que hace la cena"
+    ],
+    "fr": [
+     "un assistant qui range ta chambre",
+     "un qui prépare le dîner"
+    ],
+    "zh": [
+     "帮你收拾房间的助手",
+     "帮你做晚饭的助手"
+    ]
+   },
+   "sources": [
+    {
+     "title": "A robot just built a structure autonomously in space for the 1st time ever",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/technology/a-robot-just-built-a-structure-autonomously-in-space-for-the-1st-time-ever",
+     "date": "2026-11-10"
+    },
+    {
+     "title": "Caltech DARPA ASTRA robot",
+     "outlet": "Interesting Engineering",
+     "url": "https://interestingengineering.com/ai-robotics/caltech-darpa-astra-robot",
+     "date": "2026-11-09"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-07",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🐒",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Chimpanzee",
+    "ru": "Шимпанзе",
+    "de": "Schimpanse",
+    "es": "Chimpancé",
+    "fr": "Chimpanzé",
+    "zh": "黑猩猩"
+   },
+   "clues": {
+    "en": [
+     "🦍 Our closest ape cousin",
+     "🍌 Lives in African forests",
+     "🪵 Uses sticks as tools",
+     "👅 Blows “raspberries”",
+     "👶 Babies copy the grown-ups",
+     "🪮 A sound for grooming time",
+     "🇨🇮 Studied in Ivory Coast"
+    ],
+    "ru": [
+     "Наш ближайший родственник среди обезьян",
+     "Живёт в лесах Африки",
+     "Пользуется палками как инструментом",
+     "Громко «фыркает» губами",
+     "Малыши копируют взрослых",
+     "Звук во время груминга",
+     "Изучали в Кот-д’Ивуаре"
+    ],
+    "de": [
+     "Unser nächster Affenverwandter",
+     "Lebt in Afrikas Wäldern",
+     "Nutzt Stöcke als Werkzeug",
+     "Macht Pupsgeräusche mit den Lippen",
+     "Junge machen es den Alten nach",
+     "Ein Laut beim Lausen",
+     "In der Elfenbeinküste erforscht"
+    ],
+    "es": [
+     "Nuestro primo simio más cercano",
+     "Vive en selvas de África",
+     "Usa palos como herramientas",
+     "Hace pedorretas con los labios",
+     "Las crías imitan a los adultos",
+     "Un sonido para el aseo mutuo",
+     "Estudiado en Costa de Marfil"
+    ],
+    "fr": [
+     "Notre plus proche cousin singe",
+     "Vit dans les forêts d’Afrique",
+     "Utilise des bâtons comme outils",
+     "Fait des « prouts » avec la bouche",
+     "Les petits copient les adultes",
+     "Un son pendant l’épouillage",
+     "Étudié en Côte d’Ivoire"
+    ],
+    "zh": [
+     "人类最近的猿类亲戚",
+     "生活在非洲森林",
+     "会用树枝当工具",
+     "用嘴唇吹“噗噗”声",
+     "幼崽模仿大人",
+     "互相梳毛时发出的声音",
+     "在科特迪瓦被研究"
+    ]
+   },
+   "fact": {
+    "en": "Young apes learn when to blow lip “raspberries” by copying adults: the first time a learned, shared sound has been shown in this species.",
+    "ru": "Детёныши учатся, когда громко «фыркать» губами, глядя на взрослых. Впервые у этого вида доказан выученный общий звук.",
+    "de": "Junge Affen lernen von Erwachsenen, wann sie mit den Lippen prusten. Erstmals ist bei dieser Art ein erlernter gemeinsamer Laut belegt.",
+    "es": "Las crías aprenden de los adultos cuándo hacer pedorretas con los labios: primer sonido aprendido y compartido demostrado en la especie.",
+    "fr": "Les jeunes apprennent des adultes quand faire des bruits de lèvres : premier son appris et partagé démontré chez cette espèce.",
+    "zh": "幼崽跟大人学什么时候用嘴唇吹“噗噗”声，这是首次在该物种中证实后天习得的共同声音。"
+   },
+   "wyr": {
+    "en": [
+     "talk only in lip sounds for a day",
+     "talk only in animal noises for a day"
+    ],
+    "ru": [
+     "день говорить только фырканьем",
+     "день говорить только голосами животных"
+    ],
+    "de": [
+     "einen Tag nur prusten",
+     "einen Tag nur Tierlaute machen"
+    ],
+    "es": [
+     "un día solo con pedorretas",
+     "un día solo con sonidos de animales"
+    ],
+    "fr": [
+     "une journée à ne faire que des bruits de lèvres",
+     "une journée en cris d’animaux"
+    ],
+    "zh": [
+     "一天只用嘴唇声说话",
+     "一天只用动物叫声说话"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Baby chimpanzees blow 'raspberries' because adults do it first",
+     "outlet": "Popular Science",
+     "url": "https://www.popsci.com/environment/chimpanzees-blow-raspberries-learn-sounds/",
+     "date": "2026-11-09"
+    },
+    {
+     "title": "Young chimps can learn to blow raspberries in the right context",
+     "outlet": "IFLScience",
+     "url": "https://www.iflscience.com/young-chimps-can-learn-to-blow-raspberries-in-the-right-context-after-learning-from-older-role-models-85141",
+     "date": "2026-11-09"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-08",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🦉",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Owl",
+    "ru": "Сова",
+    "de": "Eule",
+    "es": "Búho",
+    "fr": "Chouette",
+    "zh": "猫头鹰"
+   },
+   "clues": {
+    "en": [
+     "🌙 Hoots at night",
+     "🔄 Turns its head far round",
+     "📚 Symbol of wisdom",
+     "🦴 47-million-year-old fossil",
+     "🪳 A cockroach in its tummy",
+     "☀️ Hunted by daylight",
+     "🇩🇪 Found in the Messel Pit"
+    ],
+    "ru": [
+     "Ухает по ночам",
+     "Далеко поворачивает голову",
+     "Символ мудрости",
+     "Окаменелость возрастом 47 млн лет",
+     "В животе — таракан",
+     "Охотилась днём",
+     "Найдена в карьере Мессель"
+    ],
+    "de": [
+     "Ruft nachts",
+     "Dreht den Kopf weit herum",
+     "Symbol der Weisheit",
+     "47 Millionen Jahre altes Fossil",
+     "Eine Schabe im Bauch",
+     "Jagte bei Tageslicht",
+     "In der Grube Messel gefunden"
+    ],
+    "es": [
+     "Ulula de noche",
+     "Gira mucho la cabeza",
+     "Símbolo de sabiduría",
+     "Fósil de 47 millones de años",
+     "Una cucaracha en la barriga",
+     "Cazaba de día",
+     "Hallado en la mina de Messel"
+    ],
+    "fr": [
+     "Hulule la nuit",
+     "Tourne la tête très loin",
+     "Symbole de sagesse",
+     "Fossile de 47 millions d’années",
+     "Un cafard dans le ventre",
+     "Chassait en plein jour",
+     "Trouvé dans la fosse de Messel"
+    ],
+    "zh": [
+     "夜里咕咕叫",
+     "脑袋能转很大角度",
+     "智慧的象征",
+     "4700万年前的化石",
+     "肚子里有只蟑螂",
+     "白天捕猎",
+     "发现于梅塞尔坑"
+    ]
+   },
+   "fact": {
+    "en": "A 47-million-year-old fossil bird from Germany still holds its last meal, a cockroach. Scientists think it hunted in daylight.",
+    "ru": "В окаменелой птице возрастом 47 млн лет из Германии сохранился последний обед — таракан. Похоже, она охотилась днём.",
+    "de": "Ein 47 Millionen Jahre alter Fossilvogel aus Deutschland hat noch seine letzte Mahlzeit im Bauch: eine Schabe. Er jagte wohl tagsüber.",
+    "es": "Un ave fósil de 47 millones de años de Alemania conserva su última comida, una cucaracha. Al parecer cazaba de día.",
+    "fr": "Un oiseau fossile allemand de 47 millions d’années garde son dernier repas, un cafard. Il chassait sans doute de jour.",
+    "zh": "德国一只4700万年前的鸟类化石里还留着最后一餐——一只蟑螂，它很可能白天捕猎。"
+   },
+   "wyr": {
+    "en": [
+     "be awake only at night",
+     "be awake only at sunrise"
+    ],
+    "ru": [
+     "бодрствовать только ночью",
+     "бодрствовать только на рассвете"
+    ],
+    "de": [
+     "nur nachts wach sein",
+     "nur bei Sonnenaufgang wach sein"
+    ],
+    "es": [
+     "estar despierto solo de noche",
+     "solo al amanecer"
+    ],
+    "fr": [
+     "n’être éveillé que la nuit",
+     "qu’au lever du soleil"
+    ],
+    "zh": [
+     "只在夜里醒着",
+     "只在日出时醒着"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Perfectly preserved owl fossil from 47 million years ago",
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/animals/birds/perfectly-preserved-owl-fossil-from-47-million-years-ago-could-help-to-solve-a-major-evolutionary-mystery",
+     "date": "2026-11-06"
+    },
+    {
+     "title": "Kakerlake im Magen gibt Aufschluss",
+     "outlet": "hessenschau",
+     "url": "https://www.hessenschau.de/kultur/kakerlake-im-magen-gibt-aufschluss-was-eine-47-millionen-jahre-alte-eule-aus-messel-verraet-v1,eule-grube-messel-100.html",
+     "date": "2026-11-05"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-09",
+   "cat": "records",
+   "age": 0,
+   "emoji": "📣",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Town crier",
+    "ru": "Городской глашатай",
+    "de": "Stadtausrufer",
+    "es": "Pregonero",
+    "fr": "Crieur public",
+    "zh": "传令员"
+   },
+   "clues": {
+    "en": [
+     "🔔 Rings a bell, then announces",
+     "📜 Reads news from a scroll",
+     "🎩 Wears a three-cornered hat",
+     "📣 Shouts “Oyez!”",
+     "🔊 105.9 decibels",
+     "🥇 Loudest woman ever measured",
+     "🤧 Set the record with a cold"
+    ],
+    "ru": [
+     "Звонит в колокол и объявляет",
+     "Читает новости со свитка",
+     "Носит треуголку",
+     "Кричит «Слушайте!»",
+     "105,9 децибела",
+     "Самая громкая женщина в мире",
+     "Рекорд поставила с простудой"
+    ],
+    "de": [
+     "Läutet und verkündet",
+     "Liest Neuigkeiten vom Schriftrolle",
+     "Trägt einen Dreispitz",
+     "Ruft „Oyez!“",
+     "105,9 Dezibel",
+     "Lauteste Frau der Welt",
+     "Rekord trotz Erkältung"
+    ],
+    "es": [
+     "Toca la campana y anuncia",
+     "Lee noticias de un pergamino",
+     "Lleva tricornio",
+     "Grita «¡Oíd!»",
+     "105,9 decibelios",
+     "La mujer más ruidosa del mundo",
+     "Récord con resfriado"
+    ],
+    "fr": [
+     "Sonne la cloche et annonce",
+     "Lit les nouvelles sur un rouleau",
+     "Porte un tricorne",
+     "Crie « Oyez ! »",
+     "105,9 décibels",
+     "La femme la plus bruyante du monde",
+     "Record malgré un rhume"
+    ],
+    "zh": [
+     "摇铃然后宣布",
+     "照着卷轴念新闻",
+     "戴三角帽",
+     "大喊“听着！”",
+     "105.9分贝",
+     "世界上嗓门最大的女性",
+     "感冒着创下纪录"
+    ]
+   },
+   "fact": {
+    "en": "Brenda Willison from Newmarket, England, shouted at 105.9 decibels and became the world’s loudest woman, officially recognised by Guinness.",
+    "ru": "Бренда Уиллисон из английского Ньюмаркета крикнула на 105,9 децибела и официально стала самой громкой женщиной в мире.",
+    "de": "Brenda Willison aus Newmarket (England) rief mit 105,9 Dezibel und ist offiziell die lauteste Frau der Welt.",
+    "es": "Brenda Willison, de Newmarket (Inglaterra), gritó a 105,9 decibelios y es oficialmente la mujer más ruidosa del mundo.",
+    "fr": "Brenda Willison, de Newmarket (Angleterre), a crié à 105,9 décibels : elle est officiellement la femme la plus bruyante du monde.",
+    "zh": "英国纽马克特的布伦达·威利森喊出105.9分贝，正式成为世界上嗓门最大的女性。"
+   },
+   "wyr": {
+    "en": [
+     "only be able to shout",
+     "only be able to whisper"
+    ],
+    "ru": [
+     "уметь только кричать",
+     "уметь только шептать"
+    ],
+    "de": [
+     "nur schreien können",
+     "nur flüstern können"
+    ],
+    "es": [
+     "solo poder gritar",
+     "solo poder susurrar"
+    ],
+    "fr": [
+     "ne pouvoir que crier",
+     "ne pouvoir que chuchoter"
+    ],
+    "zh": [
+     "只能大喊",
+     "只能小声说话"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Town crier Brenda is officially the world's loudest woman after record-breaking shout",
+     "outlet": "Guinness World Records",
+     "url": "https://www.guinnessworldrecords.com/news/2026/11/town-crier-brenda-is-officially-the-worlds-loudest-woman-after-record-breaking-shout",
+     "date": "2026-11-04"
+    },
+    {
+     "title": "Newmarket town crier Brenda Willison earns place in Guinness World Records",
+     "outlet": "Suffolk News",
+     "url": "https://www.suffolknews.co.uk/newmarket/news/they-wanted-me-to-get-over-100-decibels-and-i-did-meet-9490683/",
+     "date": "2026-11-11"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-10",
+   "cat": "records",
+   "age": 0,
+   "emoji": "🔐",
+   "from": "2026-11-12",
+   "expires": "2027-01-11",
+   "answer": {
+    "en": "Padlock",
+    "ru": "Навесной замок",
+    "de": "Vorhängeschloss",
+    "es": "Candado",
+    "fr": "Cadenas",
+    "zh": "挂锁"
+   },
+   "clues": {
+    "en": [
+     "🔑 Keeps things locked shut",
+     "🚲 Often used on bikes",
+     "🔤 Opened by letters “ANCE”",
+     "🚢 From a 1583 shipwreck",
+     "🩻 Cracked by a medical scanner",
+     "🏴‍☠️ A smuggler’s brass device",
+     "🏖️ Found on a beach in Wales"
+    ],
+    "ru": [
+     "Держит всё запертым",
+     "Часто вешают на велосипед",
+     "Открывается буквами «ANCE»",
+     "С корабля, затонувшего в 1583-м",
+     "Код разгадал медицинский томограф",
+     "Латунная вещица контрабандиста",
+     "Найден на пляже в Уэльсе"
+    ],
+    "de": [
+     "Hält Dinge verschlossen",
+     "Oft am Fahrrad",
+     "Öffnet mit „ANCE“",
+     "Aus einem Wrack von 1583",
+     "Mit einem Klinik-Scanner geknackt",
+     "Messingteil eines Schmugglers",
+     "An einem Strand in Wales gefunden"
+    ],
+    "es": [
+     "Mantiene todo cerrado",
+     "Se usa mucho en bicis",
+     "Se abre con «ANCE»",
+     "De un naufragio de 1583",
+     "Descifrado con un escáner médico",
+     "Pieza de latón de un contrabandista",
+     "Hallado en una playa de Gales"
+    ],
+    "fr": [
+     "Garde tout fermé",
+     "Souvent sur les vélos",
+     "S’ouvre avec « ANCE »",
+     "D’une épave de 1583",
+     "Percé par un scanner médical",
+     "Objet en laiton de contrebandier",
+     "Trouvé sur une plage du pays de Galles"
+    ],
+    "zh": [
+     "把东西锁好",
+     "常用来锁自行车",
+     "用字母“ANCE”打开",
+     "来自1583年的沉船",
+     "医院CT破解了密码",
+     "走私者的黄铜器物",
+     "在威尔士海滩发现"
+    ]
+   },
+   "fact": {
+    "en": "Scientists used CT scans to crack the letter code of a lock from a 1583 shipwreck off Wales without opening it. The code was “ANCE”.",
+    "ru": "Учёные с помощью томографа узнали буквенный код замка с корабля 1583 года у берегов Уэльса, не открывая его. Код — «ANCE».",
+    "de": "Forscher knackten per CT den Buchstabencode eines Schlosses aus einem Wrack von 1583 vor Wales, ohne es zu öffnen: „ANCE“.",
+    "es": "Con un escáner TAC descifraron sin abrirlo el código de letras de un cierre de un naufragio de 1583 en Gales: «ANCE».",
+    "fr": "Grâce au scanner, des chercheurs ont percé sans l’ouvrir le code d’une serrure d’une épave galloise de 1583 : « ANCE ».",
+    "zh": "科学家用CT扫描，不打开就破解了威尔士外海1583年沉船上一把锁的字母密码：“ANCE”。"
+   },
+   "wyr": {
+    "en": [
+     "find a treasure chest you can’t open",
+     "find a key that fits nothing"
+    ],
+    "ru": [
+     "найти сундук, который не открыть",
+     "найти ключ, который ни к чему не подходит"
+    ],
+    "de": [
+     "eine Truhe finden, die nicht aufgeht",
+     "einen Schlüssel, der nirgends passt"
+    ],
+    "es": [
+     "un cofre que no se abre",
+     "una llave que no abre nada"
+    ],
+    "fr": [
+     "un coffre impossible à ouvrir",
+     "une clé qui n’ouvre rien"
+    ],
+    "zh": [
+     "找到打不开的宝箱",
+     "找到什么都开不了的钥匙"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Cryptic padlock from a 400-year-old shipwreck finally opened",
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/archaeology/cryptic-padlock-from-a-400-year-old-shipwreck-finally-opened-but-it-leaves-a-mystery",
+     "date": "2026-11-05"
+    },
+    {
+     "title": "Archeologists crack a shipwreck's 400-year-old combination lock",
+     "outlet": "Popular Science",
+     "url": "https://www.popsci.com/technology/shipwreck-combination-lock-ann-francis/",
+     "date": "2026-11-04"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-11",
+   "cat": "sport",
+   "age": 0,
+   "emoji": "🏊",
+   "from": "2026-11-12",
+   "expires": "2026-12-27",
+   "answer": {
+    "en": "Triathlon",
+    "ru": "Триатлон",
+    "de": "Triathlon",
+    "es": "Triatlón",
+    "fr": "Triathlon",
+    "zh": "铁人三项"
+   },
+   "clues": {
+    "en": [
+     "🏊 Swim, then bike, then run",
+     "3️⃣ Three sports in one race",
+     "🏃 Ends with a full marathon",
+     "⏱️ New world best 7:19:17",
+     "🇩🇰 Won by a Dane",
+     "🌴 Raced in Florida",
+     "🚴 Bike leg under 3 h 52 min"
+    ],
+    "ru": [
+     "Плыть, крутить педали, бежать",
+     "Три вида спорта в одной гонке",
+     "Финиш — целый марафон",
+     "Новый лучший результат 7:19:17",
+     "Победил датчанин",
+     "Гонка во Флориде",
+     "Велоэтап быстрее 3 ч 52 мин"
+    ],
+    "de": [
+     "Schwimmen, Rad, Laufen",
+     "Drei Sportarten, ein Rennen",
+     "Endet mit einem Marathon",
+     "Neue Weltbestzeit 7:19:17",
+     "Ein Däne gewann",
+     "Rennen in Florida",
+     "Radstrecke unter 3:52 Std."
+    ],
+    "es": [
+     "Nadar, pedalear y correr",
+     "Tres deportes en una carrera",
+     "Termina con un maratón",
+     "Nueva mejor marca 7:19:17",
+     "Ganó un danés",
+     "Carrera en Florida",
+     "Bici en menos de 3 h 52 min"
+    ],
+    "fr": [
+     "Nager, pédaler, courir",
+     "Trois sports, une course",
+     "Finit par un marathon",
+     "Nouvelle meilleure marque 7:19:17",
+     "Gagné par un Danois",
+     "Course en Floride",
+     "Vélo en moins de 3 h 52"
+    ],
+    "zh": [
+     "先游泳再骑车再跑步",
+     "一场比赛三个项目",
+     "最后跑一个全程马拉松",
+     "新世界最佳7:19:17",
+     "丹麦人夺冠",
+     "比赛在佛罗里达",
+     "骑行段不到3小时52分"
+    ]
+   },
+   "fact": {
+    "en": "Danish athlete Magnus Ditlev finished a full long-distance race of swimming, cycling and running in 7:19:17 in Florida, a new world best.",
+    "ru": "Датчанин Магнус Дитлев прошёл полную длинную дистанцию — плавание, велосипед и бег — за 7:19:17 во Флориде. Это новый мировой рекорд.",
+    "de": "Der Däne Magnus Ditlev schaffte in Florida die volle Langdistanz aus Schwimmen, Rad und Laufen in 7:19:17 – neue Weltbestzeit.",
+    "es": "El danés Magnus Ditlev completó en Florida la distancia larga de natación, bici y carrera en 7:19:17, nueva mejor marca mundial.",
+    "fr": "Le Danois Magnus Ditlev a bouclé en Floride la longue distance natation-vélo-course en 7:19:17, nouvelle meilleure marque mondiale.",
+    "zh": "丹麦选手马格努斯·迪特列夫在佛罗里达以7:19:17完成游泳、骑行、跑步全程长距离，创世界最佳。"
+   },
+   "wyr": {
+    "en": [
+     "swim 4 km",
+     "cycle 180 km"
+    ],
+    "ru": [
+     "проплыть 4 км",
+     "проехать 180 км на велосипеде"
+    ],
+    "de": [
+     "4 km schwimmen",
+     "180 km Rad fahren"
+    ],
+    "es": [
+     "nadar 4 km",
+     "pedalear 180 km"
+    ],
+    "fr": [
+     "nager 4 km",
+     "pédaler 180 km"
+    ],
+    "zh": [
+     "游4公里",
+     "骑180公里"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Ditlev sets world record in Florida",
+     "outlet": "Slowtwitch",
+     "url": "https://slowtwitch.com/triathlon/ditlev-sets-world-record-at-ironman-florida/",
+     "date": "2026-11-07"
+    },
+    {
+     "title": "Magnus Ditlev new world best in Florida",
+     "outlet": "Triathlete",
+     "url": "https://www.triathlete.com/culture/news/magnus-ditlev-new-ironman-world-best-ironman-florida/",
+     "date": "2026-11-07"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "f261112-12",
+   "cat": "culture",
+   "age": 0,
+   "emoji": "🎄",
+   "from": "2026-11-12",
+   "expires": "2026-12-27",
+   "answer": {
+    "en": "Christmas tree",
+    "ru": "Рождественская ёлка",
+    "de": "Weihnachtsbaum",
+    "es": "Árbol de Navidad",
+    "fr": "Sapin de Noël",
+    "zh": "圣诞树"
+   },
+   "clues": {
+    "en": [
+     "⭐ Topped with a star",
+     "🎁 Presents go under it",
+     "💡 Covered in lights",
+     "🗽 A New York landmark each winter",
+     "📏 This one is 76 feet tall",
+     "🌲 A 75-year-old spruce",
+     "🚚 Trucked in from upstate"
+    ],
+    "ru": [
+     "Сверху — звезда",
+     "Под ним кладут подарки",
+     "Весь в огоньках",
+     "Символ Нью-Йорка каждую зиму",
+     "Нынешняя — 23 метра",
+     "75-летняя ель",
+     "Привезли на грузовике с севера штата"
+    ],
+    "de": [
+     "Oben ein Stern",
+     "Darunter liegen Geschenke",
+     "Voller Lichter",
+     "Jeden Winter ein New-York-Symbol",
+     "Dieser ist 23 Meter hoch",
+     "Eine 75 Jahre alte Fichte",
+     "Per Lkw aus dem Norden"
+    ],
+    "es": [
+     "Con una estrella arriba",
+     "Debajo van los regalos",
+     "Lleno de luces",
+     "Símbolo de Nueva York cada invierno",
+     "Este mide 23 metros",
+     "Una pícea de 75 años",
+     "Llegó en camión del norte"
+    ],
+    "fr": [
+     "Une étoile au sommet",
+     "Les cadeaux vont dessous",
+     "Couvert de lumières",
+     "Emblème de New York chaque hiver",
+     "Celui-ci mesure 23 mètres",
+     "Un épicéa de 75 ans",
+     "Venu en camion du nord de l’État"
+    ],
+    "zh": [
+     "顶上有颗星",
+     "礼物放在它下面",
+     "挂满彩灯",
+     "每年冬天的纽约地标",
+     "今年这棵高23米",
+     "一棵75岁的云杉",
+     "用卡车从北部运来"
+    ]
+   },
+   "fact": {
+    "en": "A 23-metre, roughly 75-year-old spruce from upstate New York has arrived in Manhattan to become the city’s famous holiday tree.",
+    "ru": "23-метровая ель примерно 75 лет от роду приехала с севера штата Нью-Йорк в Манхэттен, чтобы стать главной праздничной ёлкой города.",
+    "de": "Eine 23 Meter hohe, etwa 75 Jahre alte Fichte aus dem Norden New Yorks ist in Manhattan angekommen – als berühmter Festtagsbaum.",
+    "es": "Una pícea de 23 metros y unos 75 años llegó a Manhattan desde el norte del estado para ser el famoso árbol festivo de Nueva York.",
+    "fr": "Un épicéa de 23 mètres et d’environ 75 ans est arrivé à Manhattan pour devenir le célèbre arbre des fêtes de New York.",
+    "zh": "一棵高23米、约75岁的云杉从纽约州北部运到曼哈顿，将成为纽约著名的节日大树。"
+   },
+   "wyr": {
+    "en": [
+     "decorate a tree as tall as a building",
+     "decorate one as tiny as a pencil"
+    ],
+    "ru": [
+     "наряжать ёлку высотой с дом",
+     "наряжать ёлочку размером с карандаш"
+    ],
+    "de": [
+     "einen Baum so hoch wie ein Haus schmücken",
+     "einen so klein wie ein Bleistift"
+    ],
+    "es": [
+     "decorar un árbol alto como un edificio",
+     "uno pequeño como un lápiz"
+    ],
+    "fr": [
+     "décorer un arbre haut comme un immeuble",
+     "un arbre petit comme un crayon"
+    ],
+    "zh": [
+     "装饰和楼一样高的树",
+     "装饰铅笔那么小的树"
+    ]
+   },
+   "sources": [
+    {
+     "title": "Rockefeller Christmas tree arrives in New York City",
+     "outlet": "KPTV",
+     "url": "https://www.kptv.com/2026/11/08/rockefeller-christmas-tree-arrives-new-york-city/",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "Rockefeller Center reveals 2026 Christmas Tree",
+     "outlet": "6sqft",
+     "url": "https://www.6sqft.com/?p=249958",
+     "date": "2026-10-26"
+    }
+   ],
+   "checked": "2026-11-11"
+  }
+ ]
+}
