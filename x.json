@@ -88,6 +88,14 @@
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-L-en-v2.1.mp4"
  },
  {
+  "id": "x-vampire-rep",
+  "at_utc": "2026-11-13T15:00:00Z",
+  "dubai": "13.11 19:00",
+  "hold": false,
+  "text": "One of us is secretly a vampire… and someone just turned down the garlic bread 🧛 Who in your crew won't eat garlic?\n#BeezooSpace #PartyGames",
+  "media": "https://static.metricool.com/planner/202611/6506196-file-3949110559434337520.mp4"
+ },
+ {
   "id": "x-meet-M",
   "at_utc": "2026-11-14T07:00:00Z",
   "dubai": "14.11 11:00",
@@ -160,14 +168,6 @@
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-W-en-v2.1.mp4"
  },
  {
-  "id": "x-vampire-rep",
-  "at_utc": "2026-11-13T15:00:00Z",
-  "dubai": "13.11 19:00",
-  "hold": false,
-  "text": "One of us is secretly a vampire… and someone just turned down the garlic bread 🧛 Who in your crew won't eat garlic?\n#BeezooSpace #PartyGames",
-  "media": "https://static.metricool.com/planner/202611/6506196-file-3949110559434337520.mp4"
- },
- {
   "id": "x-trA",
   "at_utc": "2026-11-20T15:00:00Z",
   "dubai": "20.11 19:00",
@@ -232,6 +232,14 @@
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/AM-01-en-v2.0.mp4"
  },
  {
+  "id": "x-bluff-R028",
+  "at_utc": "2026-11-25T08:00:00Z",
+  "dubai": "25.11 12:00",
+  "hold": false,
+  "text": "Think catching a liar is easy? They caught the traitor… and the traitor still guessed the secret word 🤯\nBluff Night\n#BeezooSpace #PartyGames",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e5cf5c35f4bdf5bb84b2ece550c117a6c3033451/media/R028-en-cv.mp4"
+ },
+ {
   "id": "x-ser-GJ-01",
   "at_utc": "2026-11-25T14:00:00Z",
   "dubai": "25.11 18:00",
@@ -278,6 +286,14 @@
   "hold": false,
   "text": "T Is Late Again · Ep 1: Hatta 🚣\nA new episode every Saturday. Follow so you don't miss the next one!\n\nPlay free: bfep.space/app/?s=x-ser-T101 #BeezooSpace #miniseries",
   "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/T1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "x-bluff-R025",
+  "at_utc": "2026-11-28T08:00:00Z",
+  "dubai": "28.11 12:00",
+  "hold": false,
+  "text": "Your most honest friend can't lie? The most honest one just got the traitor card… and gave it away in a second 😇\nBluff Night\n#BeezooSpace #PartyGames",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e5cf5c35f4bdf5bb84b2ece550c117a6c3033451/media/R025-en-grey.mp4"
  },
  {
   "id": "x-ser-D1-01",
