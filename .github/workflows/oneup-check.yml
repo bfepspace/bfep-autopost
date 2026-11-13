@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Проверка ключа OneUp (без публикации)
         env:
-          ONEUP_API_KEY: ${{ secrets.ONEUP_API_KEY }}
+          ONEUP_API_KEY: ${{ secrets.NEUP_API_KEY }}  # секрет назван NEUP_API_KEY
         run: python3 oneup_post.py --check
