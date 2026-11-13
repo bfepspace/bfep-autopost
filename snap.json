@@ -1,0 +1,380 @@
+[
+ {
+  "id": "sn-meet-M",
+  "at_utc": "2026-11-14T07:00:00Z",
+  "dubai": "14.11 11:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo M 👋 The brainiac, 19. Three clues. He needs one. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-M-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-N",
+  "at_utc": "2026-11-14T11:30:00Z",
+  "dubai": "14.11 15:30",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo N 👋 The evening host, 28. The evening starts. He’s hosting. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-N-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-P",
+  "at_utc": "2026-11-15T07:00:00Z",
+  "dubai": "15.11 11:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo P 👋 The gamer, 20. One more round. Then bed. Probably. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-P-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-R",
+  "at_utc": "2026-11-15T11:30:00Z",
+  "dubai": "15.11 15:30",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo R 👋 The rocker, 26. Turn it up! Louder. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-R-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-S",
+  "at_utc": "2026-11-16T07:00:00Z",
+  "dubai": "16.11 11:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo S 👋 The fashionista, 25. Truth or dare? Outfit first. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-S-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-T",
+  "at_utc": "2026-11-16T11:30:00Z",
+  "dubai": "16.11 15:30",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo T 👋 The traveler, 29. Pack the games, hit the road. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-T-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-U",
+  "at_utc": "2026-11-17T07:00:00Z",
+  "dubai": "17.11 11:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo U 👋 The student, 20. I wrote it all down. All of it. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-U-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-V",
+  "at_utc": "2026-11-17T11:30:00Z",
+  "dubai": "17.11 15:30",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo V 👋 The artist, 23. I’ll paint your evening. Some on the sofa. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-V-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-meet-W",
+  "at_utc": "2026-11-18T07:00:00Z",
+  "dubai": "18.11 11:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Meet Beezoo W 👋 The champion, 27. The trophy won’t win itself. #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-W-en-v2.1.mp4"
+ },
+ {
+  "id": "sn-trA",
+  "at_utc": "2026-11-20T15:00:00Z",
+  "dubai": "20.11 19:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "14 mini-series. 19 heroes. A new episode every day 🎬 Premiere: November 23. Follow so you don't miss it! #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e0c9e2a553ffee95f59f9de7472afc8bbb553d2e/media/trailers/trailer-A-en-v1.0.mp4"
+ },
+ {
+  "id": "sn-trB",
+  "at_utc": "2026-11-21T15:00:00Z",
+  "dubai": "21.11 19:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Your BEEZOO week 📅 From November 23, a new mini-series every day. Mon: Diet Starts Monday. Tue: F Tries Everything. Thu: Beezoo Friends. Sat: T Is Late Again… W",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e0c9e2a553ffee95f59f9de7472afc8bbb553d2e/media/trailers/trailer-B-en-v1.0.mp4"
+ },
+ {
+  "id": "sn-trC",
+  "at_utc": "2026-11-22T15:00:00Z",
+  "dubai": "22.11 19:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Tomorrow! 🎉 Mini-series premiere: Monday, November 23. 14 series, a new episode every day. Follow so you don't miss it! #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e0c9e2a553ffee95f59f9de7472afc8bbb553d2e/media/trailers/trailer-C-en-v1.0.mp4"
+ },
+ {
+  "id": "sn-ser-H1-01",
+  "at_utc": "2026-11-23T06:00:00Z",
+  "dubai": "23.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Diet Starts Monday · Ep 1: Monday is coming 🥗 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/H1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-FAM-01",
+  "at_utc": "2026-11-23T14:00:00Z",
+  "dubai": "23.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "The Beezoo Family · Ep 1: Who does the dishes? 🍽️ #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/FAM-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-F1-01",
+  "at_utc": "2026-11-24T06:00:00Z",
+  "dubai": "24.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "F Tries Everything · Ep 1: Padel 🎾 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/F1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-E1-01",
+  "at_utc": "2026-11-24T14:00:00Z",
+  "dubai": "24.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Grandpa Knows · Ep 1: The octopus 🐙 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/E1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-AM-01",
+  "at_utc": "2026-11-25T06:00:00Z",
+  "dubai": "25.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Space in a Minute · Ep 1: How astronauts sleep 🚀 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/AM-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-bluff-R028",
+  "at_utc": "2026-11-25T08:00:00Z",
+  "dubai": "25.11 12:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Think catching a liar is easy? They caught the traitor… and the traitor still guessed the secret word 🤯 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e5cf5c35f4bdf5bb84b2ece550c117a6c3033451/media/R028-en-cv.mp4"
+ },
+ {
+  "id": "sn-ser-GJ-01",
+  "at_utc": "2026-11-25T14:00:00Z",
+  "dubai": "25.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Grandma vs Internet · Ep 1: The stain 🧽 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/GJ-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-FRI-01",
+  "at_utc": "2026-11-26T06:00:00Z",
+  "dubai": "26.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Beezoo Friends · Ep 1: Who pays? 💸 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/FRI-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-K1-01",
+  "at_utc": "2026-11-26T14:00:00Z",
+  "dubai": "26.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Weird But Works · Ep 1: Watermelon and cheese 🍉 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/K1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-N1-01",
+  "at_utc": "2026-11-27T06:00:00Z",
+  "dubai": "27.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "How to Host · Ep 1: How to invite 💌 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/N1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-V1-01",
+  "at_utc": "2026-11-27T14:00:00Z",
+  "dubai": "27.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Draw a Beezoo in 30s · Ep 1: Draw H ✏️ #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/V1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-T1-01",
+  "at_utc": "2026-11-28T06:00:00Z",
+  "dubai": "28.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "T Is Late Again · Ep 1: Hatta 🚣 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/T1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-bluff-R025",
+  "at_utc": "2026-11-28T08:00:00Z",
+  "dubai": "28.11 12:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Your most honest friend can't lie? The most honest one just got the traitor card… and gave it away in a second 😇 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/e5cf5c35f4bdf5bb84b2ece550c117a6c3033451/media/R025-en-grey.mp4"
+ },
+ {
+  "id": "sn-ser-D1-01",
+  "at_utc": "2026-11-28T14:00:00Z",
+  "dubai": "28.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Dad vs Things · Ep 1: Dad vs the jar 🫙 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/D1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-W1-01",
+  "at_utc": "2026-11-29T06:00:00Z",
+  "dubai": "29.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "How to Lose Like a Champ · Ep 1: Losing to Grandpa 🏆 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/W1-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-DUEL-01",
+  "at_utc": "2026-11-29T14:00:00Z",
+  "dubai": "29.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Debate of the Week · Ep 1: Sweet or salty? 🍫 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/DUEL-01-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-H1-02",
+  "at_utc": "2026-11-30T06:00:00Z",
+  "dubai": "30.11 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Diet Starts Monday · Ep 2: Smoothie disaster 🥤 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/H1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-FAM-02",
+  "at_utc": "2026-11-30T14:00:00Z",
+  "dubai": "30.11 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "The Beezoo Family · Ep 2: Dinner without phones 📵 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/FAM-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-F1-02",
+  "at_utc": "2026-12-01T06:00:00Z",
+  "dubai": "01.12 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "F Tries Everything · Ep 2: Climbing wall 🧗 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/F1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-E1-02",
+  "at_utc": "2026-12-01T14:00:00Z",
+  "dubai": "01.12 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Grandpa Knows · Ep 2: The desert 🏜️ #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/E1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-AM-02",
+  "at_utc": "2026-12-02T06:00:00Z",
+  "dubai": "02.12 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Space in a Minute · Ep 2: Crumbs in space 🍪 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/AM-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-GJ-02",
+  "at_utc": "2026-12-02T14:00:00Z",
+  "dubai": "02.12 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Grandma vs Internet · Ep 2: Fresh greens 🌿 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/GJ-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-FRI-02",
+  "at_utc": "2026-12-03T06:00:00Z",
+  "dubai": "03.12 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Beezoo Friends · Ep 2: The new neighbor 🏠 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/FRI-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-K1-02",
+  "at_utc": "2026-12-03T14:00:00Z",
+  "dubai": "03.12 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Weird But Works · Ep 2: Strawberry and pepper 🍓 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/K1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-N1-02",
+  "at_utc": "2026-12-04T06:00:00Z",
+  "dubai": "04.12 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "How to Host · Ep 2: The first 10 minutes ⏱️ #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/N1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-V1-02",
+  "at_utc": "2026-12-04T14:00:00Z",
+  "dubai": "04.12 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Draw a Beezoo in 30s · Ep 2: Draw F 🎨 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/V1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-T1-02",
+  "at_utc": "2026-12-05T06:00:00Z",
+  "dubai": "05.12 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "T Is Late Again · Ep 2: Night in the desert 🌙 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/T1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-D1-02",
+  "at_utc": "2026-12-05T14:00:00Z",
+  "dubai": "05.12 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Dad vs Things · Ep 2: Dad vs the wardrobe 🚪 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/D1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-W1-02",
+  "at_utc": "2026-12-06T06:00:00Z",
+  "dubai": "06.12 10:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "How to Lose Like a Champ · Ep 2: Losing to C 🎲 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/W1-02-en-v2.0.mp4"
+ },
+ {
+  "id": "sn-ser-DUEL-02",
+  "at_utc": "2026-12-06T14:00:00Z",
+  "dubai": "06.12 18:00",
+  "hold": false,
+  "spotlight": true,
+  "text": "Debate of the Week · Ep 2: Early bird or night owl? 🦉 #BeezooSpace",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/2039c8b9f9ca3f1abbdc28e833c302e7d90906ab/media/series/DUEL-02-en-v2.0.mp4"
+ }
+]
