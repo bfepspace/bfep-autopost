@@ -1,5 +1,5 @@
 {
- "offset": 631932606,
+ "offset": 631932614,
  "riddles": {
   "2026-10-31": {
    "thread": 21,
@@ -52,6 +52,18 @@
   "2026-11-11": {
    "thread": 16,
    "answer": "в феврале",
+   "winners": [],
+   "closed": true
+  },
+  "2026-11-12": {
+   "thread": 25,
+   "answer": "Олимп",
+   "winners": [],
+   "closed": true
+  },
+  "2026-11-13": {
+   "thread": 34,
+   "answer": "уроки",
    "winners": []
   }
  },
