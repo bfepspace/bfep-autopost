@@ -1,7 +1,7 @@
 """Публикует в Snapchat BEEZOO Space через OneUp всё, чему по snap.json уже пора (секрет ONEUP_API_KEY).
 Пост отправляется в OneUp в момент публикации (scheduled_date_time = сейчас + 3 мин по Дубаю), Spotlight.
 python3 oneup_post.py --check  — проверить ключ и показать подключённые аккаунты и категории."""
-import datetime, json, os, sys, urllib.parse, urllib.request
+import datetime, json, os, sys, urllib.error, urllib.parse, urllib.request
 
 KEY = os.environ.get("ONEUP_API_KEY", "").strip()
 API = "https://www.oneupapp.io/api/"
@@ -13,16 +13,24 @@ LATE_LIMIT = datetime.timedelta(hours=6)
 DUBAI = datetime.timezone(datetime.timedelta(hours=4))
 now = datetime.datetime.now(datetime.timezone.utc)
 
+UA = {"User-Agent": "Mozilla/5.0 (bfep-autopost)", "Accept": "application/json"}
+
+def call(req):
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"HTTP {e.code}: {e.read().decode(errors='replace')[:300]}")
+
 def get(ep, **p):
     p["apiKey"] = KEY
-    with urllib.request.urlopen(API + ep + "?" + urllib.parse.urlencode(p), timeout=60) as r:
-        return json.loads(r.read().decode())
+    req = urllib.request.Request(API + ep + "?" + urllib.parse.urlencode(p), headers=UA)
+    return call(req)
 
 def post(ep, **p):
     p["apiKey"] = KEY
-    req = urllib.request.Request(API + ep, data=urllib.parse.urlencode(p).encode(), method="POST")
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return json.loads(r.read().decode())
+    req = urllib.request.Request(API + ep, data=urllib.parse.urlencode(p).encode(), method="POST", headers=UA)
+    return call(req)
 
 if check:
     acc = get("listsocialaccounts")
