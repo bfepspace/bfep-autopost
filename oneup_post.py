@@ -22,6 +22,14 @@ def call(req):
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"HTTP {e.code}: {e.read().decode(errors='replace')[:300]}")
 
+def vurl(u):
+    """raw.githubusercontent отдаёт octet-stream — OneUp его не принимает; jsDelivr отдаёт video/mp4."""
+    pre = "https://raw.githubusercontent.com/"
+    if u.startswith(pre):
+        owner, repo, ref, path = u[len(pre):].split("/", 3)
+        return f"https://cdn.jsdelivr.net/gh/{owner}/{repo}@{ref}/{path}"
+    return u
+
 def get(ep, **p):
     p["apiKey"] = KEY
     req = urllib.request.Request(API + ep + "?" + urllib.parse.urlencode(p), headers=UA)
@@ -41,7 +49,7 @@ if check:
         it = json.load(open("snap.json", encoding="utf-8"))[0]
         when = (now + datetime.timedelta(days=1)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
         print("Черновик:", post("schedulevideopost", category_id=cats["data"][0]["id"], social_network_id="ALL",
-              scheduled_date_time=when, content=it["text"], video_url=it["media"], title=it["text"][:90],
+              scheduled_date_time=when, content=it["text"], video_url=vurl(it["media"]), title=it["text"][:90],
               snapchat=json.dumps({"isSpotLight": True}), isDraftPost="true"))
     sys.exit(0)
 
@@ -65,7 +73,7 @@ for item in schedule:
     when = (now + datetime.timedelta(minutes=3)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
     try:
         r = post("schedulevideopost", category_id=cat_id, social_network_id="ALL", scheduled_date_time=when,
-                 content=item["text"], video_url=item["media"], title=item.get("title", item["text"][:90]),
+                 content=item["text"], video_url=vurl(item["media"]), title=item.get("title", item["text"][:90]),
                  snapchat=json.dumps({"isSpotLight": item.get("spotlight", True)}))
     except Exception as e:
         print("OneUp ошибка", item["id"], e); continue
