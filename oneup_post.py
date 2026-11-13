@@ -37,6 +37,12 @@ if check:
     print("Аккаунты:", [(a.get("social_network_type"), a.get("username"), a.get("is_expired")) for a in acc.get("data", [])])
     cats = get("listcategory")
     print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
+    if "--draft" in sys.argv:  # пробный черновик (не публикуется)
+        it = json.load(open("snap.json", encoding="utf-8"))[0]
+        when = (now + datetime.timedelta(days=1)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
+        print("Черновик:", post("schedulevideopost", category_id=cats["data"][0]["id"], social_network_id="ALL",
+              scheduled_date_time=when, content=it["text"], video_url=it["media"], title=it["text"][:90],
+              snapchat=json.dumps({"isSpotLight": True}), isDraftPost="true"))
     sys.exit(0)
 
 schedule = json.load(open("snap.json", encoding="utf-8")) if os.path.exists("snap.json") else []

@@ -1,5 +1,11 @@
 name: oneup-check
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      draft:
+        description: создать пробный черновик
+        type: boolean
+        default: false
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -8,4 +14,4 @@ jobs:
       - name: Проверка ключа OneUp (без публикации)
         env:
           ONEUP_API_KEY: ${{ secrets.NEUP_API_KEY }}  # секрет назван NEUP_API_KEY
-        run: python3 oneup_post.py --check
+        run: python3 oneup_post.py --check ${{ inputs.draft && '--draft' || '' }}
