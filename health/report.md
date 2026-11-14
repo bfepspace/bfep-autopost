@@ -1,14 +1,10 @@
-# Проверка связей 2026-11-14 04:51 UTC
-❌ 6 · ⚠️ 2 · ✅ 47
+# Проверка связей 2026-11-14 04:53 UTC
+❌ 1 · ⚠️ 3 · ✅ 49
 
 - ❌ **Автопостинг** — X: всё вышло вовремя: не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107
-- ❌ **Домены** — SSL beezoo.space: [Errno -5] No address associated with hostname
-- ❌ **Домены** — SSL beezoospace.com: [Errno -5] No address associated with hostname
-- ❌ **Сайт** — https://beezoo.space/: 0 <urlopen error [Errno -5] No address associated with hostname>
-- ❌ **Сайт** — https://beezoospace.com/: 0 <urlopen error [Errno -5] No address associated with hostname>
-- ❌ **Сайт** — Внутренние ссылки и картинки (46): /icons/ → 404; /play/ → 404
 - ⚠️ **Лист ожидания** — Ошибки отправки видны посетителю: отправка no-cors: при сбое Brevo человек всё равно видит «Готово»
-- ⚠️ **Сайт** — Живой сайт = последняя версия в репозитории: 1.77 — главная на сайте отличается от репозитория (не выложено или кэш)
+- ⚠️ **Сайт** — https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет): 0
+- ⚠️ **Сайт** — https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет): 0
 - ✅ **Автопостинг** — Discord: всё вышло вовремя
 - ✅ **Автопостинг** — Discord: запас контента: последний пост 06.12
 - ✅ **Автопостинг** — Discord: файлы на 14 дней (30 постов)
@@ -50,6 +46,8 @@
 - ✅ **Сайт** — https://bfep.space/smart/waitlist.html: 200
 - ✅ **Сайт** — https://bfep.space/support.html: 200
 - ✅ **Сайт** — https://www.bfep.space/: https://bfep.space/
+- ✅ **Сайт** — Внутренние ссылки и картинки (44)
+- ✅ **Сайт** — Живой сайт = последняя версия в репозитории: на сайте метки до v1.74, в репозитории до v1.74 (главная отличается побайтно)
 - ✅ **Сервисы** — GA4 (счётчик сайта): 200
 - ✅ **Сервисы** — Metricool (счётчик сайта): 200
 - ✅ **Сервисы** — Supabase (аккаунты BEEZOO): 401

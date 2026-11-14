@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-14T04:51:02+00:00",
+ "checked_at": "2026-11-14T04:53:09+00:00",
  "counts": {
-  "fail": 6,
-  "warn": 2,
-  "ok": 47
+  "fail": 1,
+  "warn": 3,
+  "ok": 49
  },
  "results": [
   {
@@ -13,36 +13,6 @@
    "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
   },
   {
-   "area": "Домены",
-   "name": "SSL beezoo.space",
-   "status": "fail",
-   "detail": "[Errno -5] No address associated with hostname"
-  },
-  {
-   "area": "Домены",
-   "name": "SSL beezoospace.com",
-   "status": "fail",
-   "detail": "[Errno -5] No address associated with hostname"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://beezoo.space/",
-   "status": "fail",
-   "detail": "0 <urlopen error [Errno -5] No address associated with hostname>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://beezoospace.com/",
-   "status": "fail",
-   "detail": "0 <urlopen error [Errno -5] No address associated with hostname>"
-  },
-  {
-   "area": "Сайт",
-   "name": "Внутренние ссылки и картинки (46)",
-   "status": "fail",
-   "detail": "/icons/ → 404; /play/ → 404"
-  },
-  {
    "area": "Лист ожидания",
    "name": "Ошибки отправки видны посетителю",
    "status": "warn",
@@ -50,9 +20,15 @@
   },
   {
    "area": "Сайт",
-   "name": "Живой сайт = последняя версия в репозитории",
+   "name": "https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет)",
    "status": "warn",
-   "detail": "1.77 — главная на сайте отличается от репозитория (не выложено или кэш)"
+   "detail": "0"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет)",
+   "status": "warn",
+   "detail": "0"
   },
   {
    "area": "Автопостинг",
@@ -299,6 +275,18 @@
    "name": "https://www.bfep.space/",
    "status": "ok",
    "detail": "https://bfep.space/"
+  },
+  {
+   "area": "Сайт",
+   "name": "Внутренние ссылки и картинки (44)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Сайт",
+   "name": "Живой сайт = последняя версия в репозитории",
+   "status": "ok",
+   "detail": "на сайте метки до v1.74, в репозитории до v1.74 (главная отличается побайтно)"
   },
   {
    "area": "Сервисы",
