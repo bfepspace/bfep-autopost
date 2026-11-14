@@ -70,7 +70,7 @@ def send(item):
     chat = linked_chat() if item.get("to") == "chat" else item.get("chat", CHAT)  # "chat": "@другой_канал"
     if not chat:
         raise RuntimeError(f"{item['id']}: у канала нет чата обсуждения")
-    args = ["curl", "-sS", "--fail-with-body", "--retry", "3",
+    args = ["curl", "-sS", "--fail-with-body", "--retry", "3", "--max-time", "600",  # без лимита curl может висеть часами (сбой 14.11 13:06–15:47Z)
             f"https://api.telegram.org/bot{TOKEN}/{method}", "--form-string", f"chat_id={chat}"]
     if item["type"] == "quiz_results":
         item = dict(item, type="text", caption=quiz_results(item))
