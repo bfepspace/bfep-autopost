@@ -163,6 +163,29 @@ if tok and repo:
         add("Автопостинг", "Робот публикаций работает", st, f"последний запуск {lastrun:%d.%m %H:%M} UTC, сбоев из 5: {len(fails)}" if lastrun else "нет запусков")
     except Exception as e:
         add("Автопостинг", "Робот публикаций работает", "warn", e)
+    # Скрипты публикации не падают и не повторяют посты (урок X 11–13.11: падение после публикации → 161 дубль)
+    try:
+        H = {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}
+        done_runs = json.load(urllib.request.urlopen(urllib.request.Request(
+            f"https://api.github.com/repos/{repo}/actions/workflows/autopost.yml/runs?status=completed&per_page=3", headers=H), timeout=30))["workflow_runs"]
+        logs = ""
+        for r in done_runs[:2]:
+            jobs = json.load(urllib.request.urlopen(urllib.request.Request(r["jobs_url"], headers=H), timeout=30))["jobs"]
+            for j in jobs:
+                try: logs += urllib.request.urlopen(urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/jobs/{j['id']}/logs", headers=H), timeout=60).read().decode(errors="replace")
+                except Exception: pass
+        tb = re.findall(r"File \"[^\"]*?(\w+_post\.py|post\.py|bot\.py)\"", logs)
+        crashes = {}
+        for f in tb: crashes[f] = crashes.get(f, 0) + 1
+        ids = re.findall(r"опубликовано: (\S+)", logs)
+        dups = sorted({i for i in ids if ids.count(i) > 1})
+        if logs:
+            add("Автопостинг", "Скрипты публикации не падают", "fail" if crashes else "ok", ", ".join(f"{k}: {v} раз" for k, v in crashes.items()))
+            add("Автопостинг", "Нет повторных публикаций", "fail" if dups else "ok", ", ".join(dups[:10]))
+        else:
+            add("Автопостинг", "Журналы робота прочитаны", "warn", "журналы последних запусков недоступны")
+    except Exception as e:
+        add("Автопостинг", "Журналы робота прочитаны", "warn", e)
 if os.environ.get("TG_BOT_TOKEN"):
     c, _, b = fetch(f"https://api.telegram.org/bot{os.environ['TG_BOT_TOKEN']}/getMe", body=True)
     add("Ключи", "Telegram-бот", "ok" if c == 200 else "fail", c)
