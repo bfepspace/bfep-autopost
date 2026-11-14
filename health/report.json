@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-14T05:16:37+00:00",
+ "checked_at": "2026-11-14T05:18:13+00:00",
  "counts": {
   "fail": 1,
   "warn": 3,
-  "ok": 50
+  "ok": 53
  },
  "results": [
   {
@@ -119,6 +119,24 @@
    "name": "SSL bfep.space",
    "status": "ok",
    "detail": "ещё 42 дн."
+  },
+  {
+   "area": "Домены",
+   "name": "Регистрация beezoo.space",
+   "status": "ok",
+   "detail": "до 05.11.2027, ещё 356 дн."
+  },
+  {
+   "area": "Домены",
+   "name": "Регистрация beezoospace.com",
+   "status": "ok",
+   "detail": "до 05.11.2027, ещё 356 дн."
+  },
+  {
+   "area": "Домены",
+   "name": "Регистрация bfep.space",
+   "status": "ok",
+   "detail": "до 18.09.2027, ещё 308 дн."
   },
   {
    "area": "Игры",
