@@ -78,14 +78,9 @@
    "name": "Telegram-канал"
   },
   {
-   "url": "https://www.instagram.com/beezoospace/",
+   "url": "https://www.youtube.com/@beezoospace",
    "kind": "soft",
-   "name": "Instagram"
-  },
-  {
-   "url": "https://www.tiktok.com/@bestfunevening",
-   "kind": "soft",
-   "name": "TikTok (ссылка с сайта)"
+   "name": "YouTube"
   }
  ],
  "ssl_domains": [
@@ -117,5 +112,61 @@
   "bfep.space",
   "beezoo.space",
   "beezoospace.com"
+ ],
+ "social_handles": {
+  "_note": "Ники, на которые сайт должен вести (главная и /press/). Старый ник — ошибка. До даты в until принимается и старый (смена ника). Обновлять при смене ника.",
+  "instagram.com": {
+   "ok": [
+    "beezoospace"
+   ]
+  },
+  "threads.com": {
+   "ok": [
+    "@beezoospace"
+   ]
+  },
+  "threads.net": {
+   "ok": [
+    "@beezoospace"
+   ]
+  },
+  "youtube.com": {
+   "ok": [
+    "@beezoospace"
+   ]
+  },
+  "facebook.com": {
+   "ok": [
+    "beezoospace"
+   ]
+  },
+  "t.me": {
+   "ok": [
+    "beezoospace"
+   ]
+  },
+  "x.com": {
+   "ok": [
+    "beezoospace"
+   ]
+  },
+  "twitter.com": {
+   "ok": [
+    "beezoospace"
+   ]
+  },
+  "tiktok.com": {
+   "ok": [
+    "@beezoospace"
+   ],
+   "also_until": {
+    "@bestfunevening": "2026-11-18"
+   }
+  }
+ },
+ "social_pages": [
+  "/",
+  "/press/",
+  "/support.html"
  ]
 }

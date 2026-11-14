@@ -106,6 +106,25 @@ for l, u in sorted(forms.items()):
 if forms and b"isAjax" not in wl and b"no-cors" in wl:
     add("Лист ожидания", "Ошибки отправки видны посетителю", "warn", "отправка no-cors: при сбое Brevo человек всё равно видит «Готово»")
 
+# 3б. Ссылки на соцсети с сайта ведут на текущие ники (IG/FB отвечают 200 и на чужой/пустой профиль — поэтому сверка со списком)
+SH = {k: v for k, v in T.get("social_handles", {}).items() if not k.startswith("_")}
+for pg in T.get("social_pages", ["/"]):
+    c, _, html = fetch("https://bfep.space" + pg, body=True)
+    if c != 200: continue
+    found = set(re.findall(rb'href="https?://(?:www\.|m\.)?(instagram\.com|threads\.(?:com|net)|youtube\.com|facebook\.com|t\.me|x\.com|twitter\.com|tiktok\.com)/([^"/?#]+)', html))
+    bad = []
+    for dom, h in found:
+        dom, h = dom.decode(), h.decode()
+        rule = SH.get(dom)
+        if not rule: continue
+        okh = [x.lower() for x in rule.get("ok", [])]
+        tmp = {k.lower(): v for k, v in rule.get("also_until", {}).items()}
+        if h.lower() in okh: continue
+        if h.lower() in tmp and NOW.date().isoformat() < tmp[h.lower()]: continue
+        bad.append(f"{dom}/{h}")
+    add("Соцсети", f"Ссылки на соцсети на странице {pg} ({len(found)})", "fail" if bad else "ok",
+        ("ведут не туда: " + ", ".join(sorted(bad))) if bad else "")
+
 # 4. SSL-сертификаты
 for d in T["ssl_domains"]:
     try:
