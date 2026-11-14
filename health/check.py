@@ -172,8 +172,8 @@ if tok and repo:
         for r in done_runs[:2]:
             jobs = json.load(urllib.request.urlopen(urllib.request.Request(r["jobs_url"], headers=H), timeout=30))["jobs"]
             for j in jobs:
-                try: logs += urllib.request.urlopen(urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/jobs/{j['id']}/logs", headers=H), timeout=60).read().decode(errors="replace")
-                except Exception: pass
+                lp = subprocess.run(["gh", "api", f"repos/{repo}/actions/jobs/{j['id']}/logs"], capture_output=True, text=True, timeout=120)
+                logs += lp.stdout
         tb = re.findall(r"File \"[^\"]*?(\w+_post\.py|post\.py|bot\.py)\"", logs)
         crashes = {}
         for f in tb: crashes[f] = crashes.get(f, 0) + 1
