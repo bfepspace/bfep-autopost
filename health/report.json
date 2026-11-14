@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-14T05:21:45+00:00",
+ "checked_at": "2026-11-14T05:24:40+00:00",
  "counts": {
   "fail": 1,
-  "warn": 10,
-  "ok": 61
+  "warn": 6,
+  "ok": 65
  },
  "results": [
   {
@@ -22,41 +22,17 @@
    "area": "Вид с телефона",
    "name": "Главная (без метки) [en]",
    "status": "warn",
-   "detail": "форма записи только на 10.4-м экране; старое название «Best Fun Evening» на странице"
+   "detail": "форма записи только на 10.4-м экране"
   },
   {
    "area": "Вид с телефона",
    "name": "Главная (без метки) [ru]",
    "status": "warn",
-   "detail": "форма записи только на 10.9-м экране; старое название «Best Fun Evening» на странице"
-  },
-  {
-   "area": "Вид с телефона",
-   "name": "Главная (гость из TikTok) [en]",
-   "status": "warn",
-   "detail": "старое название «Best Fun Evening» на странице"
-  },
-  {
-   "area": "Вид с телефона",
-   "name": "Главная (гость из TikTok) [ru]",
-   "status": "warn",
-   "detail": "старое название «Best Fun Evening» на странице"
-  },
-  {
-   "area": "Вид с телефона",
-   "name": "Игра /play/bfep/ [en]",
-   "status": "warn",
-   "detail": "старое название «Best Fun Evening» на странице"
+   "detail": "форма записи только на 10.9-м экране"
   },
   {
    "area": "Вид с телефона",
    "name": "Приложение в браузере [en]",
-   "status": "warn",
-   "detail": "старое название «Best Fun Evening» на странице"
-  },
-  {
-   "area": "Вид с телефона",
-   "name": "Умная ссылка /bfep/ [en]",
    "status": "warn",
    "detail": "старое название «Best Fun Evening» на странице"
   },
@@ -158,6 +134,24 @@
   },
   {
    "area": "Вид с телефона",
+   "name": "Главная (гость из TikTok) [en]",
+   "status": "ok",
+   "detail": "1.1 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Главная (гость из TikTok) [ru]",
+   "status": "ok",
+   "detail": "0.4 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Игра /play/bfep/ [en]",
+   "status": "ok",
+   "detail": "0.6 с"
+  },
+  {
+   "area": "Вид с телефона",
    "name": "Игра /play/bluff/ [en]",
    "status": "ok",
    "detail": "0.5 с"
@@ -166,13 +160,13 @@
    "area": "Вид с телефона",
    "name": "Игра /play/daily/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/kmg/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.5 с"
   },
   {
    "area": "Вид с телефона",
@@ -182,21 +176,27 @@
   },
   {
    "area": "Вид с телефона",
+   "name": "Умная ссылка /bfep/ [en]",
+   "status": "ok",
+   "detail": "0.5 с"
+  },
+  {
+   "area": "Вид с телефона",
    "name": "Умная ссылка /bluff/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /daily/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /kmg/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
