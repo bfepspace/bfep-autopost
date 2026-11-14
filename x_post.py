@@ -1,7 +1,10 @@
 """Публикует в X (@beezoospace) всё, чему по x.json уже пора. Ключи — секреты GitHub:
 X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET (OAuth 1.0a, права Read and write).
 Пункт с "hold": true не публикуется (ждёт OK Аркадия). Видео: скачать по "media" → загрузка частями → пост.
-Оплата X — за каждый пост (≈$0,015), поэтому ссылок в тексте нет (пост со ссылкой ≈$0,20)."""
+Оплата X — за каждый пост (≈$0,015), поэтому ссылок в тексте нет (пост со ссылкой ≈$0,20).
+Экономия кредитов (14.11): загруженное видео запоминается в x_media.json (id живёт 24 ч), повтор поста не грузит его заново;
+при ответе 402 «credits depleted» прогон сразу останавливается и X не трогается 60 минут (x_pause.json);
+x-check по умолчанию проверяет только ключи, видео грузит лишь с флагом --video."""
 import base64, datetime, hashlib, hmac, json, os, secrets, subprocess, sys, tempfile, time, urllib.parse, urllib.request
 
 K = {n: os.environ.get(n, "").strip() for n in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")}
@@ -62,9 +65,15 @@ def upload_video(path):
         raise RuntimeError(f"X: видео не обработано: {info}")
     return mid
 
+PAUSE = "x_pause.json"
+def paused():
+    try: return datetime.datetime.fromisoformat(json.load(open(PAUSE))["until"]) > datetime.datetime.now(datetime.timezone.utc)
+    except Exception: return False
+
 if "--check" in sys.argv:  # проверка ключей и загрузки видео без публикации (workflow x-check)
     try: print("X ключи OK, аккаунт:", call("GET", "/users/me").get("data", {}).get("username"))
     except RuntimeError as e: print("X ключи НЕ принимаются:", e); sys.exit(1)
+    if "--video" not in sys.argv: sys.exit(0)  # загрузка видео стоит кредитов — только по явной просьбе
     try:
         src = json.load(open("x.json", encoding="utf-8"))[0]["media"]
         path = os.path.join(tempfile.gettempdir(), "check.mp4")
@@ -72,18 +81,26 @@ if "--check" in sys.argv:  # проверка ключей и загрузки �
         print("X загрузка видео OK, media_id:", upload_video(path)); sys.exit(0)
     except RuntimeError as e: print("X загрузка видео НЕ работает:", e); sys.exit(1)
 
+MEDIA = json.load(open("x_media.json")) if os.path.exists("x_media.json") else {}
 def send(item):
     body = {"text": item["text"]}
     if item.get("media"):
-        path = os.path.join(tempfile.gettempdir(), os.path.basename(item["media"]))
-        subprocess.run(["curl", "-sSL", "-o", path, item["media"]], check=True)
-        body["media"] = {"media_ids": [upload_video(path)]}
+        m = MEDIA.get(item["id"])
+        fresh = m and datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(m["at"]) < datetime.timedelta(hours=20)
+        if not fresh:
+            path = os.path.join(tempfile.gettempdir(), os.path.basename(item["media"]))
+            subprocess.run(["curl", "-sSL", "-o", path, item["media"]], check=True)
+            MEDIA[item["id"]] = m = {"media_id": upload_video(path), "at": datetime.datetime.now(datetime.timezone.utc).isoformat()}
+            json.dump(MEDIA, open("x_media.json", "w"), indent=1)
+        body["media"] = {"media_ids": [m["media_id"]]}
     return call("POST", "/tweets", body=json.dumps(body, ensure_ascii=False).encode())["data"]["id"]
 
 now = datetime.datetime.now(datetime.timezone.utc)
 schedule = json.load(open("x.json", encoding="utf-8")) if os.path.exists("x.json") else []
 posted = json.load(open("posted_x.json", encoding="utf-8")) if os.path.exists("posted_x.json") else {}
 changed = False
+if paused() and not dry:
+    print("X на паузе до", json.load(open(PAUSE))["until"], "— кредиты кончились, запросы не шлю"); schedule = []
 for item in schedule:
     if item["id"] in posted or item.get("hold"):
         continue
@@ -100,11 +117,15 @@ for item in schedule:
         tid = send(item)
     except Exception as e:
         print("X ошибка", item["id"], e)
+        if " 402" in str(e):  # кредиты кончились: не долбить X каждые 5 минут
+            until = (now + datetime.timedelta(minutes=60)).isoformat()
+            json.dump({"until": until, "why": str(e)[:200]}, open(PAUSE, "w")); print("X пауза до", until); break
         if " 401" in str(e):  # диагностика: ключи вообще принимаются?
             try: print("X ключи OK, аккаунт:", call("GET", "/users/me").get("data", {}).get("username"))
             except Exception as e2: print("X ключи НЕ принимаются:", e2)
         continue
     posted[item["id"]] = {"tweet_id": tid, "at": now.isoformat()}; changed = True
+    MEDIA.pop(item["id"], None); json.dump(MEDIA, open("x_media.json", "w"), indent=1)
     print("X:", item["id"], tid)
 if changed:
     json.dump(posted, open("posted_x.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
