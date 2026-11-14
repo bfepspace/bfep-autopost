@@ -168,12 +168,13 @@ if tok and repo:
         H = {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}
         done_runs = json.load(urllib.request.urlopen(urllib.request.Request(
             f"https://api.github.com/repos/{repo}/actions/workflows/autopost.yml/runs?status=completed&per_page=10", headers=H), timeout=30))["workflow_runs"]
-        logs = ""
+        logs = ""; errs = []
         for r in [r for r in done_runs if r.get("conclusion") in ("success", "failure")][:2]:
             jobs = json.load(urllib.request.urlopen(urllib.request.Request(r["jobs_url"], headers=H), timeout=30))["jobs"]
             for j in jobs:
                 lp = subprocess.run(["gh", "api", f"repos/{repo}/actions/jobs/{j['id']}/logs"], capture_output=True, text=True, timeout=120)
                 logs += lp.stdout
+                if not lp.stdout: errs.append((lp.stderr or str(lp.returncode))[:120])
         tb = re.findall(r"File \"[^\"]*?(\w+_post\.py|post\.py|bot\.py)\"", logs)
         crashes = {}
         for f in tb: crashes[f] = crashes.get(f, 0) + 1
@@ -183,7 +184,7 @@ if tok and repo:
             add("Автопостинг", "Скрипты публикации не падают", "fail" if crashes else "ok", ", ".join(f"{k}: {v} раз" for k, v in crashes.items()))
             add("Автопостинг", "Нет повторных публикаций", "fail" if dups else "ok", ", ".join(dups[:10]))
         else:
-            add("Автопостинг", "Журналы робота прочитаны", "warn", "журналы последних запусков недоступны")
+            add("Автопостинг", "Журналы робота прочитаны", "warn", "журналы последних запусков недоступны: " + "; ".join(errs[:2]))
     except Exception as e:
         add("Автопостинг", "Журналы робота прочитаны", "warn", e)
 if os.environ.get("TG_BOT_TOKEN"):
