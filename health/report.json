@@ -1,0 +1,328 @@
+{
+ "checked_at": "2026-11-14T05:08:41+00:00",
+ "counts": {
+  "fail": 1,
+  "warn": 3,
+  "ok": 49
+ },
+ "results": [
+  {
+   "area": "Автопостинг",
+   "name": "X: всё вышло вовремя",
+   "status": "fail",
+   "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Журналы робота прочитаны",
+   "status": "warn",
+   "detail": "журналы последних запусков недоступны"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет)",
+   "status": "warn",
+   "detail": "0"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет)",
+   "status": "warn",
+   "detail": "0"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Discord: всё вышло вовремя",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Discord: запас контента",
+   "status": "ok",
+   "detail": "последний пост 06.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Discord: файлы на 14 дней (30 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): всё вышло вовремя",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): запас контента",
+   "status": "ok",
+   "detail": "последний пост 06.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): файлы на 14 дней (30 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Telegram: всё вышло вовремя",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Telegram: запас контента",
+   "status": "ok",
+   "detail": "последний пост 13.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Telegram: файлы на 14 дней (84 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "X: запас контента",
+   "status": "ok",
+   "detail": "последний пост 06.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "X: файлы на 14 дней (30 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Робот публикаций работает",
+   "status": "ok",
+   "detail": "последний запуск 14.11 01:42 UTC, сбоев из 5: 0"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Ссылки в текстах постов (2)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Домены",
+   "name": "SSL bfep.space",
+   "status": "ok",
+   "detail": "ещё 42 дн."
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/bfep/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/bluff/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/daily/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/kmg/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/sayit/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/bfep",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/bluff",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/daily",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/kmg",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/sayit",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Ключи",
+   "name": "Discord-вебхук",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Ключи",
+   "name": "OneUp (Snapchat)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Ключи",
+   "name": "Telegram-бот",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo DE",
+   "status": "ok",
+   "detail": "400; ответ JSON; CORS да"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo EN",
+   "status": "ok",
+   "detail": "400; ответ JSON; CORS да"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo ES",
+   "status": "ok",
+   "detail": "400; ответ JSON; CORS да"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo FR",
+   "status": "ok",
+   "detail": "400; ответ JSON; CORS да"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo RU",
+   "status": "ok",
+   "detail": "400; ответ JSON; CORS да"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo ZH",
+   "status": "ok",
+   "detail": "400; ответ JSON; CORS да"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/app/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/press/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/privacy.html",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/smart/links.js",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/smart/waitlist.html",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/support.html",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://www.bfep.space/",
+   "status": "ok",
+   "detail": "https://bfep.space/"
+  },
+  {
+   "area": "Сайт",
+   "name": "Внутренние ссылки и картинки (44)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Сайт",
+   "name": "Живой сайт = последняя версия в репозитории",
+   "status": "ok",
+   "detail": "на сайте метки до v1.74, в репозитории до v1.74 (главная отличается побайтно)"
+  },
+  {
+   "area": "Сервисы",
+   "name": "GA4 (счётчик сайта)",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сервисы",
+   "name": "Metricool (счётчик сайта)",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сервисы",
+   "name": "Supabase (аккаунты BEEZOO)",
+   "status": "ok",
+   "detail": "401"
+  },
+  {
+   "area": "Соцсети",
+   "name": "Instagram",
+   "status": "ok",
+   "detail": "429"
+  },
+  {
+   "area": "Соцсети",
+   "name": "Telegram-канал",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Соцсети",
+   "name": "TikTok (ссылка с сайта)",
+   "status": "ok",
+   "detail": "200"
+  }
+ ]
+}

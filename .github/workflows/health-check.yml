@@ -1,0 +1,37 @@
+name: health-check
+# Проверка связей BEEZOO/BFEP по пн и чт в 23:31 МСК накануне (вс и ср 20:31 UTC): к 00:01 МСК отчёт health/report.md готов.
+# Ничего не публикует. Список проверок — health/targets.json.
+on:
+  schedule:
+    - cron: "31 20 * * 0,3"
+  workflow_dispatch:
+  push:
+    branches: [claude/project-thread-3zzibm]
+    paths: [health/**, .github/workflows/health-check.yml]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: health-check
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Скачать сайт (bfep-site)
+        run: git clone -q --depth 1 https://github.com/bfepspace/bfep-site /tmp/site
+      - name: Проверка
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          ONEUP_API_KEY: ${{ secrets.NEUP_API_KEY }}
+        run: python3 health/check.py /tmp/site
+      - name: Сохранить отчёт
+        if: always()
+        run: |
+          git config user.name "bfep-health"
+          git config user.email "autopost@bfep.space"
+          git add health/report.json health/report.md 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "health $(date -u +%FT%TZ)" && for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done)

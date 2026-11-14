@@ -1,0 +1,116 @@
+{
+ "_note": "Список проверок связей BEEZOO/BFEP. Правится здесь; робот health/check.py проверяет всё по пн и чт. kind: page — должна открываться (200); redirect_ok — любой рабочий ответ после переадресаций; optional — пока не обязателен: сбой = ⚠️, не ❌; soft — соцсети часто не пускают роботов, ошибка только при 404.",
+ "sites": [
+  {
+   "url": "https://bfep.space/",
+   "kind": "page",
+   "must": "BEEZOO"
+  },
+  {
+   "url": "https://www.bfep.space/",
+   "kind": "redirect_ok"
+  },
+  {
+   "url": "https://beezoo.space/",
+   "kind": "optional",
+   "name": "https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет)"
+  },
+  {
+   "url": "https://beezoospace.com/",
+   "kind": "optional",
+   "name": "https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет)"
+  },
+  {
+   "url": "https://bfep.space/app/",
+   "kind": "page"
+  },
+  {
+   "url": "https://bfep.space/smart/waitlist.html",
+   "kind": "page",
+   "must": "id=\"waitlist\""
+  },
+  {
+   "url": "https://bfep.space/smart/links.js",
+   "kind": "page",
+   "must": "G-D5DJJXNQMX"
+  },
+  {
+   "url": "https://bfep.space/privacy.html",
+   "kind": "page"
+  },
+  {
+   "url": "https://bfep.space/support.html",
+   "kind": "page"
+  },
+  {
+   "url": "https://bfep.space/press/",
+   "kind": "page"
+  }
+ ],
+ "games": [
+  "bfep",
+  "bluff",
+  "daily",
+  "sayit",
+  "kmg"
+ ],
+ "third_party": [
+  {
+   "url": "https://www.googletagmanager.com/gtag/js?id=G-D5DJJXNQMX",
+   "kind": "page",
+   "name": "GA4 (счётчик сайта)"
+  },
+  {
+   "url": "https://tracker.metricool.com/resources/be.js",
+   "kind": "page",
+   "name": "Metricool (счётчик сайта)"
+  },
+  {
+   "url": "https://ilpsfsrhfttjitewdtfk.supabase.co/auth/v1/health",
+   "kind": "alive",
+   "name": "Supabase (аккаунты BEEZOO)"
+  }
+ ],
+ "social": [
+  {
+   "url": "https://t.me/beezoospace",
+   "kind": "soft",
+   "name": "Telegram-канал"
+  },
+  {
+   "url": "https://www.instagram.com/beezoospace/",
+   "kind": "soft",
+   "name": "Instagram"
+  },
+  {
+   "url": "https://www.tiktok.com/@bestfunevening",
+   "kind": "soft",
+   "name": "TikTok (ссылка с сайта)"
+  }
+ ],
+ "ssl_domains": [
+  "bfep.space"
+ ],
+ "queues": [
+  {
+   "file": "schedule.json",
+   "posted": "posted.json",
+   "name": "Telegram"
+  },
+  {
+   "file": "x.json",
+   "posted": "posted_x.json",
+   "name": "X"
+  },
+  {
+   "file": "discord.json",
+   "posted": "posted_discord.json",
+   "name": "Discord"
+  },
+  {
+   "file": "snap.json",
+   "posted": "posted_snap.json",
+   "name": "Snapchat (OneUp)"
+  }
+ ]
+}
