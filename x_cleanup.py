@@ -12,7 +12,7 @@ for i, t in enumerate(ids):
         print("удалён", t, r.get("data"))
     except Exception as e:
         print("не удалён", t, e); left.append(t)
-        if " 429" in str(e): left += ids[i + 1:]; break
+        if " 429" in str(e) or " 402" in str(e): left += ids[i + 1:]; break  # 402: кредиты кончились — не перебирать остальные
     time.sleep(1)
 json.dump(left, open("x_dups.json", "w"))
 print("осталось", len(left))
