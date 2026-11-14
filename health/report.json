@@ -1,0 +1,280 @@
+{
+ "checked_at": "2026-11-14T04:49:12+00:00",
+ "counts": {
+  "fail": 30,
+  "warn": 1,
+  "ok": 14
+ },
+ "results": [
+  {
+   "area": "Автопостинг",
+   "name": "X: всё вышло вовремя",
+   "status": "fail",
+   "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Ссылки в текстах постов (2)",
+   "status": "fail",
+   "detail": "/, /app/"
+  },
+  {
+   "area": "Домены",
+   "name": "SSL beezoo.space",
+   "status": "fail",
+   "detail": "[Errno -2] Name or service not known"
+  },
+  {
+   "area": "Домены",
+   "name": "SSL beezoospace.com",
+   "status": "fail",
+   "detail": "[Errno -2] Name or service not known"
+  },
+  {
+   "area": "Домены",
+   "name": "SSL bfep.space",
+   "status": "fail",
+   "detail": "[Errno -2] Name or service not known"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/bfep/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/bluff/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/daily/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/kmg/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/sayit/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/bfep",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/bluff",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/daily",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/kmg",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/sayit",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Адреса форм Brevo на сайте",
+   "status": "fail",
+   "detail": "не найдены в smart/waitlist.html"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoo.space/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoospace.com/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/app/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/press/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/privacy.html",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/smart/links.js",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/smart/waitlist.html",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/support.html",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://www.bfep.space/",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сайт",
+   "name": "Внутренние ссылки и картинки (46)",
+   "status": "fail",
+   "detail": "/ → 0; /app/ → 0; /app/games/bottle.html → 0; /app/games/dice.html → 0; /app/games/words.html → 0; /bfep/ → 0; /bluff/ → 0; /daily/ → 0; /icon.png → 0; /icons/ → 0; /icons/app.jpg → 0; /icons/bfep.jpg → 0; /icons/bfep.png → 0; /icons/bluff.jpg → 0; /icons/bluff.png → 0"
+  },
+  {
+   "area": "Сервисы",
+   "name": "GA4 (счётчик сайта)",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сервисы",
+   "name": "Metricool (счётчик сайта)",
+   "status": "fail",
+   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "area": "Сервисы",
+   "name": "Supabase (аккаунты BEEZOO)",
+   "status": "fail",
+   "detail": "0"
+  },
+  {
+   "area": "Сайт",
+   "name": "Живой сайт = последняя версия в репозитории",
+   "status": "warn",
+   "detail": "1.77 — главная на сайте отличается от репозитория (не выложено или кэш)"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Discord: всё вышло вовремя",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Discord: запас контента",
+   "status": "ok",
+   "detail": "последний пост 06.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Discord: файлы на 14 дней (30 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): всё вышло вовремя",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): запас контента",
+   "status": "ok",
+   "detail": "последний пост 06.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): файлы на 14 дней (30 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Telegram: всё вышло вовремя",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Telegram: запас контента",
+   "status": "ok",
+   "detail": "последний пост 13.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Telegram: файлы на 14 дней (84 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "X: запас контента",
+   "status": "ok",
+   "detail": "последний пост 06.12"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "X: файлы на 14 дней (30 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Соцсети",
+   "name": "Instagram",
+   "status": "ok",
+   "detail": "0"
+  },
+  {
+   "area": "Соцсети",
+   "name": "Telegram-канал",
+   "status": "ok",
+   "detail": "0"
+  },
+  {
+   "area": "Соцсети",
+   "name": "TikTok (ссылка с сайта)",
+   "status": "ok",
+   "detail": "0"
+  }
+ ]
+}

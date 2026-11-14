@@ -1,0 +1,48 @@
+# Проверка связей 2026-11-14 04:49 UTC
+❌ 30 · ⚠️ 1 · ✅ 14
+
+- ❌ **Автопостинг** — X: всё вышло вовремя: не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107
+- ❌ **Автопостинг** — Ссылки в текстах постов (2): /, /app/
+- ❌ **Домены** — SSL beezoo.space: [Errno -2] Name or service not known
+- ❌ **Домены** — SSL beezoospace.com: [Errno -2] Name or service not known
+- ❌ **Домены** — SSL bfep.space: [Errno -2] Name or service not known
+- ❌ **Игры** — Игра в браузере /play/bfep/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Игра в браузере /play/bluff/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Игра в браузере /play/daily/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Игра в браузере /play/kmg/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Игра в браузере /play/sayit/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Умная ссылка bfep.space/bfep: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Умная ссылка bfep.space/bluff: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Умная ссылка bfep.space/daily: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Умная ссылка bfep.space/kmg: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Игры** — Умная ссылка bfep.space/sayit: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Лист ожидания** — Адреса форм Brevo на сайте: не найдены в smart/waitlist.html
+- ❌ **Сайт** — https://beezoo.space/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://beezoospace.com/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/app/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/press/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/privacy.html: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/smart/links.js: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/smart/waitlist.html: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://bfep.space/support.html: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — https://www.bfep.space/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сайт** — Внутренние ссылки и картинки (46): / → 0; /app/ → 0; /app/games/bottle.html → 0; /app/games/dice.html → 0; /app/games/words.html → 0; /bfep/ → 0; /bluff/ → 0; /daily/ → 0; /icon.png → 0; /icons/ → 0; /icons/app.jpg → 0; /icons/bfep.jpg → 0; /icons/bfep.png → 0; /icons/bluff.jpg → 0; /icons/bluff.png → 0
+- ❌ **Сервисы** — GA4 (счётчик сайта): 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сервисы** — Metricool (счётчик сайта): 0 <urlopen error Tunnel connection failed: 403 Forbidden>
+- ❌ **Сервисы** — Supabase (аккаунты BEEZOO): 0
+- ⚠️ **Сайт** — Живой сайт = последняя версия в репозитории: 1.77 — главная на сайте отличается от репозитория (не выложено или кэш)
+- ✅ **Автопостинг** — Discord: всё вышло вовремя
+- ✅ **Автопостинг** — Discord: запас контента: последний пост 06.12
+- ✅ **Автопостинг** — Discord: файлы на 14 дней (30 постов)
+- ✅ **Автопостинг** — Snapchat (OneUp): всё вышло вовремя
+- ✅ **Автопостинг** — Snapchat (OneUp): запас контента: последний пост 06.12
+- ✅ **Автопостинг** — Snapchat (OneUp): файлы на 14 дней (30 постов)
+- ✅ **Автопостинг** — Telegram: всё вышло вовремя
+- ✅ **Автопостинг** — Telegram: запас контента: последний пост 13.12
+- ✅ **Автопостинг** — Telegram: файлы на 14 дней (84 постов)
+- ✅ **Автопостинг** — X: запас контента: последний пост 06.12
+- ✅ **Автопостинг** — X: файлы на 14 дней (30 постов)
+- ✅ **Соцсети** — Instagram: 0
+- ✅ **Соцсети** — Telegram-канал: 0
+- ✅ **Соцсети** — TikTok (ссылка с сайта): 0
