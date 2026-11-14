@@ -210,6 +210,24 @@ if os.environ.get("ONEUP_API_KEY"):
     exp = "True" in re.sub(r"Категории.*", "", p.stdout, flags=re.S) or p.returncode
     add("Ключи", "OneUp (Snapchat)", "fail" if exp else "ok", "аккаунт отключён или ключ не принят" if exp else "")
 
+# 7. Вид сайта с телефона (health/ui.js, если запускался в этом прогоне)
+uip = os.path.join(ROOT, "health", "ui.json")
+if os.path.exists(uip) and NOW.timestamp() - os.path.getmtime(uip) < 3600:
+    for u in json.load(open(uip, encoding="utf-8")):
+        nm = f"{u['name']} [{u['lang']}]"
+        probs, warns = [], []
+        if u["errors"]: probs.append("ошибки JS: " + "; ".join(u["errors"][:2]))
+        if u["empty"]: probs.append("пустая страница")
+        if u["bad"]: probs.append("не грузится: " + ", ".join(u["bad"][:3]))
+        if u["overflow"] > 2: warns.append(f"страница шире экрана на {u['overflow']} px (едет вбок)")
+        if u["loadMs"] > 8000: warns.append(f"грузится {u['loadMs']/1000:.1f} с")
+        if u.get("waitlistVisible") is False: probs.append("формы записи нет на странице")
+        elif u.get("waitlistScreens") is not None and u["waitlistScreens"] > 2.5: warns.append(f"форма записи только на {u['waitlistScreens']}-м экране")
+        if u["oldBrand"]: warns.append(f"старое название «{u['oldBrand']}» на странице")
+        add("Вид с телефона", nm, "fail" if probs else "warn" if warns else "ok", "; ".join(probs + warns) or f"{u['loadMs']/1000:.1f} с")
+elif os.environ.get("GITHUB_ACTIONS"):
+    add("Вид с телефона", "Проверка браузером", "warn", "health/ui.json не создан в этом прогоне")
+
 # Итог
 order = {"fail": 0, "warn": 1, "ok": 2}
 R.sort(key=lambda r: (order[r["status"]], r["area"], r["name"]))
