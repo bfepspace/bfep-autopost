@@ -10,6 +10,7 @@ T = json.load(open(os.path.join(ROOT, "health", "targets.json"), encoding="utf-8
 NOW = datetime.datetime.now(datetime.timezone.utc)
 UA = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) bfep-health"}
 R = []  # {area, name, status: ok|warn|fail, detail}
+def ts(s): return datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
 
 def add(area, name, status, detail=""):
     R.append({"area": area, "name": name, "status": status, "detail": str(detail)[:300]})
@@ -115,8 +116,19 @@ for d in T["ssl_domains"]:
     except Exception as e:
         add("Домены", f"SSL {d}", "fail", e)
 
+# 4б. Срок регистрации доменов (RDAP): предупреждение за 45 дней, ❌ за 14
+for d in T.get("domains", []):
+    try:
+        req = urllib.request.Request("https://rdap.org/domain/" + d, headers={"Accept": "application/rdap+json", **UA})
+        j = json.load(urllib.request.urlopen(req, timeout=30))
+        exp = [e["eventDate"] for e in j.get("events", []) if e.get("eventAction") == "expiration"]
+        days = (ts(exp[0]) - NOW).days if exp else None
+        add("Домены", f"Регистрация {d}", "warn" if days is None else "ok" if days > 45 else "warn" if days > 14 else "fail",
+            "срок не найден" if days is None else f"до {ts(exp[0]):%d.%m.%Y}, ещё {days} дн.")
+    except Exception as e:
+        add("Домены", f"Регистрация {d}", "warn", e)
+
 # 5. Очереди автопостинга: просрочки, пропуски, файлы и ссылки на ближайшие 14 дней
-def ts(s): return datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
 for q in T["queues"]:
     fp = os.path.join(ROOT, q["file"])
     if not os.path.exists(fp): continue

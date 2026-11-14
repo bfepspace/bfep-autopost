@@ -112,5 +112,10 @@
    "posted": "posted_snap.json",
    "name": "Snapchat (OneUp)"
   }
+ ],
+ "domains": [
+  "bfep.space",
+  "beezoo.space",
+  "beezoospace.com"
  ]
 }
