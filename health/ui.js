@@ -11,7 +11,7 @@ const pages = [
   ...games.map(g => ({ path: `/play/${g}/`, name: `Игра /play/${g}/` })),
   ...games.map(g => ({ path: `/${g}/`, name: `Умная ссылка /${g}/` })),
 ];
-const OLD = /Bomi|Best Fun Evening(?! Games FZE)/;
+const OLD = /Bomi|Best Fun Evening(?! (Games FZE|Plan))/;
 (async () => {
   const b = await chromium.launch();
   const out = [];
