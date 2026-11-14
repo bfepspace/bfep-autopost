@@ -28,7 +28,9 @@ def judge(t, area):
     name = t.get("name") or t["url"]
     code, final, b = fetch(t["url"], body=bool(t.get("must")))
     k = t.get("kind", "page")
-    if k == "soft":
+    if k == "optional":
+        add(area, name, "ok" if 0 < code < 400 else "warn", f"{code}")
+    elif k == "soft":
         add(area, name, "fail" if code == 404 else "warn" if code == 0 else "ok", f"{code}")
     elif k == "alive":
         add(area, name, "ok" if 0 < code < 500 else "fail", f"{code}")
@@ -51,10 +53,13 @@ with ThreadPoolExecutor(12) as ex:
 if SITE and os.path.isdir(SITE):
     code, _, live = fetch("https://bfep.space/", body=True)
     repo = open(os.path.join(SITE, "index.html"), "rb").read()
-    ver = re.findall(rb"Site v(1\.\d+)", subprocess.run(["git", "-C", SITE, "log", "-1", "--format=%s"], capture_output=True).stdout)
+    def vmax(b):
+        v = [tuple(map(int, x.split(b"."))) for x in re.findall(rb"\?v=(\d+\.\d+)", b)]
+        return ".".join(map(str, max(v))) if v else "?"
+    lv, rv = vmax(live), vmax(repo)
     same = hashlib.sha1(live).hexdigest() == hashlib.sha1(repo).hexdigest()
-    add("Сайт", "Живой сайт = последняя версия в репозитории", "ok" if same else "warn",
-        (ver[0].decode() if ver else "") + ("" if same else " — главная на сайте отличается от репозитория (не выложено или кэш)"))
+    add("Сайт", "Живой сайт = последняя версия в репозитории", "ok" if same or lv == rv else "warn",
+        f"на сайте метки до v{lv}, в репозитории до v{rv}" + ("" if same else " (главная отличается побайтно)"))
     paths = set()
     for dp, _, fs in os.walk(SITE):
         if "/.git" in dp: continue
@@ -62,7 +67,9 @@ if SITE and os.path.isdir(SITE):
             if f.endswith((".html", ".js")):
                 txt = open(os.path.join(dp, f), encoding="utf-8", errors="ignore").read()
                 for m in re.findall(r'(?:href|src)=["\'](/[^"\'#?\s${}+]*)', txt):
-                    if not m.startswith("//"): paths.add(m)
+                    if m.startswith("//"): continue
+                    if m.endswith("/") and not os.path.exists(os.path.join(SITE, m.strip("/"), "index.html")) and m != "/": continue  # начало адреса из кода ('/play/' + id)
+                    paths.add(m)
     bad = []
     def chk(p):
         c, _, _ = fetch("https://bfep.space" + p, method="GET")
