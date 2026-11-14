@@ -1,8 +1,8 @@
 {
- "checked_at": "2026-11-14T04:57:18+00:00",
+ "checked_at": "2026-11-14T05:08:41+00:00",
  "counts": {
   "fail": 1,
-  "warn": 2,
+  "warn": 3,
   "ok": 49
  },
  "results": [
@@ -11,6 +11,12 @@
    "name": "X: всё вышло вовремя",
    "status": "fail",
    "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Журналы робота прочитаны",
+   "status": "warn",
+   "detail": "журналы последних запусков недоступны"
   },
   {
    "area": "Сайт",
