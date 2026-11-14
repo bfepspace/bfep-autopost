@@ -1,36 +1,13 @@
-# Проверка связей 2026-11-14 04:49 UTC
-❌ 30 · ⚠️ 1 · ✅ 14
+# Проверка связей 2026-11-14 04:51 UTC
+❌ 6 · ⚠️ 2 · ✅ 47
 
 - ❌ **Автопостинг** — X: всё вышло вовремя: не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107
-- ❌ **Автопостинг** — Ссылки в текстах постов (2): /, /app/
-- ❌ **Домены** — SSL beezoo.space: [Errno -2] Name or service not known
-- ❌ **Домены** — SSL beezoospace.com: [Errno -2] Name or service not known
-- ❌ **Домены** — SSL bfep.space: [Errno -2] Name or service not known
-- ❌ **Игры** — Игра в браузере /play/bfep/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Игра в браузере /play/bluff/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Игра в браузере /play/daily/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Игра в браузере /play/kmg/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Игра в браузере /play/sayit/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Умная ссылка bfep.space/bfep: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Умная ссылка bfep.space/bluff: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Умная ссылка bfep.space/daily: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Умная ссылка bfep.space/kmg: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Игры** — Умная ссылка bfep.space/sayit: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Лист ожидания** — Адреса форм Brevo на сайте: не найдены в smart/waitlist.html
-- ❌ **Сайт** — https://beezoo.space/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://beezoospace.com/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/app/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/press/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/privacy.html: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/smart/links.js: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/smart/waitlist.html: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://bfep.space/support.html: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — https://www.bfep.space/: 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сайт** — Внутренние ссылки и картинки (46): / → 0; /app/ → 0; /app/games/bottle.html → 0; /app/games/dice.html → 0; /app/games/words.html → 0; /bfep/ → 0; /bluff/ → 0; /daily/ → 0; /icon.png → 0; /icons/ → 0; /icons/app.jpg → 0; /icons/bfep.jpg → 0; /icons/bfep.png → 0; /icons/bluff.jpg → 0; /icons/bluff.png → 0
-- ❌ **Сервисы** — GA4 (счётчик сайта): 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сервисы** — Metricool (счётчик сайта): 0 <urlopen error Tunnel connection failed: 403 Forbidden>
-- ❌ **Сервисы** — Supabase (аккаунты BEEZOO): 0
+- ❌ **Домены** — SSL beezoo.space: [Errno -5] No address associated with hostname
+- ❌ **Домены** — SSL beezoospace.com: [Errno -5] No address associated with hostname
+- ❌ **Сайт** — https://beezoo.space/: 0 <urlopen error [Errno -5] No address associated with hostname>
+- ❌ **Сайт** — https://beezoospace.com/: 0 <urlopen error [Errno -5] No address associated with hostname>
+- ❌ **Сайт** — Внутренние ссылки и картинки (46): /icons/ → 404; /play/ → 404
+- ⚠️ **Лист ожидания** — Ошибки отправки видны посетителю: отправка no-cors: при сбое Brevo человек всё равно видит «Готово»
 - ⚠️ **Сайт** — Живой сайт = последняя версия в репозитории: 1.77 — главная на сайте отличается от репозитория (не выложено или кэш)
 - ✅ **Автопостинг** — Discord: всё вышло вовремя
 - ✅ **Автопостинг** — Discord: запас контента: последний пост 06.12
@@ -43,6 +20,39 @@
 - ✅ **Автопостинг** — Telegram: файлы на 14 дней (84 постов)
 - ✅ **Автопостинг** — X: запас контента: последний пост 06.12
 - ✅ **Автопостинг** — X: файлы на 14 дней (30 постов)
-- ✅ **Соцсети** — Instagram: 0
-- ✅ **Соцсети** — Telegram-канал: 0
-- ✅ **Соцсети** — TikTok (ссылка с сайта): 0
+- ✅ **Автопостинг** — Робот публикаций работает: последний запуск 14.11 01:42 UTC, сбоев из 5: 0
+- ✅ **Автопостинг** — Ссылки в текстах постов (2)
+- ✅ **Домены** — SSL bfep.space: ещё 42 дн.
+- ✅ **Игры** — Игра в браузере /play/bfep/: 200
+- ✅ **Игры** — Игра в браузере /play/bluff/: 200
+- ✅ **Игры** — Игра в браузере /play/daily/: 200
+- ✅ **Игры** — Игра в браузере /play/kmg/: 200
+- ✅ **Игры** — Игра в браузере /play/sayit/: 200
+- ✅ **Игры** — Умная ссылка bfep.space/bfep: 200
+- ✅ **Игры** — Умная ссылка bfep.space/bluff: 200
+- ✅ **Игры** — Умная ссылка bfep.space/daily: 200
+- ✅ **Игры** — Умная ссылка bfep.space/kmg: 200
+- ✅ **Игры** — Умная ссылка bfep.space/sayit: 200
+- ✅ **Ключи** — Discord-вебхук: 200
+- ✅ **Ключи** — OneUp (Snapchat)
+- ✅ **Ключи** — Telegram-бот: 200
+- ✅ **Лист ожидания** — Форма Brevo DE: 200
+- ✅ **Лист ожидания** — Форма Brevo EN: 200
+- ✅ **Лист ожидания** — Форма Brevo ES: 200
+- ✅ **Лист ожидания** — Форма Brevo FR: 200
+- ✅ **Лист ожидания** — Форма Brevo RU: 200
+- ✅ **Лист ожидания** — Форма Brevo ZH: 200
+- ✅ **Сайт** — https://bfep.space/: 200
+- ✅ **Сайт** — https://bfep.space/app/: 200
+- ✅ **Сайт** — https://bfep.space/press/: 200
+- ✅ **Сайт** — https://bfep.space/privacy.html: 200
+- ✅ **Сайт** — https://bfep.space/smart/links.js: 200
+- ✅ **Сайт** — https://bfep.space/smart/waitlist.html: 200
+- ✅ **Сайт** — https://bfep.space/support.html: 200
+- ✅ **Сайт** — https://www.bfep.space/: https://bfep.space/
+- ✅ **Сервисы** — GA4 (счётчик сайта): 200
+- ✅ **Сервисы** — Metricool (счётчик сайта): 200
+- ✅ **Сервисы** — Supabase (аккаунты BEEZOO): 401
+- ✅ **Соцсети** — Instagram: 429
+- ✅ **Соцсети** — Telegram-канал: 200
+- ✅ **Соцсети** — TikTok (ссылка с сайта): 200

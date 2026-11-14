@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-14T04:49:12+00:00",
+ "checked_at": "2026-11-14T04:51:02+00:00",
  "counts": {
-  "fail": 30,
-  "warn": 1,
-  "ok": 14
+  "fail": 6,
+  "warn": 2,
+  "ok": 47
  },
  "results": [
   {
@@ -13,178 +13,40 @@
    "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
   },
   {
-   "area": "Автопостинг",
-   "name": "Ссылки в текстах постов (2)",
-   "status": "fail",
-   "detail": "/, /app/"
-  },
-  {
    "area": "Домены",
    "name": "SSL beezoo.space",
    "status": "fail",
-   "detail": "[Errno -2] Name or service not known"
+   "detail": "[Errno -5] No address associated with hostname"
   },
   {
    "area": "Домены",
    "name": "SSL beezoospace.com",
    "status": "fail",
-   "detail": "[Errno -2] Name or service not known"
-  },
-  {
-   "area": "Домены",
-   "name": "SSL bfep.space",
-   "status": "fail",
-   "detail": "[Errno -2] Name or service not known"
-  },
-  {
-   "area": "Игры",
-   "name": "Игра в браузере /play/bfep/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Игра в браузере /play/bluff/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Игра в браузере /play/daily/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Игра в браузере /play/kmg/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Игра в браузере /play/sayit/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Умная ссылка bfep.space/bfep",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Умная ссылка bfep.space/bluff",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Умная ссылка bfep.space/daily",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Умная ссылка bfep.space/kmg",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Игры",
-   "name": "Умная ссылка bfep.space/sayit",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Лист ожидания",
-   "name": "Адреса форм Brevo на сайте",
-   "status": "fail",
-   "detail": "не найдены в smart/waitlist.html"
+   "detail": "[Errno -5] No address associated with hostname"
   },
   {
    "area": "Сайт",
    "name": "https://beezoo.space/",
    "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+   "detail": "0 <urlopen error [Errno -5] No address associated with hostname>"
   },
   {
    "area": "Сайт",
    "name": "https://beezoospace.com/",
    "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/app/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/press/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/privacy.html",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/smart/links.js",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/smart/waitlist.html",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://bfep.space/support.html",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://www.bfep.space/",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
+   "detail": "0 <urlopen error [Errno -5] No address associated with hostname>"
   },
   {
    "area": "Сайт",
    "name": "Внутренние ссылки и картинки (46)",
    "status": "fail",
-   "detail": "/ → 0; /app/ → 0; /app/games/bottle.html → 0; /app/games/dice.html → 0; /app/games/words.html → 0; /bfep/ → 0; /bluff/ → 0; /daily/ → 0; /icon.png → 0; /icons/ → 0; /icons/app.jpg → 0; /icons/bfep.jpg → 0; /icons/bfep.png → 0; /icons/bluff.jpg → 0; /icons/bluff.png → 0"
+   "detail": "/icons/ → 404; /play/ → 404"
   },
   {
-   "area": "Сервисы",
-   "name": "GA4 (счётчик сайта)",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сервисы",
-   "name": "Metricool (счётчик сайта)",
-   "status": "fail",
-   "detail": "0 <urlopen error Tunnel connection failed: 403 Forbidden>"
-  },
-  {
-   "area": "Сервисы",
-   "name": "Supabase (аккаунты BEEZOO)",
-   "status": "fail",
-   "detail": "0"
+   "area": "Лист ожидания",
+   "name": "Ошибки отправки видны посетителю",
+   "status": "warn",
+   "detail": "отправка no-cors: при сбое Brevo человек всё равно видит «Готово»"
   },
   {
    "area": "Сайт",
@@ -259,22 +121,220 @@
    "detail": ""
   },
   {
+   "area": "Автопостинг",
+   "name": "Робот публикаций работает",
+   "status": "ok",
+   "detail": "последний запуск 14.11 01:42 UTC, сбоев из 5: 0"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Ссылки в текстах постов (2)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Домены",
+   "name": "SSL bfep.space",
+   "status": "ok",
+   "detail": "ещё 42 дн."
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/bfep/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/bluff/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/daily/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/kmg/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Игра в браузере /play/sayit/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/bfep",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/bluff",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/daily",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/kmg",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Игры",
+   "name": "Умная ссылка bfep.space/sayit",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Ключи",
+   "name": "Discord-вебхук",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Ключи",
+   "name": "OneUp (Snapchat)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Ключи",
+   "name": "Telegram-бот",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo DE",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo EN",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo ES",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo FR",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo RU",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Лист ожидания",
+   "name": "Форма Brevo ZH",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/app/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/press/",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/privacy.html",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/smart/links.js",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/smart/waitlist.html",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://bfep.space/support.html",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://www.bfep.space/",
+   "status": "ok",
+   "detail": "https://bfep.space/"
+  },
+  {
+   "area": "Сервисы",
+   "name": "GA4 (счётчик сайта)",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сервисы",
+   "name": "Metricool (счётчик сайта)",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "area": "Сервисы",
+   "name": "Supabase (аккаунты BEEZOO)",
+   "status": "ok",
+   "detail": "401"
+  },
+  {
    "area": "Соцсети",
    "name": "Instagram",
    "status": "ok",
-   "detail": "0"
+   "detail": "429"
   },
   {
    "area": "Соцсети",
    "name": "Telegram-канал",
    "status": "ok",
-   "detail": "0"
+   "detail": "200"
   },
   {
    "area": "Соцсети",
    "name": "TikTok (ссылка с сайта)",
    "status": "ok",
-   "detail": "0"
+   "detail": "200"
   }
  ]
 }
