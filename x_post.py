@@ -87,7 +87,8 @@ changed = False
 for item in schedule:
     if item["id"] in posted or item.get("hold"):
         continue
-    assert "http" not in item["text"] and "bfep.space" not in item["text"] and "beezoo.space" not in item["text"], "в X без ссылок"
+    if any(w in item["text"] for w in ("http", "bfep.space", "beezoo.space")):
+        print("X пропуск", item["id"], "— в тексте ссылка (в X без ссылок)"); continue
     at = datetime.datetime.fromisoformat(item["at_utc"].replace("Z", "+00:00"))
     if at > now:
         continue

@@ -1,0 +1,21 @@
+name: x-cleanup
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Удалить дубли в X (x_dups.json)
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python3 x_cleanup.py
+      - name: Сохранить остаток
+        run: |
+          git config user.name "bfep-bot"; git config user.email "bot@users.noreply.github.com"
+          git add x_dups.json; git commit -m "x-cleanup: остаток дублей" || true
+          git pull --rebase -q && git push || true

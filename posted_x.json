@@ -18,5 +18,33 @@
  "x-meet-E": {
   "tweet_id": "2120117305187148127",
   "at": "2026-11-10T11:32:04.571671+00:00"
+ },
+ "x-meet-F": {
+  "tweet_id": "2120411953457971385",
+  "at": "restored-from-logs"
+ },
+ "x-meet-G": {
+  "tweet_id": "2120480494014038433",
+  "at": "restored-from-logs"
+ },
+ "x-meet-H": {
+  "tweet_id": "2120775038710473063",
+  "at": "restored-from-logs"
+ },
+ "x-meet-J": {
+  "tweet_id": "2120843968472625170",
+  "at": "restored-from-logs"
+ },
+ "x-meet-K": {
+  "tweet_id": "2121137928164565085",
+  "at": "restored-from-logs"
+ },
+ "x-meet-L": {
+  "tweet_id": "2121207057860776295",
+  "at": "restored-from-logs"
+ },
+ "x-vampire-rep": {
+  "skipped": "late",
+  "at": "2026-11-14T04:55:36.772432+00:00"
  }
 }
