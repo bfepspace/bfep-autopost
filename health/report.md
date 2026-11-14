@@ -1,8 +1,10 @@
-# Проверка связей 2026-11-14 05:12 UTC
+# Проверка связей 2026-11-14 05:14 UTC
 ❌ 0 · ⚠️ 4 · ✅ 49
 
 - ⚠️ **Автопостинг** — X: всё вышло вовремя:  пропущены за неделю: x-meet-D, x-meet-A, x-R107, x-vampire-rep
-- ⚠️ **Автопостинг** — Журналы робота прочитаны: журналы последних запусков недоступны
+- ⚠️ **Автопостинг** — Журналы робота прочитаны: журналы последних запусков недоступны: the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway
+; the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway
+
 - ⚠️ **Сайт** — https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет): 0
 - ⚠️ **Сайт** — https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет): 0
 - ✅ **Автопостинг** — Discord: всё вышло вовремя

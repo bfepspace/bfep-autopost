@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-14T05:12:43+00:00",
+ "checked_at": "2026-11-14T05:14:38+00:00",
  "counts": {
   "fail": 0,
   "warn": 4,
@@ -16,7 +16,7 @@
    "area": "Автопостинг",
    "name": "Журналы робота прочитаны",
    "status": "warn",
-   "detail": "журналы последних запусков недоступны"
+   "detail": "журналы последних запусков недоступны: the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway\n; the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway\n"
   },
   {
    "area": "Сайт",
