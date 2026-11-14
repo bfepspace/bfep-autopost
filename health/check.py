@@ -167,9 +167,9 @@ if tok and repo:
     try:
         H = {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}
         done_runs = json.load(urllib.request.urlopen(urllib.request.Request(
-            f"https://api.github.com/repos/{repo}/actions/workflows/autopost.yml/runs?status=completed&per_page=3", headers=H), timeout=30))["workflow_runs"]
+            f"https://api.github.com/repos/{repo}/actions/workflows/autopost.yml/runs?status=completed&per_page=10", headers=H), timeout=30))["workflow_runs"]
         logs = ""
-        for r in done_runs[:2]:
+        for r in [r for r in done_runs if r.get("conclusion") in ("success", "failure")][:2]:
             jobs = json.load(urllib.request.urlopen(urllib.request.Request(r["jobs_url"], headers=H), timeout=30))["jobs"]
             for j in jobs:
                 lp = subprocess.run(["gh", "api", f"repos/{repo}/actions/jobs/{j['id']}/logs"], capture_output=True, text=True, timeout=120)
