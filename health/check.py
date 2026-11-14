@@ -84,9 +84,25 @@ forms = dict(re.findall(rb'(\w\w): "(https://[\w.]+sibforms\.com/serve/[^"]+)"',
 if not forms:
     add("Лист ожидания", "Адреса форм Brevo на сайте", "fail", "не найдены в smart/waitlist.html")
 for l, u in sorted(forms.items()):
-    c, _, b = fetch(u.decode(), body=True)
-    add("Лист ожидания", f"Форма Brevo {l.decode().upper()}", "ok" if c == 200 else "fail", f"{c}")
-if forms and (b"no-cors" in wl):
+    # Пробная отправка с заведомо неверной почтой: контакт не создаётся, но Brevo должен ответить JSON с ошибкой EMAIL
+    import urllib.parse
+    data = urllib.parse.urlencode({"EMAIL": "health-check-not-an-email", "OPT_IN": "1", "email_address_check": "", "locale": l.decode(), "html_type": "simple",
+                                   "GAME": "all", "SOURCE": "health", "CAMPAIGN": "health"}).encode()
+    req = urllib.request.Request(u.decode() + "?isAjax=1", data=data, headers=dict(UA, Origin="https://bfep.space"), method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            c, body, cors = r.status, r.read().decode(errors="replace"), r.headers.get("Access-Control-Allow-Origin", "")
+    except urllib.error.HTTPError as e:
+        c, body, cors = e.code, e.read().decode(errors="replace"), e.headers.get("Access-Control-Allow-Origin", "")
+    except Exception as e:
+        c, body, cors = 0, str(e), ""
+    try: j = json.loads(body)
+    except Exception: j = None
+    other = [k for k in ((j or {}).get("errors") or {}) if k.upper() != "EMAIL"] if isinstance((j or {}).get("errors"), dict) else []
+    st = "ok" if j is not None and not other else "fail"
+    add("Лист ожидания", f"Форма Brevo {l.decode().upper()}", st,
+        f"{c}; ответ {'JSON' if j is not None else 'не JSON'}; CORS {'да' if cors else 'нет (сайт шлёт вслепую)'}" + (f"; лишние поля: {other}" if other else "") + ("" if j is not None else "; " + body[:120]))
+if forms and b"isAjax" not in wl and b"no-cors" in wl:
     add("Лист ожидания", "Ошибки отправки видны посетителю", "warn", "отправка no-cors: при сбое Brevo человек всё равно видит «Готово»")
 
 # 4. SSL-сертификаты
