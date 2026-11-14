@@ -1,8 +1,8 @@
 {
- "checked_at": "2026-11-14T04:53:09+00:00",
+ "checked_at": "2026-11-14T04:57:18+00:00",
  "counts": {
   "fail": 1,
-  "warn": 3,
+  "warn": 2,
   "ok": 49
  },
  "results": [
@@ -11,12 +11,6 @@
    "name": "X: всё вышло вовремя",
    "status": "fail",
    "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
-  },
-  {
-   "area": "Лист ожидания",
-   "name": "Ошибки отправки видны посетителю",
-   "status": "warn",
-   "detail": "отправка no-cors: при сбое Brevo человек всё равно видит «Готово»"
   },
   {
    "area": "Сайт",
@@ -196,37 +190,37 @@
    "area": "Лист ожидания",
    "name": "Форма Brevo DE",
    "status": "ok",
-   "detail": "200"
+   "detail": "400; ответ JSON; CORS да"
   },
   {
    "area": "Лист ожидания",
    "name": "Форма Brevo EN",
    "status": "ok",
-   "detail": "200"
+   "detail": "400; ответ JSON; CORS да"
   },
   {
    "area": "Лист ожидания",
    "name": "Форма Brevo ES",
    "status": "ok",
-   "detail": "200"
+   "detail": "400; ответ JSON; CORS да"
   },
   {
    "area": "Лист ожидания",
    "name": "Форма Brevo FR",
    "status": "ok",
-   "detail": "200"
+   "detail": "400; ответ JSON; CORS да"
   },
   {
    "area": "Лист ожидания",
    "name": "Форма Brevo RU",
    "status": "ok",
-   "detail": "200"
+   "detail": "400; ответ JSON; CORS да"
   },
   {
    "area": "Лист ожидания",
    "name": "Форма Brevo ZH",
    "status": "ok",
-   "detail": "200"
+   "detail": "400; ответ JSON; CORS да"
   },
   {
    "area": "Сайт",
