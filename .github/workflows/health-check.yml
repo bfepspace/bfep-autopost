@@ -21,6 +21,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Скачать сайт (bfep-site)
         run: git clone -q --depth 1 https://github.com/bfepspace/bfep-site /tmp/site
+      - name: Вид сайта с телефона (браузер)
+        continue-on-error: true
+        run: |
+          npm i --no-save --silent playwright@1.48.2
+          npx playwright install --with-deps chromium > /dev/null
+          node health/ui.js
       - name: Проверка
         env:
           GH_TOKEN: ${{ github.token }}
@@ -33,5 +39,5 @@ jobs:
         run: |
           git config user.name "bfep-health"
           git config user.email "autopost@bfep.space"
-          git add health/report.json health/report.md 2>/dev/null || true
+          git add health/report.json health/report.md health/ui.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -qm "health $(date -u +%FT%TZ)" && for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done)

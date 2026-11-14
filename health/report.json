@@ -1,22 +1,40 @@
 {
- "checked_at": "2026-11-14T05:08:41+00:00",
+ "checked_at": "2026-11-14T06:27:27+00:00",
  "counts": {
   "fail": 1,
-  "warn": 3,
-  "ok": 49
+  "warn": 6,
+  "ok": 67
  },
  "results": [
   {
    "area": "Автопостинг",
-   "name": "X: всё вышло вовремя",
+   "name": "Скрипты публикации не падают",
    "status": "fail",
-   "detail": "не вышли: x-meet-F, x-meet-G, x-meet-H, x-meet-J, x-meet-K, x-meet-L, x-vampire-rep пропущены за неделю: x-meet-D, x-meet-A, x-R107"
+   "detail": "x_post.py: 130 раз"
   },
   {
    "area": "Автопостинг",
-   "name": "Журналы робота прочитаны",
+   "name": "X: всё вышло вовремя",
    "status": "warn",
-   "detail": "журналы последних запусков недоступны"
+   "detail": " пропущены за неделю: x-meet-D, x-meet-A, x-R107, x-vampire-rep"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Главная (без метки) [en]",
+   "status": "warn",
+   "detail": "форма записи только на 10.4-м экране"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Главная (без метки) [ru]",
+   "status": "warn",
+   "detail": "форма записи только на 10.9-м экране"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Приложение в браузере [en]",
+   "status": "warn",
+   "detail": "старое название «Best Fun Evening» на странице"
   },
   {
    "area": "Сайт",
@@ -44,7 +62,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Discord: файлы на 14 дней (30 постов)",
+   "name": "Discord: файлы на 14 дней (31 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -62,7 +80,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Snapchat (OneUp): файлы на 14 дней (30 постов)",
+   "name": "Snapchat (OneUp): файлы на 14 дней (31 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -92,7 +110,13 @@
   },
   {
    "area": "Автопостинг",
-   "name": "X: файлы на 14 дней (30 постов)",
+   "name": "X: файлы на 14 дней (31 постов)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Нет повторных публикаций",
    "status": "ok",
    "detail": ""
   },
@@ -109,10 +133,100 @@
    "detail": ""
   },
   {
+   "area": "Вид с телефона",
+   "name": "Главная (гость из TikTok) [en]",
+   "status": "ok",
+   "detail": "0.6 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Главная (гость из TikTok) [ru]",
+   "status": "ok",
+   "detail": "0.4 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Игра /play/bfep/ [en]",
+   "status": "ok",
+   "detail": "0.9 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Игра /play/bluff/ [en]",
+   "status": "ok",
+   "detail": "0.5 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Игра /play/daily/ [en]",
+   "status": "ok",
+   "detail": "0.7 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Игра /play/kmg/ [en]",
+   "status": "ok",
+   "detail": "0.4 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Игра /play/sayit/ [en]",
+   "status": "ok",
+   "detail": "0.5 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Умная ссылка /bfep/ [en]",
+   "status": "ok",
+   "detail": "0.4 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Умная ссылка /bluff/ [en]",
+   "status": "ok",
+   "detail": "0.4 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Умная ссылка /daily/ [en]",
+   "status": "ok",
+   "detail": "0.3 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Умная ссылка /kmg/ [en]",
+   "status": "ok",
+   "detail": "0.3 с"
+  },
+  {
+   "area": "Вид с телефона",
+   "name": "Умная ссылка /sayit/ [en]",
+   "status": "ok",
+   "detail": "0.3 с"
+  },
+  {
    "area": "Домены",
    "name": "SSL bfep.space",
    "status": "ok",
    "detail": "ещё 42 дн."
+  },
+  {
+   "area": "Домены",
+   "name": "Регистрация beezoo.space",
+   "status": "ok",
+   "detail": "до 05.11.2027, ещё 356 дн."
+  },
+  {
+   "area": "Домены",
+   "name": "Регистрация beezoospace.com",
+   "status": "ok",
+   "detail": "до 05.11.2027, ещё 356 дн."
+  },
+  {
+   "area": "Домены",
+   "name": "Регистрация bfep.space",
+   "status": "ok",
+   "detail": "до 18.09.2027, ещё 308 дн."
   },
   {
    "area": "Игры",
@@ -308,21 +422,33 @@
   },
   {
    "area": "Соцсети",
-   "name": "Instagram",
-   "status": "ok",
-   "detail": "429"
-  },
-  {
-   "area": "Соцсети",
    "name": "Telegram-канал",
    "status": "ok",
    "detail": "200"
   },
   {
    "area": "Соцсети",
-   "name": "TikTok (ссылка с сайта)",
+   "name": "YouTube",
    "status": "ok",
    "detail": "200"
+  },
+  {
+   "area": "Соцсети",
+   "name": "Ссылки на соцсети на странице / (7)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Соцсети",
+   "name": "Ссылки на соцсети на странице /press/ (7)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Соцсети",
+   "name": "Ссылки на соцсети на странице /support.html (0)",
+   "status": "ok",
+   "detail": ""
   }
  ]
 }

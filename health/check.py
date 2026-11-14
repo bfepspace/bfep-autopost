@@ -10,6 +10,7 @@ T = json.load(open(os.path.join(ROOT, "health", "targets.json"), encoding="utf-8
 NOW = datetime.datetime.now(datetime.timezone.utc)
 UA = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) bfep-health"}
 R = []  # {area, name, status: ok|warn|fail, detail}
+def ts(s): return datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
 
 def add(area, name, status, detail=""):
     R.append({"area": area, "name": name, "status": status, "detail": str(detail)[:300]})
@@ -105,6 +106,25 @@ for l, u in sorted(forms.items()):
 if forms and b"isAjax" not in wl and b"no-cors" in wl:
     add("Лист ожидания", "Ошибки отправки видны посетителю", "warn", "отправка no-cors: при сбое Brevo человек всё равно видит «Готово»")
 
+# 3б. Ссылки на соцсети с сайта ведут на текущие ники (IG/FB отвечают 200 и на чужой/пустой профиль — поэтому сверка со списком)
+SH = {k: v for k, v in T.get("social_handles", {}).items() if not k.startswith("_")}
+for pg in T.get("social_pages", ["/"]):
+    c, _, html = fetch("https://bfep.space" + pg, body=True)
+    if c != 200: continue
+    found = set(re.findall(rb'href="https?://(?:www\.|m\.)?(instagram\.com|threads\.(?:com|net)|youtube\.com|facebook\.com|t\.me|x\.com|twitter\.com|tiktok\.com)/([^"/?#]+)', html))
+    bad = []
+    for dom, h in found:
+        dom, h = dom.decode(), h.decode()
+        rule = SH.get(dom)
+        if not rule: continue
+        okh = [x.lower() for x in rule.get("ok", [])]
+        tmp = {k.lower(): v for k, v in rule.get("also_until", {}).items()}
+        if h.lower() in okh: continue
+        if h.lower() in tmp and NOW.date().isoformat() < tmp[h.lower()]: continue
+        bad.append(f"{dom}/{h}")
+    add("Соцсети", f"Ссылки на соцсети на странице {pg} ({len(found)})", "fail" if bad else "ok",
+        ("ведут не туда: " + ", ".join(sorted(bad))) if bad else "")
+
 # 4. SSL-сертификаты
 for d in T["ssl_domains"]:
     try:
@@ -115,8 +135,19 @@ for d in T["ssl_domains"]:
     except Exception as e:
         add("Домены", f"SSL {d}", "fail", e)
 
+# 4б. Срок регистрации доменов (RDAP): предупреждение за 45 дней, ❌ за 14
+for d in T.get("domains", []):
+    try:
+        req = urllib.request.Request("https://rdap.org/domain/" + d, headers={"Accept": "application/rdap+json", **UA})
+        j = json.load(urllib.request.urlopen(req, timeout=30))
+        exp = [e["eventDate"] for e in j.get("events", []) if e.get("eventAction") == "expiration"]
+        days = (ts(exp[0]) - NOW).days if exp else None
+        add("Домены", f"Регистрация {d}", "warn" if days is None else "ok" if days > 45 else "warn" if days > 14 else "fail",
+            "срок не найден" if days is None else f"до {ts(exp[0]):%d.%m.%Y}, ещё {days} дн.")
+    except Exception as e:
+        add("Домены", f"Регистрация {d}", "warn", e)
+
 # 5. Очереди автопостинга: просрочки, пропуски, файлы и ссылки на ближайшие 14 дней
-def ts(s): return datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
 for q in T["queues"]:
     fp = os.path.join(ROOT, q["file"])
     if not os.path.exists(fp): continue
@@ -167,13 +198,14 @@ if tok and repo:
     try:
         H = {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}
         done_runs = json.load(urllib.request.urlopen(urllib.request.Request(
-            f"https://api.github.com/repos/{repo}/actions/workflows/autopost.yml/runs?status=completed&per_page=3", headers=H), timeout=30))["workflow_runs"]
-        logs = ""
-        for r in done_runs[:2]:
+            f"https://api.github.com/repos/{repo}/actions/workflows/autopost.yml/runs?status=completed&per_page=10", headers=H), timeout=30))["workflow_runs"]
+        logs = ""; errs = []
+        for r in [r for r in done_runs if r.get("conclusion") in ("success", "failure")][:2]:
             jobs = json.load(urllib.request.urlopen(urllib.request.Request(r["jobs_url"], headers=H), timeout=30))["jobs"]
             for j in jobs:
-                try: logs += urllib.request.urlopen(urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/jobs/{j['id']}/logs", headers=H), timeout=60).read().decode(errors="replace")
-                except Exception: pass
+                lp = subprocess.run(["gh", "api", "--allow-escape-sequences", f"repos/{repo}/actions/jobs/{j['id']}/logs"], capture_output=True, text=True, timeout=120)
+                logs += lp.stdout
+                if not lp.stdout: errs.append((lp.stderr or str(lp.returncode))[:120])
         tb = re.findall(r"File \"[^\"]*?(\w+_post\.py|post\.py|bot\.py)\"", logs)
         crashes = {}
         for f in tb: crashes[f] = crashes.get(f, 0) + 1
@@ -183,7 +215,7 @@ if tok and repo:
             add("Автопостинг", "Скрипты публикации не падают", "fail" if crashes else "ok", ", ".join(f"{k}: {v} раз" for k, v in crashes.items()))
             add("Автопостинг", "Нет повторных публикаций", "fail" if dups else "ok", ", ".join(dups[:10]))
         else:
-            add("Автопостинг", "Журналы робота прочитаны", "warn", "журналы последних запусков недоступны")
+            add("Автопостинг", "Журналы робота прочитаны", "warn", "журналы последних запусков недоступны: " + "; ".join(errs[:2]))
     except Exception as e:
         add("Автопостинг", "Журналы робота прочитаны", "warn", e)
 if os.environ.get("TG_BOT_TOKEN"):
@@ -196,6 +228,24 @@ if os.environ.get("ONEUP_API_KEY"):
     p = subprocess.run([sys.executable, os.path.join(ROOT, "oneup_post.py"), "--check"], cwd=ROOT, capture_output=True, text=True, timeout=120)
     exp = "True" in re.sub(r"Категории.*", "", p.stdout, flags=re.S) or p.returncode
     add("Ключи", "OneUp (Snapchat)", "fail" if exp else "ok", "аккаунт отключён или ключ не принят" if exp else "")
+
+# 7. Вид сайта с телефона (health/ui.js, если запускался в этом прогоне)
+uip = os.path.join(ROOT, "health", "ui.json")
+if os.path.exists(uip) and NOW.timestamp() - os.path.getmtime(uip) < 3600:
+    for u in json.load(open(uip, encoding="utf-8")):
+        nm = f"{u['name']} [{u['lang']}]"
+        probs, warns = [], []
+        if u["errors"]: probs.append("ошибки JS: " + "; ".join(u["errors"][:2]))
+        if u["empty"]: probs.append("пустая страница")
+        if u["bad"]: probs.append("не грузится: " + ", ".join(u["bad"][:3]))
+        if u["overflow"] > 2: warns.append(f"страница шире экрана на {u['overflow']} px (едет вбок)")
+        if u["loadMs"] > 8000: warns.append(f"грузится {u['loadMs']/1000:.1f} с")
+        if u.get("waitlistVisible") is False: probs.append("формы записи нет на странице")
+        elif u.get("waitlistScreens") is not None and u["waitlistScreens"] > 2.5: warns.append(f"форма записи только на {u['waitlistScreens']}-м экране")
+        if u["oldBrand"]: warns.append(f"старое название «{u['oldBrand']}» на странице")
+        add("Вид с телефона", nm, "fail" if probs else "warn" if warns else "ok", "; ".join(probs + warns) or f"{u['loadMs']/1000:.1f} с")
+elif os.environ.get("GITHUB_ACTIONS"):
+    add("Вид с телефона", "Проверка браузером", "warn", "health/ui.json не создан в этом прогоне")
 
 # Итог
 order = {"fail": 0, "warn": 1, "ok": 2}
