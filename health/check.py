@@ -172,7 +172,7 @@ if tok and repo:
         for r in [r for r in done_runs if r.get("conclusion") in ("success", "failure")][:2]:
             jobs = json.load(urllib.request.urlopen(urllib.request.Request(r["jobs_url"], headers=H), timeout=30))["jobs"]
             for j in jobs:
-                lp = subprocess.run(["gh", "api", f"repos/{repo}/actions/jobs/{j['id']}/logs"], capture_output=True, text=True, timeout=120)
+                lp = subprocess.run(["gh", "api", "--allow-escape-sequences", f"repos/{repo}/actions/jobs/{j['id']}/logs"], capture_output=True, text=True, timeout=120)
                 logs += lp.stdout
                 if not lp.stdout: errs.append((lp.stderr or str(lp.returncode))[:120])
         tb = re.findall(r"File \"[^\"]*?(\w+_post\.py|post\.py|bot\.py)\"", logs)
