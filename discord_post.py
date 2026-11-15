@@ -1,5 +1,6 @@
 """Публикует в Discord-канал BEEZOO всё, чему по discord.json уже пора (вебхук: секрет DISCORD_WEBHOOK_URL).
-Пункт с "hold": true не публикуется (ждёт OK Аркадия на сетку). Видео скачивается по "media" и прикрепляется файлом."""
+Пункт с "hold": true не публикуется (ждёт OK Аркадия на сетку). Видео скачивается по "media" и прикрепляется файлом.
+Пункт с "poll" публикуется как опрос Discord (итоги собирает poll_results.py)."""
 import datetime, json, os, subprocess, sys, tempfile
 
 HOOK = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
@@ -12,7 +13,12 @@ schedule = json.load(open("discord.json", encoding="utf-8")) if os.path.exists("
 posted = json.load(open("posted_discord.json", encoding="utf-8")) if os.path.exists("posted_discord.json") else {}
 
 def send(item):
-    payload = json.dumps({"content": item["text"], "username": "BEEZOO Space"}, ensure_ascii=False)
+    body = {"content": item["text"], "username": "BEEZOO Space"}
+    if item.get("poll"):  # опрос Discord: {"question": "...", "options": [...], "hours": 48}
+        p = item["poll"]
+        body["poll"] = {"question": {"text": p["question"]}, "answers": [{"poll_media": {"text": o}} for o in p["options"]],
+                        "duration": p.get("hours", 48), "allow_multiselect": bool(p.get("multiple"))}
+    payload = json.dumps(body, ensure_ascii=False)
     args = ["curl", "-sS", "-o", "/dev/stdout", "-w", "\n%{http_code}", f"{HOOK}?wait=true", "-F", f"payload_json={payload}"]
     if item.get("media"):
         path = os.path.join(tempfile.gettempdir(), os.path.basename(item["media"]))
