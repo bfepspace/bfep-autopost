@@ -1,0 +1,40 @@
+name: pr-automerge
+# Аркадий 15.11.2026: PR робота публикаций сливаются сами, если проверка прошла.
+# Сливается: PR из ЭТОГО репозитория (не форк), не черновик (draft), без метки no-automerge.
+# PR, который меняет .github/ (сами роботы и эта проверка), всегда ждёт ручного Merge.
+# Чтобы PR подождал ручного OK — открыть его как Draft или поставить метку no-automerge.
+# Проверка — .github/scripts/check_pr.py (JSON, Python, id, время, файлы роликов).
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, labeled, unlabeled]
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: pr-automerge-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  check-and-merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Проверка расписаний и кода
+        run: python3 .github/scripts/check_pr.py
+      - name: Merge
+        if: >-
+          github.event.pull_request.head.repo.full_name == github.repository &&
+          !github.event.pull_request.draft &&
+          !contains(github.event.pull_request.labels.*.name, 'no-automerge')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh pr diff ${{ github.event.pull_request.number }} --name-only -R ${{ github.repository }} | grep -q '^\.github/'; then
+            echo "PR меняет .github/ — ждёт ручного Merge"; exit 0
+          fi
+          for i in 1 2 3 4 5; do
+            gh pr merge ${{ github.event.pull_request.number }} --merge -R ${{ github.repository }} && exit 0
+            sleep 20  # робот мог только что запушить в main — подождать и повторить
+            gh pr update-branch ${{ github.event.pull_request.number }} -R ${{ github.repository }} || true
+          done
+          exit 1
