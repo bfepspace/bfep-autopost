@@ -1,0 +1,31 @@
+name: site-daily
+# Ежедневная проверка сайта глазами игрока с телефона: 6 языков × главная, 5 игр /play/, приложение /app/.
+# 06:07 Дубая (02:07 UTC); в 07:17 Дубая плановая задача Claude читает health/site-daily.md и передаёт ошибки.
+# Ничего не публикует и не отправляет в Brevo (отправка формы перехватывается в браузере).
+on:
+  schedule:
+    - cron: "7 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: site-daily
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Браузер
+        run: |
+          npm i --no-save --silent playwright@1.48.2
+          npx playwright install --with-deps chromium > /dev/null
+      - name: Пройти сайт на 6 языках
+        run: node health/site-daily.js
+      - name: Сохранить отчёт
+        if: always()
+        run: |
+          git config user.name "bfep-health"
+          git config user.email "autopost@bfep.space"
+          git add health/site-daily.json health/site-daily.md 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "site-daily $(date -u +%FT%TZ)" && for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done)
