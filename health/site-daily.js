@@ -131,7 +131,18 @@ async function checkGame(b, wl, g, L) {
     rec.notes.push(`экраны: ${scr.join(' → ') || '—'}; звуков: ${snd}`);
     const ban = p.locator('#bfepGet');
     await ban.waitFor({ timeout: 4000 }).catch(() => {});
-    if (!(await ban.count())) rec.fail.push(`Игра ${g}: на итогах нет баннера «подарок первым 150»`);
+    // итоги открыты роботом посреди раунда: таймер игры мог сразу переключить экран и убрать баннер — открыть итоги ещё раз
+    for (let k = 0; k < 2 && !(await ban.count()); k++) {
+      const last = await p.evaluate(() => (window.__scr || []).slice(-1)[0]);
+      if (last === 's-results' || last === 's-done') break;
+      rec.notes.push(`после итогов игра сама ушла на ${last} — итоги открыты повторно`);
+      await p.evaluate(() => show('s-results')).catch(() => {});
+      await ban.waitFor({ timeout: 4000 }).catch(() => {});
+    }
+    if (!(await ban.count())) {
+      const why = await p.evaluate(() => ({ last: (window.__scr || []).slice(-1)[0], off: !!localStorage.getItem('bfep-banner-off'), wl: !!localStorage.getItem('bfep-wl-done') })).catch(() => ({}));
+      rec.fail.push(`Игра ${g}: на итогах нет баннера «подарок первым 150» (экран сейчас ${why.last}, баннер скрыт кнопкой ✕: ${why.off ? 'да' : 'нет'}, уже в листе: ${why.wl ? 'да' : 'нет'})`);
+    }
     else {
       const bt = await ban.innerText();
       if (!bt.includes(BANNER[L])) rec.fail.push(`Игра ${g}: баннер не на языке ${L.toUpperCase()} («${bt.slice(0, 60)}»)`);
@@ -200,4 +211,5 @@ function limit(pr, part, lang, secs = 150) {
   md.push('## Подробно'); for (const r of out) md.push(`- ${r.fail.length ? '❌' : '✅'} ${r.part} ${r.lang.toUpperCase()}${r.notes.length ? ' — ' + r.notes.join('; ') : ''}`);
   fs.writeFileSync(__dirname + '/site-daily.md', md.join('\n') + '\n');
   console.log(md.slice(0, 3).join('\n'), `(${res.secs} с)`);
+  process.exit(0);   // таймеры limit() не держат процесс
 })();
