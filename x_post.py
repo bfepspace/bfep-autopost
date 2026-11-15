@@ -84,6 +84,9 @@ if "--check" in sys.argv:  # проверка ключей и загрузки �
 MEDIA = json.load(open("x_media.json")) if os.path.exists("x_media.json") else {}
 def send(item):
     body = {"text": item["text"]}
+    if item.get("poll"):  # опрос X: до 4 вариантов по 25 символов, без видео; итоги собирает poll_results.py
+        body["poll"] = {"options": item["poll"]["options"], "duration_minutes": item["poll"].get("hours", 48) * 60}
+        return call("POST", "/tweets", body=json.dumps(body, ensure_ascii=False).encode())["data"]["id"]
     if item.get("media"):
         m = MEDIA.get(item["id"])
         fresh = m and datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(m["at"]) < datetime.timedelta(hours=20)
