@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T21:04:41+00:00",
+ "checked_at": "2026-11-16T00:18:34+00:00",
  "counts": {
   "fail": 0,
   "warn": 5,
@@ -112,7 +112,7 @@
    "area": "Автопостинг",
    "name": "Робот публикаций работает",
    "status": "ok",
-   "detail": "последний запуск 15.11 19:38 UTC, сбоев из 5: 0"
+   "detail": "последний запуск 15.11 22:00 UTC, сбоев из 5: 0"
   },
   {
    "area": "Автопостинг",
@@ -130,67 +130,67 @@
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "1.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [ru]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.5 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bfep/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bluff/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/daily/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/kmg/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.9 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/sayit/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Приложение в браузере [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "1.0 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /bfep/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.8 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /bluff/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /daily/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
@@ -202,7 +202,7 @@
    "area": "Вид с телефона",
    "name": "Умная ссылка /sayit/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Домены",
