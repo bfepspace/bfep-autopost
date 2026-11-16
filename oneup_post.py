@@ -64,15 +64,16 @@ if check:
     print("Аккаунты:", [{k: v for k, v in a.items() if "token" not in k.lower()} for a in acc.get("data", [])])
     cats = get("listcategory")
     print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
-    m = json.load(open("snap.json", encoding="utf-8"))[-1]["media"]
-    o, r_, ref, path = m[len("https://raw.githubusercontent.com/"):].split("/", 3)
-    for u in [vurl(m), f"https://rawcdn.githack.com/{o}/{r_}/{ref}/{path}", f"https://cdn.statically.io/gh/{o}/{r_}/{ref}/{path}",
-              f"https://cdn.jsdelivr.net/gh/{o}/{r_}@{ref}/README.md"]:
+    base = "bfepspace/bfep-autopost"
+    for u in [f"https://cdn.jsdelivr.net/gh/{base}@main/media/beezoo-heroes/BEEZOO-meet-T-en-v2.1.mp4",
+              f"https://fastly.jsdelivr.net/gh/{base}@8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-T-en-v2.1.mp4",
+              f"https://gcore.jsdelivr.net/gh/{base}@8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-T-en-v2.1.mp4",
+              f"https://cdn.jsdelivr.net/gh/{base}@8cb53249cb0f7a89ad390d66ff65327db2929b11/media/beezoo-heroes/BEEZOO-meet-T-en-v2.1.mp4"]:
         try:
-            with urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "Mozilla/5.0"}), timeout=60) as r:
-                print("HEAD", r.status, r.headers.get("Content-Type"), r.headers.get("Content-Length"), u)
-        except Exception as e:
-            print("HEAD ошибка", e, u)
+            with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0", "Range": "bytes=0-100"}), timeout=60) as r:
+                print("GET", r.status, r.headers.get("Content-Type"), u)
+        except urllib.error.HTTPError as e:
+            print("GET ошибка", e.code, e.read()[:200], u)
     if "--draft" in sys.argv:  # пробный черновик (не публикуется)
         it = json.load(open("snap.json", encoding="utf-8"))[0]
         when = (now + datetime.timedelta(days=1)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
