@@ -662,5 +662,37 @@
    ],
    "hours": 48
   }
+ },
+ {
+  "id": "x-meet-D-re",
+  "at_utc": "2026-11-22T07:00:00Z",
+  "dubai": "22.11 11:00",
+  "hold": false,
+  "text": "Meet Beezoo D 👋 The strong dad, 38. Competes with everyone. Even the kettle.\nHero 1 of 19. Which Beezoo are you? 👇\n#BeezooSpace #PartyGames",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-D-en-v2.0.mp4"
+ },
+ {
+  "id": "x-meet-A-re",
+  "at_utc": "2026-11-23T07:00:00Z",
+  "dubai": "23.11 11:00",
+  "hold": false,
+  "text": "Meet Beezoo A 👋 The astronaut, 27. Dreams of the stars. Even at noon.\nHero 2 of 19. Which Beezoo are you? 👇\n#BeezooSpace #PartyGames",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-meet-A-en-v2.0.mp4"
+ },
+ {
+  "id": "x-R107-re",
+  "at_utc": "2026-11-24T07:00:00Z",
+  "dubai": "24.11 11:00",
+  "hold": false,
+  "text": "Phone died mid-game? Grab a tablet or open the laptop, the game goes on 📱💻 The whole evening on any screen.\n#BeezooSpace #PartyGames",
+  "media": "https://raw.githubusercontent.com/bfepspace/bfep-autopost/d99a2fecee3eb60898809a80f19cf014dd995c2d/media/beezoo-heroes/BEEZOO-R107-any-device-en-v1.0.mp4"
+ },
+ {
+  "id": "x-vampire-rep-re",
+  "at_utc": "2026-11-25T07:00:00Z",
+  "dubai": "25.11 11:00",
+  "hold": false,
+  "text": "One of us is secretly a vampire… and someone just turned down the garlic bread 🧛 Who in your crew won't eat garlic?\n#BeezooSpace #PartyGames",
+  "media": "https://static.metricool.com/planner/202611/6506196-file-3949110559434337520.mp4"
  }
 ]
