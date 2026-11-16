@@ -12,13 +12,27 @@
   },
   {
    "url": "https://beezoo.space/",
-   "kind": "optional",
-   "name": "https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет)"
+   "kind": "page",
+   "must": "BEEZOO",
+   "name": "https://beezoo.space/ → bfep.space (переадресация 301 в Cloudflare с 16.11)"
+  },
+  {
+   "url": "https://www.beezoo.space/",
+   "kind": "page",
+   "must": "BEEZOO",
+   "name": "https://www.beezoo.space/ → bfep.space (переадресация 301 в Cloudflare с 16.11)"
   },
   {
    "url": "https://beezoospace.com/",
-   "kind": "optional",
-   "name": "https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет)"
+   "kind": "page",
+   "must": "BEEZOO",
+   "name": "https://beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)"
+  },
+  {
+   "url": "https://www.beezoospace.com/",
+   "kind": "page",
+   "must": "BEEZOO",
+   "name": "https://www.beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)"
   },
   {
    "url": "https://bfep.space/app/",
