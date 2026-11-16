@@ -1,10 +1,10 @@
 {
- "at": "2026-11-15T08:29:54.044Z",
+ "at": "2026-11-16T03:41:53.523Z",
  "base": "https://bfep.space",
- "secs": 1269,
+ "secs": 1280,
  "checks": 42,
- "failed": 1,
- "ok": false,
+ "failed": 0,
+ "ok": true,
  "results": [
   {
    "part": "Главная",
@@ -28,7 +28,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-reveal, итоги открыты вручную",
-    "экраны: s-setup → s-theme → s-board → s-hand → s-play → s-reveal; звуков: 667"
+    "экраны: s-setup → s-theme → s-hand → s-play → s-reveal; звуков: 730"
    ]
   },
   {
@@ -41,8 +41,8 @@
     "en"
    ],
    "notes": [
-    "автопрохождение дошло до s-round, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-settings → s-board → s-hand → s-qr → s-card → s-talk → s-vote → s-verdict → s-round; звуков: 648"
+    "автопрохождение дошло до s-settings, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-board → s-hand → s-card → s-settings; звуков: 681"
    ]
   },
   {
@@ -69,8 +69,8 @@
     "en"
    ],
    "notes": [
-    "автопрохождение дошло до s-home, итоги открыты вручную",
-    "экраны: s-setup → s-card → s-home; звуков: 893"
+    "автопрохождение дошло до s-noms, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-card → s-noms; звуков: 819"
    ]
   },
   {
@@ -84,7 +84,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-pick, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-kcard → s-noms → s-hand → s-pick; звуков: 700"
+    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick; звуков: 624"
    ]
   },
   {
@@ -119,216 +119,33 @@
     "de"
    ],
    "notes": [
-    "автопрохождение дошло до s-settings, итоги открыты вручную",
-    "экраны: s-setup → s-hand → s-play → s-reveal → s-theme → s-board → s-settings; звуков: 754"
-   ]
-  },
-  {
-   "part": "/play/bluff/",
-   "lang": "de",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "de"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-board, итоги открыты вручную",
-    "экраны: s-setup → s-hand → s-card → s-home → s-board; звуков: 679"
-   ]
-  },
-  {
-   "part": "/play/daily/",
-   "lang": "de",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "de"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-play, итоги открыты вручную",
-    "экраны: s-stats → s-home → s-play; звуков: 437"
-   ]
-  },
-  {
-   "part": "/play/sayit/",
-   "lang": "de",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "de"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-home, итоги открыты вручную",
-    "экраны: s-setup → s-card → s-noms → s-home; звуков: 702"
-   ]
-  },
-  {
-   "part": "/play/kmg/",
-   "lang": "de",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "de"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-noms, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick → s-noms; звуков: 725"
-   ]
-  },
-  {
-   "part": "/app/ (BEEZOO Space)",
-   "lang": "de",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [],
-   "notes": [
-    "открыто карточек: 17"
-   ]
-  },
-  {
-   "part": "Главная",
-   "lang": "es",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "es"
-   ],
-   "notes": []
-  },
-  {
-   "part": "/play/bfep/",
-   "lang": "es",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "es"
-   ],
-   "notes": [
     "автопрохождение дошло до s-reveal, итоги открыты вручную",
-    "экраны: s-setup → s-board → s-theme → s-hand → s-play → s-reveal; звуков: 669"
+    "экраны: s-setup → s-theme → s-settings → s-board → s-hand → s-play → s-reveal; звуков: 698",
+    "после итогов игра сама ушла на s-reveal — итоги открыты повторно"
    ]
   },
   {
    "part": "/play/bluff/",
-   "lang": "es",
+   "lang": "de",
    "errors": [],
    "bad": [],
    "fail": [],
    "sent": [
-    "es"
+    "de"
    ],
    "notes": [
-    "автопрохождение дошло до s-vote, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-board → s-hand → s-card → s-qr → s-talk → s-vote; звуков: 697"
+    "автопрохождение дошло до s-card, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-hand → s-card; звуков: 751"
    ]
   },
   {
    "part": "/play/daily/",
-   "lang": "es",
+   "lang": "de",
    "errors": [],
    "bad": [],
    "fail": [],
    "sent": [
-    "es"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-play, итоги открыты вручную",
-    "экраны: s-stats → s-home → s-play; звуков: 443"
-   ]
-  },
-  {
-   "part": "/play/sayit/",
-   "lang": "es",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "es"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-noms, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-card → s-noms; звуков: 771"
-   ]
-  },
-  {
-   "part": "/play/kmg/",
-   "lang": "es",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "es"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-settings, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick → s-settings; звуков: 637"
-   ]
-  },
-  {
-   "part": "/app/ (BEEZOO Space)",
-   "lang": "es",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [],
-   "notes": [
-    "открыто карточек: 17"
-   ]
-  },
-  {
-   "part": "Главная",
-   "lang": "ru",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "ru"
-   ],
-   "notes": []
-  },
-  {
-   "part": "/play/bfep/",
-   "lang": "ru",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "ru"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-reveal, итоги открыты вручную",
-    "экраны: s-setup → s-theme → s-hand → s-play → s-reveal; звуков: 776"
-   ]
-  },
-  {
-   "part": "/play/bluff/",
-   "lang": "ru",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "ru"
-   ],
-   "notes": [
-    "автопрохождение дошло до s-qr, итоги открыты вручную",
-    "экраны: s-setup → s-hand → s-card → s-home → s-qr; звуков: 703"
-   ]
-  },
-  {
-   "part": "/play/daily/",
-   "lang": "ru",
-   "errors": [],
-   "bad": [],
-   "fail": [],
-   "sent": [
-    "ru"
+    "de"
    ],
    "notes": [
     "автопрохождение дошло до s-play, итоги открыты вручную",
@@ -337,6 +154,148 @@
   },
   {
    "part": "/play/sayit/",
+   "lang": "de",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "de"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-noms, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-card → s-noms; звуков: 736"
+   ]
+  },
+  {
+   "part": "/play/kmg/",
+   "lang": "de",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "de"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-pick, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick; звуков: 586"
+   ]
+  },
+  {
+   "part": "/app/ (BEEZOO Space)",
+   "lang": "de",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [],
+   "notes": [
+    "открыто карточек: 17"
+   ]
+  },
+  {
+   "part": "Главная",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "es"
+   ],
+   "notes": []
+  },
+  {
+   "part": "/play/bfep/",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "es"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-reveal, итоги открыты вручную",
+    "экраны: s-settings → s-theme → s-setup → s-hand → s-play → s-reveal; звуков: 211"
+   ]
+  },
+  {
+   "part": "/play/bluff/",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "es"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-settings, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-hand → s-card → s-board → s-settings; звуков: 730"
+   ]
+  },
+  {
+   "part": "/play/daily/",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "es"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-play, итоги открыты вручную",
+    "экраны: s-stats → s-home → s-play; звуков: 436"
+   ]
+  },
+  {
+   "part": "/play/sayit/",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "es"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-card, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-card; звуков: 665"
+   ]
+  },
+  {
+   "part": "/play/kmg/",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "es"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-pick, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick; звуков: 640"
+   ]
+  },
+  {
+   "part": "/app/ (BEEZOO Space)",
+   "lang": "es",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [],
+   "notes": [
+    "открыто карточек: 17"
+   ]
+  },
+  {
+   "part": "Главная",
+   "lang": "ru",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "ru"
+   ],
+   "notes": []
+  },
+  {
+   "part": "/play/bfep/",
    "lang": "ru",
    "errors": [],
    "bad": [],
@@ -345,8 +304,50 @@
     "ru"
    ],
    "notes": [
-    "автопрохождение дошло до s-noms, итоги открыты вручную",
-    "экраны: s-setup → s-card → s-home → s-noms; звуков: 903"
+    "автопрохождение дошло до s-reveal, итоги открыты вручную",
+    "экраны: s-setup → s-theme → s-hand → s-play → s-reveal; звуков: 778"
+   ]
+  },
+  {
+   "part": "/play/bluff/",
+   "lang": "ru",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "ru"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-home, итоги открыты вручную",
+    "экраны: s-setup → s-hand → s-qr → s-card → s-talk → s-vote → s-verdict → s-round → s-home; звуков: 696"
+   ]
+  },
+  {
+   "part": "/play/daily/",
+   "lang": "ru",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "ru"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-play, итоги открыты вручную",
+    "экраны: s-settings → s-home → s-play; звуков: 439"
+   ]
+  },
+  {
+   "part": "/play/sayit/",
+   "lang": "ru",
+   "errors": [],
+   "bad": [],
+   "fail": [],
+   "sent": [
+    "ru"
+   ],
+   "notes": [
+    "автопрохождение дошло до s-settings, итоги открыты вручную",
+    "экраны: s-setup → s-card → s-home → s-settings; звуков: 364"
    ]
   },
   {
@@ -360,7 +361,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-noms, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick → s-noms; звуков: 702"
+    "экраны: s-setup → s-kcard → s-hand → s-pick → s-home → s-settings → s-noms; звуков: 356"
    ]
   },
   {
@@ -390,13 +391,13 @@
    "lang": "fr",
    "errors": [],
    "bad": [],
-   "fail": [
-    "Игра bfep: на итогах нет баннера «подарок первым 150»"
+   "fail": [],
+   "sent": [
+    "fr"
    ],
-   "sent": [],
    "notes": [
     "автопрохождение дошло до s-reveal, итоги открыты вручную",
-    "экраны: s-setup → s-hand → s-play → s-theme → s-reveal; звуков: 765"
+    "экраны: s-setup → s-theme → s-hand → s-play → s-reveal; звуков: 751"
    ]
   },
   {
@@ -410,7 +411,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-card, итоги открыты вручную",
-    "экраны: s-setup → s-board → s-home → s-hand → s-card; звуков: 799"
+    "экраны: s-setup → s-board → s-home → s-hand → s-card; звуков: 681"
    ]
   },
   {
@@ -424,7 +425,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-play, итоги открыты вручную",
-    "экраны: s-play; звуков: 463"
+    "экраны: s-stats → s-home → s-settings → s-play; звуков: 180"
    ]
   },
   {
@@ -438,7 +439,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-noms, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-card → s-noms; звуков: 874"
+    "экраны: s-setup → s-home → s-settings → s-card → s-noms; звуков: 439"
    ]
   },
   {
@@ -452,7 +453,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-pick, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-settings → s-kcard → s-hand → s-pick; звуков: 646"
+    "экраны: s-setup → s-kcard → s-home → s-settings → s-hand → s-pick; звуков: 677"
    ]
   },
   {
@@ -487,8 +488,8 @@
     "zh"
    ],
    "notes": [
-    "автопрохождение дошло до s-reveal, итоги открыты вручную",
-    "экраны: s-setup → s-theme → s-hand → s-play → s-reveal; звуков: 688"
+    "автопрохождение дошло до s-settings, итоги открыты вручную",
+    "экраны: s-setup → s-board → s-theme → s-hand → s-play → s-reveal → s-settings; звуков: 740"
    ]
   },
   {
@@ -501,8 +502,8 @@
     "zh"
    ],
    "notes": [
-    "автопрохождение дошло до s-home, итоги открыты вручную",
-    "экраны: s-setup → s-hand → s-card → s-talk → s-vote → s-verdict → s-round → s-home; звуков: 732"
+    "автопрохождение дошло до s-round, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-hand → s-card → s-talk → s-vote → s-verdict → s-steal → s-round; звуков: 687"
    ]
   },
   {
@@ -530,7 +531,7 @@
    ],
    "notes": [
     "автопрохождение дошло до s-noms, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-card → s-noms; звуков: 887"
+    "экраны: s-setup → s-home → s-card → s-noms; звуков: 738"
    ]
   },
   {
@@ -543,8 +544,8 @@
     "zh"
    ],
    "notes": [
-    "автопрохождение дошло до s-pick, итоги открыты вручную",
-    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick; звуков: 611"
+    "автопрохождение дошло до s-settings, итоги открыты вручную",
+    "экраны: s-setup → s-home → s-kcard → s-hand → s-pick → s-settings; звуков: 634"
    ]
   },
   {
