@@ -9,7 +9,7 @@ RUN_FOR = int(sys.argv[1]) if len(sys.argv) > 1 else 300
 APP = "https://bfep.space/app/?s=tg-chat-"
 STATE_FILE = "bot_state.json"
 
-if not TOKEN or not CONFIG.get("interactive"):
+if not TOKEN:
     time.sleep(RUN_FOR); sys.exit(0)
 
 state = json.load(open(STATE_FILE, encoding="utf-8")) if os.path.exists(STATE_FILE) else {}
@@ -90,6 +90,13 @@ def on_channel_post(msg):
         api("sendMessage", chat_id=msg["chat"]["id"], reply_to_message_id=msg["message_id"],
             text=f"🏆 Лучшие отгадчики недели:\n{top() or 'пока никого — в понедельник новая неделя!'}\n\nПозови друзей в команду: /invite")
     else:
+        # защита от повторов (16.11 под одним постом ушло 15+ одинаковых вопросов): один комментарий на пост канала
+        key = str(msg.get("forward_from_message_id") or (msg.get("forward_origin") or {}).get("message_id") or msg["message_id"])
+        done = state.setdefault("commented", [])
+        if key in done:
+            print("повтор поста канала", key, "— комментарий не отправляю"); return
+        done.append(key); del done[:-200]
+        save()  # фиксируем до отправки: даже при сбое повторного комментария не будет
         q = random.choice(CONFIG.get("first_comments") or ["А у вас в компании так бывает? 👇"])
         api("sendMessage", chat_id=msg["chat"]["id"], reply_to_message_id=msg["message_id"], text=q)
 
@@ -183,17 +190,76 @@ def handle(upd):
         return on_command(msg, m.group(1).lower(), m.group(2))
     on_riddle_reply(msg)
 
+def save():
+    json.dump(state, open(STATE_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+def cleanup_dups():
+    """Разовая чистка 16.11: лишние первые комментарии бота под последним постом канала.
+    Свои сообщения узнаём так: editMessageReplyMarkup без изменений отвечает «not modified» только на сообщения бота.
+    Идём от самого нового сообщения чата вниз, пока сообщения — бота; самое раннее из них оставляем, остальные удаляем."""
+    task = CONFIG.get("tg_cleanup")
+    if not task or state.get("cleanup_done") == task:
+        return
+    log = state.setdefault("cleanup_log", [])
+    chat = (api("getChat", chat_id=CHANNEL) or {}).get("linked_chat_id")
+    if not chat:
+        log.append("нет linked_chat_id"); return
+    def probe(mid):
+        args = ["curl", "-sS", "--max-time", "20", f"https://api.telegram.org/bot{TOKEN}/editMessageReplyMarkup",
+                "--form-string", f"chat_id={chat}", "--form-string", f"message_id={mid}"]
+        r = json.loads(subprocess.run(args, capture_output=True, text=True).stdout or "{}")
+        d = (r.get("description") or "").lower()
+        if r.get("ok"):
+            return "own"  # не должно случаться: разметки не было
+        if "not modified" in d:
+            return "own"
+        if "not found" in d:
+            return "none"
+        return "foreign"
+    base = max([r["thread"] for r in state["riddles"].values()] or [1])
+    top, miss, mid = base, 0, base
+    while miss < 40 and mid < base + 2000:
+        mid += 1
+        if probe(mid) == "none":
+            miss += 1
+        else:
+            top, miss = mid, 0
+    run, mid = [], top
+    while mid > base:
+        k = probe(mid)
+        if k == "own":
+            run.append(mid)
+        elif k == "foreign":
+            break
+        mid -= 1
+    keep = min(run) if run else None
+    gone = []
+    for m in sorted(run)[1:][:60]:
+        if api("deleteMessage", chat_id=chat, message_id=m):
+            gone.append(m)
+    log.append({"at": datetime.datetime.utcnow().isoformat(), "chat": chat, "top": top, "stop_at": mid,
+                "kept": keep, "deleted": gone})
+    state["cleanup_done"] = task
+    save()
+
+cleanup_dups()
+if not CONFIG.get("interactive"):
+    save(); time.sleep(RUN_FOR); sys.exit(0)
+
 end = time.time() + RUN_FOR
 while time.time() < end:
     ups = api("getUpdates", offset=state["offset"], timeout=max(1, min(50, int(end - time.time()))),
               allowed_updates=["message", "chat_member", "poll_answer"]) or []
     for u in ups:
+        if u["update_id"] < state["offset"]:
+            continue  # уже обработан
         state["offset"] = u["update_id"] + 1
+        save()  # offset сохраняем сразу, до обработки
         try:
             handle(u)
         except Exception as e:
             print("ОШИБКА:", e)
     if ups:
-        json.dump(state, open(STATE_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        save()
     elif ups is None:
         time.sleep(10)  # например, у бота стоит webhook (409) — не долбим Telegram
