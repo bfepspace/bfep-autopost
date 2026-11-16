@@ -44,7 +44,7 @@ def post(ep, **p):
 
 if check:
     acc = get("listsocialaccounts")
-    print("Аккаунты:", [(a.get("social_network_type"), a.get("username"), a.get("is_expired")) for a in acc.get("data", [])])
+    print("Аккаунты:", [{k: v for k, v in a.items() if "token" not in k.lower()} for a in acc.get("data", [])])
     cats = get("listcategory")
     print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
     if "--draft" in sys.argv:  # пробный черновик (не публикуется)
