@@ -42,19 +42,6 @@ def post(ep, **p):
     req = urllib.request.Request(API + ep, data=urllib.parse.urlencode(p).encode(), method="POST", headers=UA)
     return call(req)
 
-if check:
-    acc = get("listsocialaccounts")
-    print("Аккаунты:", [{k: v for k, v in a.items() if "token" not in k.lower()} for a in acc.get("data", [])])
-    cats = get("listcategory")
-    print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
-    if "--draft" in sys.argv:  # пробный черновик (не публикуется)
-        it = json.load(open("snap.json", encoding="utf-8"))[0]
-        when = (now + datetime.timedelta(days=1)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
-        print("Черновик:", post("schedulevideopost", category_id=cats["data"][0]["id"], social_network_id="ALL",
-              scheduled_date_time=when, content=it["text"], video_url=vurl(it["media"]), title=it["text"][:90],
-              snapchat=json.dumps({"isSpotLight": True}), isDraftPost="true"))
-    sys.exit(0)
-
 NETS = [("snap.json", "posted_snap.json", "snap", "Snapchat"), ("bs.json", "posted_bs.json", "bluesky", "Bluesky")]
 _acc = None
 
@@ -71,6 +58,19 @@ def account_ids(kind):
         return "ALL"
     print("OneUp: не найден аккаунт", kind, [(a.get("social_network_type"), a.get("username")) for a in _acc])
     return None
+
+if check:
+    acc = get("listsocialaccounts")
+    print("Аккаунты:", [{k: v for k, v in a.items() if "token" not in k.lower()} for a in acc.get("data", [])])
+    cats = get("listcategory")
+    print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
+    if "--draft" in sys.argv:  # пробный черновик (не публикуется)
+        it = json.load(open("snap.json", encoding="utf-8"))[0]
+        when = (now + datetime.timedelta(days=1)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
+        print("Черновик:", post("schedulevideopost", category_id=cats["data"][0]["id"], social_network_id=account_ids("snap"),
+              scheduled_date_time=when, content=it["text"], video_url=vurl(it["media"]), title=it["text"][:90],
+              snapchat=json.dumps({"isSpotLight": True}), isDraftPost="true"))
+    sys.exit(0)
 
 cat_id = None
 for fname, pname, kind, label in NETS:
