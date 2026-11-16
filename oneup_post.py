@@ -24,13 +24,41 @@ def call(req):
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"HTTP {e.code}: {e.read().decode(errors='replace')[:300]}")
 
+SB_URL = os.environ.get("SUPABASE_URL", "https://ilpsfsrhfttjitewdtfk.supabase.co").rstrip("/")
+SB_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "").strip()
+BUCKET = "oneup-media"
+
 def vurl(u):
-    """raw.githubusercontent отдаёт octet-stream — OneUp его не принимает; jsDelivr отдаёт video/mp4."""
+    """OneUp не принимает raw.githubusercontent (octet-stream), а jsDelivr с 16.11 не отдаёт наши файлы.
+    Поэтому видео из репозитория кладём в публичную папку Supabase Storage (video/mp4) и отдаём её ссылку."""
     pre = "https://raw.githubusercontent.com/"
-    if u.startswith(pre):
-        owner, repo, ref, path = u[len(pre):].split("/", 3)
-        return f"https://cdn.jsdelivr.net/gh/{owner}/{repo}@{ref}/{path}"
-    return u
+    if not u.startswith(pre):
+        return u
+    if not SB_KEY:
+        raise RuntimeError("нет секрета SUPABASE_SERVICE_KEY — некуда выложить видео для OneUp")
+    path = u[len(pre):].split("/", 3)[3]
+    local = path if os.path.exists(path) else None
+    data = open(local, "rb").read() if local else urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=300).read()
+    name = path.replace("/", "_")
+    req = urllib.request.Request(f"{SB_URL}/storage/v1/object/{BUCKET}/{name}", data=data, method="POST",
+                                 headers={"Authorization": "Bearer " + SB_KEY, "apikey": SB_KEY,
+                                          "Content-Type": "video/mp4", "x-upsert": "true"})
+    call(req)
+    return f"{SB_URL}/storage/v1/object/public/{BUCKET}/{name}"
+
+def sb_cleanup(days=3):
+    """Удаляет из папки видео старше days дней (OneUp к этому времени уже опубликовал)."""
+    if not SB_KEY:
+        return
+    hdr = {"Authorization": "Bearer " + SB_KEY, "apikey": SB_KEY, "Content-Type": "application/json"}
+    lst = call(urllib.request.Request(f"{SB_URL}/storage/v1/object/list/{BUCKET}", method="POST", headers=hdr,
+                                      data=json.dumps({"prefix": "", "limit": 1000}).encode()))
+    old = [o["name"] for o in lst if o.get("created_at") and
+           datetime.datetime.fromisoformat(o["created_at"].replace("Z", "+00:00")) < now - datetime.timedelta(days=days)]
+    if old:
+        call(urllib.request.Request(f"{SB_URL}/storage/v1/object/{BUCKET}", method="DELETE", headers=hdr,
+                                    data=json.dumps({"prefixes": old}).encode()))
+        print("Supabase: удалено старых видео", len(old))
 
 def get(ep, **p):
     p["apiKey"] = KEY
@@ -112,3 +140,8 @@ for fname, pname, kind, label in NETS:
         print(label + ":", item["id"], r.get("message"))
     if changed:
         json.dump(posted, open(pname, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+if not dry and now.minute < 6:
+    try:
+        sb_cleanup()
+    except Exception as e:
+        print("Supabase cleanup ошибка", e)

@@ -14,4 +14,5 @@ jobs:
       - name: Проверка ключа OneUp (без публикации)
         env:
           ONEUP_API_KEY: ${{ secrets.NEUP_API_KEY }}  # секрет назван NEUP_API_KEY
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}  # загрузка видео для OneUp в Supabase Storage
         run: python3 oneup_post.py --check ${{ inputs.draft && '--draft' || '' }}
