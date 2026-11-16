@@ -136,13 +136,15 @@
   },
   "threads.com": {
    "ok": [
-    "@beezoospace"
-   ]
+    "@bestfunevening"
+   ],
+   "_why": "16.11: ник в Threads ещё не сменён на @beezoospace; после смены — поменять здесь"
   },
   "threads.net": {
    "ok": [
-    "@beezoospace"
-   ]
+    "@bestfunevening"
+   ],
+   "_why": "16.11: ник в Threads ещё не сменён на @beezoospace; после смены — поменять здесь"
   },
   "youtube.com": {
    "ok": [
@@ -176,6 +178,11 @@
    "also_until": {
     "@bestfunevening": "2026-11-18"
    }
+  },
+  "bsky.app/profile": {
+   "ok": [
+    "beezoospace.bsky.social"
+   ]
   }
  },
  "social_pages": [
