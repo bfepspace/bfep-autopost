@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-16T17:49:15+00:00",
+ "checked_at": "2026-11-16T17:53:20+00:00",
  "counts": {
-  "fail": 3,
+  "fail": 1,
   "warn": 3,
-  "ok": 70
+  "ok": 72
  },
  "results": [
   {
@@ -11,18 +11,6 @@
    "name": "Snapchat (OneUp): всё вышло вовремя",
    "status": "fail",
    "detail": "не вышли: sn-meet-T"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
-   "status": "fail",
-   "detail": "522 "
-  },
-  {
-   "area": "Сайт",
-   "name": "https://www.beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
-   "status": "fail",
-   "detail": "522 "
   },
   {
    "area": "Автопостинг",
@@ -130,79 +118,79 @@
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [en]",
    "status": "ok",
-   "detail": "1.2 с"
+   "detail": "2.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [ru]",
    "status": "ok",
-   "detail": "1.2 с"
+   "detail": "1.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bfep/ [en]",
    "status": "ok",
-   "detail": "1.5 с"
+   "detail": "1.8 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bluff/ [en]",
    "status": "ok",
-   "detail": "1.0 с"
+   "detail": "1.7 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/daily/ [en]",
    "status": "ok",
-   "detail": "1.3 с"
+   "detail": "1.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/kmg/ [en]",
    "status": "ok",
-   "detail": "1.2 с"
+   "detail": "1.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/sayit/ [en]",
    "status": "ok",
-   "detail": "1.3 с"
+   "detail": "2.2 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Приложение в браузере [en]",
    "status": "ok",
-   "detail": "1.4 с"
+   "detail": "1.5 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /bfep/ [en]",
    "status": "ok",
-   "detail": "1.0 с"
+   "detail": "6.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /bluff/ [en]",
    "status": "ok",
-   "detail": "1.0 с"
+   "detail": "1.8 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /daily/ [en]",
    "status": "ok",
-   "detail": "0.9 с"
+   "detail": "1.1 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /kmg/ [en]",
    "status": "ok",
-   "detail": "1.0 с"
+   "detail": "1.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /sayit/ [en]",
    "status": "ok",
-   "detail": "0.9 с"
+   "detail": "2.5 с"
   },
   {
    "area": "Домены",
@@ -350,6 +338,12 @@
   },
   {
    "area": "Сайт",
+   "name": "https://beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
+   "status": "ok",
+   "detail": "https://bfep.space/?s=web-dom-beezoospace"
+  },
+  {
+   "area": "Сайт",
    "name": "https://bfep.space/",
    "status": "ok",
    "detail": "200"
@@ -395,6 +389,12 @@
    "name": "https://www.beezoo.space/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
    "status": "ok",
    "detail": "https://bfep.space/?s=web-dom-beezoo"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://www.beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
+   "status": "ok",
+   "detail": "https://bfep.space/?s=web-dom-beezoospace"
   },
   {
    "area": "Сайт",
