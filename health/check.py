@@ -111,7 +111,7 @@ SH = {k: v for k, v in T.get("social_handles", {}).items() if not k.startswith("
 for pg in T.get("social_pages", ["/"]):
     c, _, html = fetch("https://bfep.space" + pg, body=True)
     if c != 200: continue
-    found = set(re.findall(rb'href="https?://(?:www\.|m\.)?(instagram\.com|threads\.(?:com|net)|youtube\.com|facebook\.com|t\.me|x\.com|twitter\.com|tiktok\.com)/([^"/?#]+)', html))
+    found = set(re.findall(rb'href="https?://(?:www\.|m\.)?(instagram\.com|threads\.(?:com|net)|bsky\.app/profile|youtube\.com|facebook\.com|t\.me|x\.com|twitter\.com|tiktok\.com)/([^"/?#]+)', html))
     bad = []
     for dom, h in found:
         dom, h = dom.decode(), h.decode()
