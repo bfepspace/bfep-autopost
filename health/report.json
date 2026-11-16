@@ -1,16 +1,58 @@
 {
- "checked_at": "2026-11-16T00:18:34+00:00",
+ "checked_at": "2026-11-16T16:17:40+00:00",
  "counts": {
-  "fail": 0,
-  "warn": 5,
-  "ok": 69
+  "fail": 7,
+  "warn": 3,
+  "ok": 66
  },
  "results": [
   {
    "area": "Автопостинг",
+   "name": "Discord: файлы на 14 дней (30 постов)",
+   "status": "fail",
+   "detail": "dc-ser-W1-01"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "Snapchat (OneUp): файлы на 14 дней (29 постов)",
+   "status": "fail",
+   "detail": "sn-ser-W1-01"
+  },
+  {
+   "area": "Автопостинг",
+   "name": "X: файлы на 14 дней (34 постов)",
+   "status": "fail",
+   "detail": "x-trA, x-ser-W1-01"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoo.space/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
+   "status": "fail",
+   "detail": "0 <urlopen error [Errno -5] No address associated with hostname>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
+   "status": "fail",
+   "detail": "0 <urlopen error [Errno -5] No address associated with hostname>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://www.beezoo.space/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
+   "status": "fail",
+   "detail": "0 <urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "area": "Сайт",
+   "name": "https://www.beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
+   "status": "fail",
+   "detail": "0 <urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "area": "Автопостинг",
    "name": "X: всё вышло вовремя",
    "status": "warn",
-   "detail": " пропущены за неделю: x-meet-D, x-meet-A, x-R107, x-vampire-rep"
+   "detail": " пропущены за неделю: x-meet-A, x-R107, x-vampire-rep"
   },
   {
    "area": "Вид с телефона",
@@ -23,18 +65,6 @@
    "name": "Главная (без метки) [ru]",
    "status": "warn",
    "detail": "форма записи только на 10.8-м экране"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://beezoo.space/ (домен ещё не направлен на сайт, ссылок на него нет)",
-   "status": "warn",
-   "detail": "0"
-  },
-  {
-   "area": "Сайт",
-   "name": "https://beezoospace.com/ (домен ещё не направлен на сайт, ссылок на него нет)",
-   "status": "warn",
-   "detail": "0"
   },
   {
    "area": "Автопостинг",
@@ -50,12 +80,6 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Discord: файлы на 14 дней (30 постов)",
-   "status": "ok",
-   "detail": ""
-  },
-  {
-   "area": "Автопостинг",
    "name": "Snapchat (OneUp): всё вышло вовремя",
    "status": "ok",
    "detail": ""
@@ -65,12 +89,6 @@
    "name": "Snapchat (OneUp): запас контента",
    "status": "ok",
    "detail": "последний пост 13.12"
-  },
-  {
-   "area": "Автопостинг",
-   "name": "Snapchat (OneUp): файлы на 14 дней (29 постов)",
-   "status": "ok",
-   "detail": ""
   },
   {
    "area": "Автопостинг",
@@ -86,7 +104,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Telegram: файлы на 14 дней (84 постов)",
+   "name": "Telegram: файлы на 14 дней (82 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -98,12 +116,6 @@
   },
   {
    "area": "Автопостинг",
-   "name": "X: файлы на 14 дней (30 постов)",
-   "status": "ok",
-   "detail": ""
-  },
-  {
-   "area": "Автопостинг",
    "name": "Нет повторных публикаций",
    "status": "ok",
    "detail": ""
@@ -112,7 +124,7 @@
    "area": "Автопостинг",
    "name": "Робот публикаций работает",
    "status": "ok",
-   "detail": "последний запуск 15.11 22:00 UTC, сбоев из 5: 0"
+   "detail": "последний запуск 16.11 12:22 UTC, сбоев из 5: 0"
   },
   {
    "area": "Автопостинг",
@@ -130,7 +142,7 @@
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [en]",
    "status": "ok",
-   "detail": "1.4 с"
+   "detail": "0.8 с"
   },
   {
    "area": "Вид с телефона",
@@ -142,7 +154,7 @@
    "area": "Вид с телефона",
    "name": "Игра /play/bfep/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.7 с"
   },
   {
    "area": "Вид с телефона",
@@ -154,13 +166,13 @@
    "area": "Вид с телефона",
    "name": "Игра /play/daily/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.9 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/kmg/ [en]",
    "status": "ok",
-   "detail": "0.9 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
@@ -172,13 +184,13 @@
    "area": "Вид с телефона",
    "name": "Приложение в браузере [en]",
    "status": "ok",
-   "detail": "1.0 с"
+   "detail": "0.8 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /bfep/ [en]",
    "status": "ok",
-   "detail": "0.8 с"
+   "detail": "0.5 с"
   },
   {
    "area": "Вид с телефона",
@@ -196,19 +208,19 @@
    "area": "Вид с телефона",
    "name": "Умная ссылка /kmg/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /sayit/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Домены",
    "name": "SSL bfep.space",
    "status": "ok",
-   "detail": "ещё 40 дн."
+   "detail": "ещё 39 дн."
   },
   {
    "area": "Домены",
