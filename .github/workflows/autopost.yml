@@ -26,6 +26,7 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           ONEUP_API_KEY: ${{ secrets.NEUP_API_KEY }}  # секрет назван NEUP_API_KEY
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}  # загрузка видео для OneUp в Supabase Storage
         run: |
           git config user.name "bfep-autopost"
           git config user.email "autopost@bfep.space"
