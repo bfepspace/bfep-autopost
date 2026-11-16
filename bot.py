@@ -217,6 +217,9 @@ def cleanup_dups():
             return "none"
         return "foreign"
     base = max([r["thread"] for r in state["riddles"].values()] or [1])
+    if str(task).endswith("scan"):  # только осмотр: какие сообщения после загадки чьи (own/foreign/none)
+        log.append({"scan_from": base, "kinds": {m: probe(m) for m in range(base, base + 60)}})
+        state["cleanup_done"] = task; save(); return
     top, miss, mid = base, 0, base
     while miss < 40 and mid < base + 2000:
         mid += 1
@@ -237,7 +240,7 @@ def cleanup_dups():
     for m in sorted(run)[1:][:60]:
         if api("deleteMessage", chat_id=chat, message_id=m):
             gone.append(m)
-    log.append({"at": datetime.datetime.utcnow().isoformat(), "chat": chat, "top": top, "stop_at": mid,
+    log.append({"at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "chat": chat, "top": top, "stop_at": mid,
                 "kept": keep, "deleted": gone})
     state["cleanup_done"] = task
     save()
