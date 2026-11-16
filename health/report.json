@@ -1,17 +1,11 @@
 {
- "checked_at": "2026-11-16T16:52:14+00:00",
+ "checked_at": "2026-11-16T16:56:46+00:00",
  "counts": {
-  "fail": 7,
+  "fail": 4,
   "warn": 3,
-  "ok": 66
+  "ok": 69
  },
  "results": [
-  {
-   "area": "Ключи",
-   "name": "Telegram-бот",
-   "status": "fail",
-   "detail": "502"
-  },
   {
    "area": "Сайт",
    "name": "https://beezoo.space/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
@@ -35,18 +29,6 @@
    "name": "https://www.beezoospace.com/ → bfep.space (переадресация 301 в Cloudflare с 16.11)",
    "status": "fail",
    "detail": "0 <urlopen error [Errno -2] Name or service not known>"
-  },
-  {
-   "area": "Соцсети",
-   "name": "Ссылки на соцсети на странице / (8)",
-   "status": "fail",
-   "detail": "ведут не туда: threads.com/@beezoospace"
-  },
-  {
-   "area": "Соцсети",
-   "name": "Ссылки на соцсети на странице /press/ (8)",
-   "status": "fail",
-   "detail": "ведут не туда: threads.com/@beezoospace"
   },
   {
    "area": "Автопостинг",
@@ -160,49 +142,49 @@
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [en]",
    "status": "ok",
-   "detail": "0.7 с"
+   "detail": "0.8 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [ru]",
    "status": "ok",
-   "detail": "0.8 с"
+   "detail": "0.5 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bfep/ [en]",
    "status": "ok",
-   "detail": "0.7 с"
+   "detail": "0.9 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bluff/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.7 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/daily/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.7 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/kmg/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "1.1 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/sayit/ [en]",
    "status": "ok",
-   "detail": "0.8 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Приложение в браузере [en]",
    "status": "ok",
-   "detail": "0.7 с"
+   "detail": "0.6 с"
   },
   {
    "area": "Вид с телефона",
@@ -214,13 +196,13 @@
    "area": "Вид с телефона",
    "name": "Умная ссылка /bluff/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /daily/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
@@ -232,7 +214,7 @@
    "area": "Вид с телефона",
    "name": "Умная ссылка /sayit/ [en]",
    "status": "ok",
-   "detail": "0.3 с"
+   "detail": "0.5 с"
   },
   {
    "area": "Домены",
@@ -329,6 +311,12 @@
    "name": "OneUp (Snapchat)",
    "status": "ok",
    "detail": ""
+  },
+  {
+   "area": "Ключи",
+   "name": "Telegram-бот",
+   "status": "ok",
+   "detail": "200"
   },
   {
    "area": "Лист ожидания",
@@ -455,6 +443,18 @@
    "name": "YouTube",
    "status": "ok",
    "detail": "200"
+  },
+  {
+   "area": "Соцсети",
+   "name": "Ссылки на соцсети на странице / (8)",
+   "status": "ok",
+   "detail": ""
+  },
+  {
+   "area": "Соцсети",
+   "name": "Ссылки на соцсети на странице /press/ (8)",
+   "status": "ok",
+   "detail": ""
   },
   {
    "area": "Соцсети",
