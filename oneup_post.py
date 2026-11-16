@@ -1,5 +1,7 @@
-"""Публикует в Snapchat BEEZOO Space через OneUp всё, чему по snap.json уже пора (секрет ONEUP_API_KEY).
-Пост отправляется в OneUp в момент публикации (scheduled_date_time = сейчас + 3 мин по Дубаю), Spotlight.
+"""Публикует через OneUp всё, чему уже пора (секрет ONEUP_API_KEY):
+snap.json → Snapchat BEEZOO Space (Spotlight), bs.json → Bluesky @beezoospace.bsky.social.
+Каждый пост уходит только в аккаунт своей сети (social_network_id по listsocialaccounts), не в ALL.
+Пост отправляется в OneUp в момент публикации (scheduled_date_time = сейчас + 3 мин по Дубаю).
 python3 oneup_post.py --check  — проверить ключ и показать подключённые аккаунты и категории."""
 import datetime, json, os, sys, urllib.error, urllib.parse, urllib.request
 
@@ -53,33 +55,60 @@ if check:
               snapchat=json.dumps({"isSpotLight": True}), isDraftPost="true"))
     sys.exit(0)
 
-schedule = json.load(open("snap.json", encoding="utf-8")) if os.path.exists("snap.json") else []
-posted = json.load(open("posted_snap.json", encoding="utf-8")) if os.path.exists("posted_snap.json") else {}
+NETS = [("snap.json", "posted_snap.json", "snap", "Snapchat"), ("bs.json", "posted_bs.json", "bluesky", "Bluesky")]
+_acc = None
+
+def account_ids(kind):
+    """id аккаунтов OneUp нужной сети. Не нашли — None (тогда пост не отправляем, чтобы не уйти во все сети)."""
+    global _acc
+    if _acc is None:
+        _acc = get("listsocialaccounts").get("data", [])
+    ids = [str(a.get("social_network_id") or a.get("id")) for a in _acc
+           if kind in str(a.get("social_network_type", "")).lower() and not a.get("is_expired")]
+    if ids:
+        return json.dumps(ids)
+    if kind == "snap" and len(_acc) == 1:  # до появления второй сети работало с ALL
+        return "ALL"
+    print("OneUp: не найден аккаунт", kind, [(a.get("social_network_type"), a.get("username")) for a in _acc])
+    return None
+
 cat_id = None
-changed = False
-for item in schedule:
-    if item["id"] in posted or item.get("hold"):
-        continue
-    at = datetime.datetime.fromisoformat(item["at_utc"].replace("Z", "+00:00"))
-    if at > now:
-        continue
-    if now - at > LATE_LIMIT:
-        posted[item["id"]] = {"skipped": "late", "at": now.isoformat()}; changed = True; continue
-    if dry:
-        print("опубликовал бы:", item["id"]); continue
-    if cat_id is None:
-        cats = get("listcategory").get("data", [])
-        cat_id = os.environ.get("ONEUP_CATEGORY_ID") or (cats[0]["id"] if cats else "")
-    when = (now + datetime.timedelta(minutes=3)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
-    try:
-        r = post("schedulevideopost", category_id=cat_id, social_network_id="ALL", scheduled_date_time=when,
-                 content=item["text"], video_url=vurl(item["media"]), title=item.get("title", item["text"][:90]),
-                 snapchat=json.dumps({"isSpotLight": item.get("spotlight", True)}))
-    except Exception as e:
-        print("OneUp ошибка", item["id"], e); continue
-    if r.get("error"):
-        print("OneUp ошибка", item["id"], r); continue
-    posted[item["id"]] = {"post_ids": r.get("post_ids"), "at": now.isoformat()}; changed = True
-    print("Snapchat:", item["id"], r.get("message"))
-if changed:
-    json.dump(posted, open("posted_snap.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+for fname, pname, kind, label in NETS:
+    schedule = json.load(open(fname, encoding="utf-8")) if os.path.exists(fname) else []
+    posted = json.load(open(pname, encoding="utf-8")) if os.path.exists(pname) else {}
+    changed = False
+    net_ids = False
+    for item in schedule:
+        if item["id"] in posted or item.get("hold"):
+            continue
+        at = datetime.datetime.fromisoformat(item["at_utc"].replace("Z", "+00:00"))
+        if at > now:
+            continue
+        if now - at > LATE_LIMIT:
+            posted[item["id"]] = {"skipped": "late", "at": now.isoformat()}; changed = True; continue
+        if dry:
+            print("опубликовал бы:", label, item["id"]); continue
+        if net_ids is False:
+            net_ids = account_ids(kind)
+        if net_ids is None:
+            break
+        if cat_id is None:
+            cats = get("listcategory").get("data", [])
+            cat_id = os.environ.get("ONEUP_CATEGORY_ID") or (cats[0]["id"] if cats else "")
+        when = (now + datetime.timedelta(minutes=3)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
+        extra = {"snapchat": json.dumps({"isSpotLight": item.get("spotlight", True)})} if kind == "snap" else {}
+        try:
+            if item.get("media"):
+                r = post("schedulevideopost", category_id=cat_id, social_network_id=net_ids, scheduled_date_time=when,
+                         content=item["text"], video_url=vurl(item["media"]), title=item.get("title", item["text"][:90]), **extra)
+            else:
+                r = post("scheduletextpost", category_id=cat_id, social_network_id=net_ids, scheduled_date_time=when,
+                         content=item["text"])
+        except Exception as e:
+            print("OneUp ошибка", label, item["id"], e); continue
+        if r.get("error"):
+            print("OneUp ошибка", label, item["id"], r); continue
+        posted[item["id"]] = {"post_ids": r.get("post_ids"), "at": now.isoformat()}; changed = True
+        print(label + ":", item["id"], r.get("message"))
+    if changed:
+        json.dump(posted, open(pname, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
