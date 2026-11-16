@@ -64,7 +64,10 @@ if check:
     print("Аккаунты:", [{k: v for k, v in a.items() if "token" not in k.lower()} for a in acc.get("data", [])])
     cats = get("listcategory")
     print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
-    for u in [vurl(i["media"]) for i in json.load(open("snap.json", encoding="utf-8"))[-3:]]:
+    m = json.load(open("snap.json", encoding="utf-8"))[-1]["media"]
+    o, r_, ref, path = m[len("https://raw.githubusercontent.com/"):].split("/", 3)
+    for u in [vurl(m), f"https://rawcdn.githack.com/{o}/{r_}/{ref}/{path}", f"https://cdn.statically.io/gh/{o}/{r_}/{ref}/{path}",
+              f"https://cdn.jsdelivr.net/gh/{o}/{r_}@{ref}/README.md"]:
         try:
             with urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "Mozilla/5.0"}), timeout=60) as r:
                 print("HEAD", r.status, r.headers.get("Content-Type"), r.headers.get("Content-Length"), u)
