@@ -63,7 +63,7 @@ def account_ids(kind):
     global _acc
     if _acc is None:
         _acc = get("listsocialaccounts").get("data", [])
-    ids = [str(a.get("social_network_id") or a.get("id")) for a in _acc
+    ids = [str(a.get("social_account_id") or a.get("social_network_id") or a.get("id")) for a in _acc
            if kind in str(a.get("social_network_type", "")).lower() and not a.get("is_expired")]
     if ids:
         return json.dumps(ids)
