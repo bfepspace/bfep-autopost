@@ -64,6 +64,12 @@ if check:
     print("Аккаунты:", [{k: v for k, v in a.items() if "token" not in k.lower()} for a in acc.get("data", [])])
     cats = get("listcategory")
     print("Категории:", [(c.get("id"), c.get("category_name")) for c in cats.get("data", [])])
+    for u in [vurl(i["media"]) for i in json.load(open("snap.json", encoding="utf-8"))[-3:]]:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(u, method="HEAD", headers={"User-Agent": "Mozilla/5.0"}), timeout=60) as r:
+                print("HEAD", r.status, r.headers.get("Content-Type"), r.headers.get("Content-Length"), u)
+        except Exception as e:
+            print("HEAD ошибка", e, u)
     if "--draft" in sys.argv:  # пробный черновик (не публикуется)
         it = json.load(open("snap.json", encoding="utf-8"))[0]
         when = (now + datetime.timedelta(days=1)).astimezone(DUBAI).strftime("%Y-%m-%d %H:%M")
