@@ -217,6 +217,12 @@ def cleanup_dups():
             return "none"
         return "foreign"
     base = max([r["thread"] for r in state["riddles"].values()] or [1])
+    if ":del:" in str(task):  # точечно: удалить перечисленные id, только если сообщение бота
+        a, b = map(int, str(task).split(":del:")[1].split("-"))
+        res = {m: probe(m) for m in range(a, b + 1)}
+        gone = [m for m, k in res.items() if k == "own" and api("deleteMessage", chat_id=chat, message_id=m)]
+        log.append({"del": [a, b], "kinds": res, "deleted": gone})
+        state["cleanup_done"] = task; save(); return
     if str(task).endswith("scan"):  # только осмотр: какие сообщения после загадки чьи (own/foreign/none)
         log.append({"scan_from": base, "kinds": {m: probe(m) for m in range(base, base + 60)}})
         state["cleanup_done"] = task; save(); return
