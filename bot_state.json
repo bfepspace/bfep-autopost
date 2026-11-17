@@ -1,5 +1,5 @@
 {
- "offset": 631932656,
+ "offset": 631932657,
  "riddles": {
   "2026-10-31": {
    "thread": 21,
@@ -310,5 +310,8 @@
    }
   }
  ],
- "cleanup_done": "2026-11-16-check2-scan"
+ "cleanup_done": "2026-11-16-check2-scan",
+ "commented": [
+  "120"
+ ]
 }
