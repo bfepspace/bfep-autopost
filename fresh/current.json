@@ -1,12 +1,1425 @@
 {
  "v": 1,
  "deck": "current",
- "published": "2026-11-13",
+ "published": "2026-11-18",
  "built_from": [
   "fresh-2026-11-07",
-  "fresh-2026-11-12"
+  "fresh-2026-11-12",
+  "fresh-2026-11-19"
  ],
  "items": [
+  {
+   "id": "f261119-12",
+   "cat": "records",
+   "age": 0,
+   "emoji": "🥊",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Boxer",
+    "ru": "Боксёр",
+    "de": "Boxer",
+    "es": "Boxeador",
+    "fr": "Boxeur",
+    "zh": "拳击手"
+   },
+   "clues": {
+    "en": [
+     "🥊 Wears big padded gloves",
+     "🔔 Fights in rounds",
+     "🟥 Steps into a ring",
+     "🎬 Hero of a famous 1976 film",
+     "🩶 Grey sweatsuit, black beanie",
+     "🏛️ 570 fans on museum steps",
+     "🏆 A world record in Philadelphia"
+    ],
+    "ru": [
+     "Носит большие мягкие перчатки",
+     "Бьётся по раундам",
+     "Выходит на ринг",
+     "Герой знаменитого фильма 1976 года",
+     "Серый костюм и чёрная шапка",
+     "570 фанатов на ступенях музея",
+     "Мировой рекорд в Филадельфии"
+    ],
+    "de": [
+     "Trägt dicke Handschuhe",
+     "Kämpft in Runden",
+     "Steigt in den Ring",
+     "Held eines Kultfilms von 1976",
+     "Grauer Jogginganzug, schwarze Mütze",
+     "570 Fans auf Museumsstufen",
+     "Weltrekord in Philadelphia"
+    ],
+    "es": [
+     "Usa guantes acolchados",
+     "Pelea por asaltos",
+     "Sube al cuadrilátero",
+     "Héroe de una película de 1976",
+     "Chándal gris y gorro negro",
+     "570 fans en la escalera de un museo",
+     "Récord mundial en Filadelfia"
+    ],
+    "fr": [
+     "Porte de gros gants rembourrés",
+     "Combat en rounds",
+     "Monte sur le ring",
+     "Héros d’un film culte de 1976",
+     "Survêtement gris, bonnet noir",
+     "570 fans sur les marches d’un musée",
+     "Record du monde à Philadelphie"
+    ],
+    "zh": [
+     "戴着厚厚的手套",
+     "按回合比赛",
+     "走上擂台",
+     "1976年名片里的主角",
+     "灰色运动服配黑色毛线帽",
+     "570名粉丝站在博物馆台阶上",
+     "费城的世界纪录"
+    ]
+   },
+   "fact": {
+    "en": "570 fans dressed as a famous movie boxer gathered on the Philadelphia Museum of Art steps and set a world record, 50 years after the film came out.",
+    "ru": "570 фанатов в костюмах знаменитого киногероя-боксёра собрались на ступенях музея в Филадельфии и поставили мировой рекорд — через 50 лет после фильма.",
+    "de": "570 Fans, verkleidet als berühmter Film-Boxer, trafen sich auf den Stufen des Kunstmuseums Philadelphia – Weltrekord, 50 Jahre nach dem Film.",
+    "es": "570 fans vestidos como un famoso boxeador de cine se reunieron en la escalera del museo de Filadelfia y batieron un récord, 50 años después del filme.",
+    "fr": "570 fans déguisés en célèbre boxeur de cinéma se sont réunis sur les marches du musée de Philadelphie : record du monde, 50 ans après le film.",
+    "zh": "570名粉丝装扮成一位著名电影拳击手，聚在费城艺术博物馆台阶上，创下世界纪录，正值电影上映50周年。"
+   },
+   "sources": [
+    {
+     "title": "Hundreds of fans set Guinness World Record in Philadelphia",
+     "outlet": "CBS Philadelphia",
+     "url": "https://www.cbsnews.com/philadelphia/news/rocky-guinness-world-record-philadelphia-art-museum/",
+     "date": "2026-11-13"
+    },
+    {
+     "title": "570 fans break Guinness World Record in Philadelphia",
+     "outlet": "Billy Penn",
+     "url": "https://billypenn.com/2026/11/16/rocky-fans-guinness-world-record-philadelphia/",
+     "date": "2026-11-16"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "run up a huge staircase every morning",
+     "do 50 push-ups every day"
+    ],
+    "ru": [
+     "каждое утро взбегать по огромной лестнице",
+     "делать 50 отжиманий каждый день"
+    ],
+    "de": [
+     "jeden Morgen eine Riesentreppe hochrennen",
+     "täglich 50 Liegestütze machen"
+    ],
+    "es": [
+     "subir corriendo una gran escalera cada mañana",
+     "hacer 50 flexiones al día"
+    ],
+    "fr": [
+     "monter un grand escalier en courant chaque matin",
+     "faire 50 pompes par jour"
+    ],
+    "zh": [
+     "每天早上跑上一段大台阶",
+     "每天做50个俯卧撑"
+    ]
+   },
+   "daily": "2026-11-19"
+  },
+  {
+   "id": "f261119-11",
+   "cat": "space",
+   "age": 0,
+   "emoji": "💫",
+   "from": "2026-11-19",
+   "expires": "2027-01-18",
+   "answer": {
+    "en": "Star",
+    "ru": "Звезда",
+    "de": "Stern",
+    "es": "Estrella",
+    "fr": "Étoile",
+    "zh": "恒星"
+   },
+   "clues": {
+    "en": [
+     "✨ Twinkles in the night sky",
+     "☀️ The Sun is one of them",
+     "✏️ Drawn with five points",
+     "🌀 This old one spins every 8 minutes",
+     "📡 Sends out radio pulses",
+     "🤍 This kind is a white dwarf",
+     "👯 Circles a Sun-like partner"
+    ],
+    "ru": [
+     "Мерцает в ночном небе",
+     "Солнце — одна из них",
+     "Рисуют с пятью лучами",
+     "Эта старая крутится раз в 8 минут",
+     "Посылает радиоимпульсы",
+     "Такую называют белым карликом",
+     "Кружит рядом с двойником Солнца"
+    ],
+    "de": [
+     "Funkelt am Nachthimmel",
+     "Die Sonne ist einer davon",
+     "Wird mit fünf Zacken gemalt",
+     "Dieser alte dreht sich alle 8 Min.",
+     "Sendet Radiopulse",
+     "Diese Art heißt Weißer Zwerg",
+     "Kreist mit einem sonnenähnlichen Partner"
+    ],
+    "es": [
+     "Brilla en el cielo nocturno",
+     "El Sol es una de ellas",
+     "Se dibuja con cinco puntas",
+     "Esta vieja gira cada 8 minutos",
+     "Emite pulsos de radio",
+     "Este tipo es una enana blanca",
+     "Gira junto a una gemela del Sol"
+    ],
+    "fr": [
+     "Scintille dans le ciel nocturne",
+     "Le Soleil en est une",
+     "Se dessine à cinq branches",
+     "Celle-ci, vieille, tourne en 8 min",
+     "Émet des impulsions radio",
+     "Ce type est une naine blanche",
+     "Tourne avec une jumelle du Soleil"
+    ],
+    "zh": [
+     "在夜空中闪烁",
+     "太阳就是其中之一",
+     "画出来有五个角",
+     "这颗老的每8分钟转一圈",
+     "发出射电脉冲",
+     "这种叫白矮星",
+     "和一颗类太阳伙伴相绕"
+    ]
+   },
+   "fact": {
+    "en": "Astronomers found a burnt-out star over 5,000 light-years away that spins every 8 minutes and sends radio pulses while circling a Sun-like partner.",
+    "ru": "Астрономы нашли в 5000 с лишним световых лет угасшую звезду: она крутится раз в 8 минут, шлёт радиоимпульсы и кружит рядом с двойником Солнца.",
+    "de": "Astronomen fanden über 5.000 Lichtjahre entfernt einen ausgebrannten Stern, der sich alle 8 Minuten dreht und Radiopulse sendet.",
+    "es": "Astrónomos hallaron a más de 5.000 años luz una estrella apagada que gira cada 8 minutos y emite pulsos de radio junto a una gemela del Sol.",
+    "fr": "Des astronomes ont trouvé à plus de 5 000 années-lumière une étoile éteinte qui tourne en 8 minutes et émet des impulsions radio.",
+    "zh": "天文学家在5000多光年外发现一颗燃尽的恒星，每8分钟自转一圈并发出射电脉冲，它的伙伴与太阳相似。"
+   },
+   "sources": [
+    {
+     "title": "Astronomers discover a dead star spinning every 8 minutes and sending mysterious radio pulses",
+     "outlet": "ScienceDaily",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261114202136.htm",
+     "date": "2026-11-15"
+    },
+    {
+     "title": "Astronomers trace mystery radio signals back to cosmic odd couple of white dwarf and sun-like star",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/astronomy/stars/astronomers-trace-mystery-radio-signals-back-to-cosmic-odd-couple-of-white-dwarf-and-sun-like-star",
+     "date": "2026-11-13"
+    }
+   ],
+   "checked": "2026-11-18",
+   "daily": "2026-11-20"
+  },
+  {
+   "id": "f261119-10",
+   "cat": "engineering",
+   "age": 0,
+   "emoji": "🔋",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Airplane",
+    "ru": "Самолёт",
+    "de": "Flugzeug",
+    "es": "Avión",
+    "fr": "Avion",
+    "zh": "飞机"
+   },
+   "clues": {
+    "en": [
+     "🛩️ Has wings and a cockpit",
+     "🛫 Takes off from a runway",
+     "🧳 Carries passengers and luggage",
+     "🔋 This one runs only on batteries",
+     "💺 It has 19 seats",
+     "🌀 Ten electric fans on the wings",
+     "🇨🇳 First crewed flight in China"
+    ],
+    "ru": [
+     "Есть крылья и кабина пилотов",
+     "Взлетает с полосы",
+     "Возит пассажиров и багаж",
+     "Этот летает только на батареях",
+     "В нём 19 мест",
+     "Десять электровентиляторов на крыльях",
+     "Первый полёт с экипажем — в Китае"
+    ],
+    "de": [
+     "Hat Flügel und ein Cockpit",
+     "Startet von einer Piste",
+     "Trägt Passagiere und Gepäck",
+     "Dieses fliegt nur mit Akkus",
+     "Es hat 19 Sitze",
+     "Zehn E-Fans an den Flügeln",
+     "Erster bemannter Flug in China"
+    ],
+    "es": [
+     "Tiene alas y cabina",
+     "Despega de una pista",
+     "Lleva pasajeros y equipaje",
+     "Este vuela solo con baterías",
+     "Tiene 19 plazas",
+     "Diez ventiladores en las alas",
+     "Primer vuelo tripulado en China"
+    ],
+    "fr": [
+     "A des ailes et un cockpit",
+     "Décolle d’une piste",
+     "Transporte passagers et bagages",
+     "Celui-ci vole sur batteries",
+     "Il compte 19 places",
+     "Dix soufflantes électriques",
+     "Premier vol habité en Chine"
+    ],
+    "zh": [
+     "有机翼和驾驶舱",
+     "从跑道起飞",
+     "载着乘客和行李",
+     "这一架只靠电池",
+     "有19个座位",
+     "机翼上有10个电动风扇",
+     "在中国首次载人试飞"
+    ]
+   },
+   "fact": {
+    "en": "China’s 19-seat, fully battery-powered airliner made its first flight with people on board on 14 November, using ten electric fans on its wings.",
+    "ru": "Китайский 19-местный лайнер полностью на батареях 14 ноября впервые полетел с людьми на борту. На крыльях у него 10 электровентиляторов.",
+    "de": "Chinas 19-sitziges, rein batteriebetriebenes Passagierflugzeug flog am 14. November erstmals mit Crew – angetrieben von zehn E-Fans.",
+    "es": "Un avión chino de 19 plazas, solo con baterías, voló por primera vez con tripulación el 14 de noviembre gracias a diez ventiladores eléctricos.",
+    "fr": "Un avion de ligne chinois de 19 places, 100 % batteries, a volé pour la première fois avec équipage le 14 novembre, grâce à dix soufflantes.",
+    "zh": "中国一架19座纯电池客机11月14日首次载人试飞，机翼上装有10个电动风扇。"
+   },
+   "sources": [
+    {
+     "title": "Battery-only 19-seater puts China in the electric airliner race",
+     "outlet": "New Atlas",
+     "url": "https://newatlas.com/aircraft/comac-ce-25a-electric-airliner-first-crewed-flight/",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "China's electric airliner era starts with a 19-seat plane and 400 km of range",
+     "outlet": "Electrek",
+     "url": "https://electrek.co/2026/11/15/china-comac-ce-25a-electric-plane-crewed-flight/",
+     "date": "2026-11-15"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "fly in a silent electric plane",
+     "ride a superfast train"
+    ],
+    "ru": [
+     "лететь в бесшумном электросамолёте",
+     "ехать на сверхскоростном поезде"
+    ],
+    "de": [
+     "in einem leisen E-Flieger fliegen",
+     "im Superschnellzug fahren"
+    ],
+    "es": [
+     "volar en un avión eléctrico silencioso",
+     "ir en un tren superrápido"
+    ],
+    "fr": [
+     "voler dans un avion électrique silencieux",
+     "prendre un train ultrarapide"
+    ],
+    "zh": [
+     "坐安静的电动飞机",
+     "坐超高速列车"
+    ]
+   },
+   "daily": "2026-11-21"
+  },
+  {
+   "id": "f261119-09",
+   "cat": "culture",
+   "age": 0,
+   "emoji": "📖",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Human",
+    "ru": "Человек",
+    "de": "Mensch",
+    "es": "Humano",
+    "fr": "Humain",
+    "zh": "人类"
+   },
+   "clues": {
+    "en": [
+     "🧑 You, me and everyone",
+     "📚 The only species that writes books",
+     "🌍 About 8 billion of them",
+     "📖 Word of the Year 2026",
+     "🤖 Chosen amid the AI debate",
+     "🎓 Picked by a Cambridge dictionary",
+     "🥈 Beat “agent” and “analogue”"
+    ],
+    "ru": [
+     "Это ты, я и все мы",
+     "Единственный вид, что пишет книги",
+     "Таких около 8 млрд",
+     "Слово года — 2026",
+     "Выбрано на фоне споров об ИИ",
+     "Выбор словаря из Кембриджа",
+     "Обошло «agent» и «analogue»"
+    ],
+    "de": [
+     "Du, ich und alle anderen",
+     "Die einzige Art, die Bücher schreibt",
+     "Etwa 8 Milliarden davon",
+     "Wort des Jahres 2026",
+     "Gewählt in der KI-Debatte",
+     "Wahl eines Cambridge-Wörterbuchs",
+     "Schlug „agent“ und „analogue“"
+    ],
+    "es": [
+     "Tú, yo y todos",
+     "La única especie que escribe libros",
+     "Hay unos 8.000 millones",
+     "Palabra del año 2026",
+     "Elegida en pleno debate sobre la IA",
+     "Elegida por un diccionario de Cambridge",
+     "Superó a «agent» y «analogue»"
+    ],
+    "fr": [
+     "Toi, moi et tout le monde",
+     "La seule espèce qui écrit des livres",
+     "Ils sont environ 8 milliards",
+     "Mot de l’année 2026",
+     "Choisi en plein débat sur l’IA",
+     "Choix d’un dictionnaire de Cambridge",
+     "A battu « agent » et « analogue »"
+    ],
+    "zh": [
+     "你、我、大家都是",
+     "唯一会写书的物种",
+     "大约有80亿",
+     "2026年度词汇",
+     "在人工智能争论中被选中",
+     "剑桥一本词典选出",
+     "击败了agent和analogue"
+    ]
+   },
+   "fact": {
+    "en": "Cambridge Dictionary chose this word as its Word of the Year 2026, reflecting the debate about what makes people different from AI.",
+    "ru": "Кембриджский словарь выбрал это слово словом 2026 года: сейчас много спорят, чем люди отличаются от ИИ.",
+    "de": "Das Cambridge Dictionary kürte dieses Wort zum Wort des Jahres 2026 – mitten in der Debatte, was uns von KI unterscheidet.",
+    "es": "El diccionario de Cambridge eligió esta palabra como la del año 2026, en pleno debate sobre qué nos diferencia de la IA.",
+    "fr": "Le dictionnaire de Cambridge a élu ce mot « mot de l’année 2026 », en plein débat sur ce qui nous distingue de l’IA.",
+    "zh": "剑桥词典把这个词选为2026年度词汇，反映了人们对“我们和人工智能有何不同”的讨论。"
+   },
+   "sources": [
+    {
+     "title": "Cambridge Dictionary Word of the Year 2026",
+     "outlet": "Cambridge Dictionary blog",
+     "url": "https://dictionaryblog.cambridge.org/2026/11/18/word-of-the-year-2026/",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Cambridge Dictionary's Word of the Year 2026 tackles ongoing AI fears",
+     "outlet": "Euronews (Yahoo News)",
+     "url": "https://www.yahoo.com/news/us/articles/human-cambridge-dictionarys-word-2026-101638601.html",
+     "date": "2026-11-18"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "talk only to robots for a day",
+     "spend a day without any screens"
+    ],
+    "ru": [
+     "день общаться только с роботами",
+     "день прожить без экранов"
+    ],
+    "de": [
+     "einen Tag nur mit Robotern reden",
+     "einen Tag ohne Bildschirme"
+    ],
+    "es": [
+     "hablar solo con robots un día",
+     "pasar un día sin pantallas"
+    ],
+    "fr": [
+     "ne parler qu’à des robots un jour",
+     "passer une journée sans écrans"
+    ],
+    "zh": [
+     "一天只和机器人说话",
+     "一天不看任何屏幕"
+    ]
+   },
+   "daily": "2026-11-22"
+  },
+  {
+   "id": "f261119-08",
+   "cat": "space",
+   "age": 0,
+   "emoji": "☄️",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Asteroid",
+    "ru": "Астероид",
+    "de": "Asteroid",
+    "es": "Asteroide",
+    "fr": "Astéroïde",
+    "zh": "小行星"
+   },
+   "clues": {
+    "en": [
+     "🪨 A space rock circling the Sun",
+     "🦖 One ended the age of dinosaurs",
+     "🌌 Many sit between Mars and Jupiter",
+     "🛰️ A European probe just arrived",
+     "💥 NASA rammed its moon in 2022",
+     "📏 About 780 m across",
+     "🏷️ Its name is Didymos"
+    ],
+    "ru": [
+     "Каменная глыба, летящая вокруг Солнца",
+     "Один такой погубил динозавров",
+     "Многие летают между Марсом и Юпитером",
+     "К нему прилетел европейский зонд",
+     "NASA протаранило его спутник в 2022",
+     "Около 780 м в поперечнике",
+     "Его зовут Дидим"
+    ],
+    "de": [
+     "Ein Felsbrocken, der die Sonne umkreist",
+     "Einer beendete die Dino-Zeit",
+     "Viele zwischen Mars und Jupiter",
+     "Eine europäische Sonde ist da",
+     "Die NASA rammte 2022 seinen Mond",
+     "Rund 780 m groß",
+     "Er heißt Didymos"
+    ],
+    "es": [
+     "Roca que gira alrededor del Sol",
+     "Uno acabó con los dinosaurios",
+     "Muchos están entre Marte y Júpiter",
+     "Llegó una sonda europea",
+     "La NASA chocó con su luna en 2022",
+     "Mide unos 780 m",
+     "Se llama Didymos"
+    ],
+    "fr": [
+     "Un rocher qui tourne autour du Soleil",
+     "L’un d’eux a éteint les dinosaures",
+     "Beaucoup entre Mars et Jupiter",
+     "Une sonde européenne est arrivée",
+     "La NASA a percuté sa lune en 2022",
+     "Environ 780 m de large",
+     "Il s’appelle Didymos"
+    ],
+    "zh": [
+     "绕太阳转的太空岩石",
+     "有一颗让恐龙灭绝了",
+     "很多位于火星和木星之间",
+     "一艘欧洲探测器刚刚抵达",
+     "NASA在2022年撞过它的卫星",
+     "直径约780米",
+     "名叫迪迪莫斯"
+    ]
+   },
+   "fact": {
+    "en": "Europe’s Hera probe has reached Didymos and its moonlet Dimorphos, which NASA deliberately rammed in 2022 to test planetary defence.",
+    "ru": "Европейский зонд Hera добрался до Дидима и его спутника Диморфа, в который NASA специально врезалось в 2022 году, проверяя защиту Земли.",
+    "de": "Die europäische Sonde Hera hat Didymos und seinen Mond Dimorphos erreicht, den die NASA 2022 absichtlich rammte – ein Test zur Planetenabwehr.",
+    "es": "La sonda europea Hera llegó a Didymos y su lunita Dimorfo, contra la que la NASA chocó a propósito en 2022 para probar la defensa planetaria.",
+    "fr": "La sonde européenne Hera a rejoint Didymos et sa petite lune Dimorphos, percutée exprès par la NASA en 2022 pour tester la défense planétaire.",
+    "zh": "欧洲的赫拉号探测器抵达迪迪莫斯及其小卫星迪莫弗斯，NASA曾在2022年故意撞击它，测试行星防御。"
+   },
+   "sources": [
+    {
+     "title": "Hera flies rectangular orbits around the Didymos asteroids",
+     "outlet": "ScienceDaily",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261115085545.htm",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Europe's Hera spacecraft begins close inspections of an asteroid rammed by NASA",
+     "outlet": "AP (ClickOrlando)",
+     "url": "https://www.clickorlando.com/tech/2026/11/11/europes-hera-spacecraft-begins-close-inspections-of-an-asteroid-rammed-by-nasa-in-a-2022-test/",
+     "date": "2026-11-11"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "land on a tiny moon",
+     "ride on a comet’s tail"
+    ],
+    "ru": [
+     "сесть на крошечную луну",
+     "прокатиться на хвосте кометы"
+    ],
+    "de": [
+     "auf einem Mini-Mond landen",
+     "auf einem Kometenschweif reiten"
+    ],
+    "es": [
+     "aterrizar en una luna diminuta",
+     "montar en la cola de un cometa"
+    ],
+    "fr": [
+     "se poser sur une mini-lune",
+     "chevaucher la queue d’une comète"
+    ],
+    "zh": [
+     "登上一颗迷你卫星",
+     "骑在彗星尾巴上"
+    ]
+   },
+   "daily": "2026-11-23"
+  },
+  {
+   "id": "f261119-07",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🦈",
+   "from": "2026-11-19",
+   "expires": "2027-01-18",
+   "answer": {
+    "en": "Shark",
+    "ru": "Акула",
+    "de": "Hai",
+    "es": "Tiburón",
+    "fr": "Requin",
+    "zh": "鲨鱼"
+   },
+   "clues": {
+    "en": [
+     "🦈 A fin above the water",
+     "🦷 Rows and rows of teeth",
+     "🌊 In the seas before dinosaurs",
+     "🌵 Skin with thorn-like scales",
+     "📏 Grows to about 3 metres",
+     "🌑 Lives 350–450 m deep",
+     "🇮🇳 New species named in India"
+    ],
+    "ru": [
+     "Плавник над водой",
+     "Зубы в несколько рядов",
+     "В морях раньше динозавров",
+     "Кожа в чешуе, похожей на шипы",
+     "Вырастает до 3 метров",
+     "Живёт на глубине 350–450 м",
+     "Новый вид описали в Индии"
+    ],
+    "de": [
+     "Flosse über dem Wasser",
+     "Reihen über Reihen von Zähnen",
+     "Schon vor den Dinos im Meer",
+     "Haut mit dornartigen Schuppen",
+     "Wird etwa 3 Meter lang",
+     "Lebt in 350–450 m Tiefe",
+     "Neue Art aus Indien"
+    ],
+    "es": [
+     "Aleta sobre el agua",
+     "Filas y filas de dientes",
+     "En el mar antes que los dinosaurios",
+     "Piel con escamas como espinas",
+     "Mide hasta unos 3 metros",
+     "Vive a 350–450 m",
+     "Nueva especie descrita en India"
+    ],
+    "fr": [
+     "Aileron hors de l’eau",
+     "Des rangées de dents",
+     "Dans les mers avant les dinosaures",
+     "Peau aux écailles épineuses",
+     "Atteint environ 3 mètres",
+     "Vit entre 350 et 450 m",
+     "Nouvelle espèce nommée en Inde"
+    ],
+    "zh": [
+     "背鳍露出水面",
+     "一排又一排牙齿",
+     "比恐龙更早出现在海里",
+     "皮肤上长着刺一样的鳞",
+     "能长到约3米",
+     "生活在350–450米深处",
+     "印度命名的新物种"
+    ]
+   },
+   "fact": {
+    "en": "Indian scientists named a new deep-sea species, mistaken for its Atlantic cousin for decades. It grows to about 3 m and is covered in thorny scales.",
+    "ru": "Индийские учёные описали новый глубоководный вид, который десятки лет путали с атлантическим родственником. Он до 3 м и покрыт колючей чешуёй.",
+    "de": "Forscher in Indien beschrieben eine neue Tiefseeart, die jahrzehntelang mit einer Atlantik-Art verwechselt wurde: bis 3 m lang, mit Dornenschuppen.",
+    "es": "Científicos indios describieron una especie de aguas profundas confundida durante décadas con su prima atlántica. Mide hasta 3 m y tiene escamas espinosas.",
+    "fr": "Des chercheurs indiens ont nommé une espèce des grands fonds, longtemps confondue avec sa cousine atlantique : 3 m et des écailles épineuses.",
+    "zh": "印度科学家命名了一种深海新物种，几十年来一直被误认作大西洋的近亲，它能长到约3米，身上长满刺状鳞片。"
+   },
+   "sources": [
+    {
+     "title": "Scientists Discover New Deep-Sea Shark Species Hiding In Plain Sight",
+     "outlet": "Forbes",
+     "url": "https://www.forbes.com/sites/melissacristinamarquez/2026/11/16/scientists-discover-new-deep-sea-shark-species-hiding-in-plain-sight/",
+     "date": "2026-11-16"
+    },
+    {
+     "title": "Meet India's newest deep-sea shark",
+     "outlet": "ThePrint",
+     "url": "https://theprint.in/theprint-essential/meet-indias-newest-deep-sea-shark-a-10-foot-giant-scientists-had-misidentified-for-decades/3099736/",
+     "date": "2026-11-16"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "dive to the bottom of the ocean",
+     "fly to the edge of space"
+    ],
+    "ru": [
+     "нырнуть на дно океана",
+     "полететь на край космоса"
+    ],
+    "de": [
+     "in die Tiefsee tauchen",
+     "an den Rand des Alls fliegen"
+    ],
+    "es": [
+     "bajar al fondo del océano",
+     "volar al borde del espacio"
+    ],
+    "fr": [
+     "plonger au fond de l’océan",
+     "voler au bord de l’espace"
+    ],
+    "zh": [
+     "潜入深海",
+     "飞到太空边缘"
+    ]
+   },
+   "daily": "2026-11-24"
+  },
+  {
+   "id": "f261119-06",
+   "cat": "tech",
+   "age": 0,
+   "emoji": "🤖",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Dance",
+    "ru": "Танец",
+    "de": "Tanz",
+    "es": "Baile",
+    "fr": "Danse",
+    "zh": "舞蹈"
+   },
+   "clues": {
+    "en": [
+     "💃 Moving to music",
+     "🩰 Ballet is one kind",
+     "🕺 Disco, tango, waltz",
+     "🤖 Done by 151 humanoid robots",
+     "🎯 The target was 110 machines",
+     "🏆 New world record on 17 November",
+     "🇨🇳 Took place in Shenzhen"
+    ],
+    "ru": [
+     "Движения под музыку",
+     "Балет — один из видов",
+     "Диско, танго, вальс",
+     "Исполнил 151 человекоподобный робот",
+     "Цель была — 110 машин",
+     "Новый мировой рекорд 17 ноября",
+     "Это было в Шэньчжэне"
+    ],
+    "de": [
+     "Bewegung zur Musik",
+     "Ballett ist eine Art davon",
+     "Disco, Tango, Walzer",
+     "Von 151 Humanoiden aufgeführt",
+     "Ziel waren 110 Maschinen",
+     "Neuer Weltrekord am 17. November",
+     "Fand in Shenzhen statt"
+    ],
+    "es": [
+     "Moverse con música",
+     "El ballet es un tipo",
+     "Disco, tango, vals",
+     "Lo hicieron 151 robots humanoides",
+     "El objetivo: 110 máquinas",
+     "Nuevo récord mundial el 17 de noviembre",
+     "Fue en Shenzhen"
+    ],
+    "fr": [
+     "Bouger en musique",
+     "Le ballet en est un genre",
+     "Disco, tango, valse",
+     "Réalisée par 151 robots humanoïdes",
+     "L’objectif était 110 machines",
+     "Record du monde le 17 novembre",
+     "C’était à Shenzhen"
+    ],
+    "zh": [
+     "跟着音乐动起来",
+     "芭蕾是其中一种",
+     "迪斯科、探戈、华尔兹",
+     "151个人形机器人一起完成",
+     "原定目标是110台",
+     "11月17日创下世界纪录",
+     "地点在深圳"
+    ]
+   },
+   "fact": {
+    "en": "In Shenzhen, China, 151 humanoid robots danced in sync and set a world record on 17 November. The organisers had only aimed for 110.",
+    "ru": "В китайском Шэньчжэне 151 человекоподобный робот синхронно станцевал и 17 ноября установил мировой рекорд. Планировали всего 110.",
+    "de": "In Shenzhen tanzten 151 humanoide Roboter synchron und stellten am 17. November einen Weltrekord auf. Geplant waren nur 110.",
+    "es": "En Shenzhen, 151 robots humanoides bailaron sincronizados y batieron un récord mundial el 17 de noviembre. El objetivo era 110.",
+    "fr": "À Shenzhen, 151 robots humanoïdes ont dansé en rythme et battu un record du monde le 17 novembre. L’objectif était de 110.",
+    "zh": "11月17日，151个人形机器人在深圳同步跳舞，创下世界纪录，原定目标只有110个。"
+   },
+   "sources": [
+    {
+     "title": "151 Humanoid Robots Set Guinness World Record With Synchronised Dance In China",
+     "outlet": "TVC News",
+     "url": "https://www.tvcnews.tv/151-humanoid-robots-set-guinness-world-record-with-synchronised-dance-in-china/",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "151 Humanoid Robots Successfully Challenge Guinness World Record",
+     "outlet": "Gasgoo",
+     "url": "https://autonews.gasgoo.com/articles/news/151-humanoid-robots-successfully-challenge-guinness-world-record-2123030218822037505",
+     "date": "2026-11-18"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "dance with a robot",
+     "sing with a robot"
+    ],
+    "ru": [
+     "танцевать с роботом",
+     "петь с роботом"
+    ],
+    "de": [
+     "mit einem Roboter tanzen",
+     "mit einem Roboter singen"
+    ],
+    "es": [
+     "bailar con un robot",
+     "cantar con un robot"
+    ],
+    "fr": [
+     "danser avec un robot",
+     "chanter avec un robot"
+    ],
+    "zh": [
+     "和机器人跳舞",
+     "和机器人唱歌"
+    ]
+   },
+   "daily": "2026-11-25"
+  },
+  {
+   "id": "f261119-05",
+   "cat": "science",
+   "age": 0,
+   "emoji": "🐀",
+   "from": "2026-11-19",
+   "expires": "2027-01-18",
+   "answer": {
+    "en": "Rodent",
+    "ru": "Грызун",
+    "de": "Nagetier",
+    "es": "Roedor",
+    "fr": "Rongeur",
+    "zh": "啮齿动物"
+   },
+   "clues": {
+    "en": [
+     "🐭 Mice and rats belong here",
+     "🦷 Teeth that never stop growing",
+     "🐿️ Squirrels and beavers too",
+     "🦴 Known from just two fossil teeth",
+     "⚖️ Weighed about 30 kg",
+     "⏳ Lived 34 million years ago",
+     "🇹🇭 Dug up in a Thai coal mine"
+    ],
+    "ru": [
+     "Сюда относятся мыши и крысы",
+     "Зубы, которые растут всю жизнь",
+     "Белки и бобры — тоже",
+     "Найден по двум окаменелым зубам",
+     "Весил около 30 кг",
+     "Жил 34 млн лет назад",
+     "Найден в угольной шахте Таиланда"
+    ],
+    "de": [
+     "Mäuse und Ratten gehören dazu",
+     "Zähne, die nie aufhören zu wachsen",
+     "Auch Eichhörnchen und Biber",
+     "Nur zwei fossile Zähne gefunden",
+     "Wog rund 30 kg",
+     "Lebte vor 34 Mio. Jahren",
+     "Aus einer Kohlemine in Thailand"
+    ],
+    "es": [
+     "Ratones y ratas lo son",
+     "Dientes que nunca dejan de crecer",
+     "También ardillas y castores",
+     "Hallado por solo dos dientes fósiles",
+     "Pesaba unos 30 kg",
+     "Vivió hace 34 millones de años",
+     "De una mina de carbón de Tailandia"
+    ],
+    "fr": [
+     "Souris et rats en font partie",
+     "Des dents qui poussent sans fin",
+     "Écureuils et castors aussi",
+     "Trouvé grâce à deux dents fossiles",
+     "Pesait environ 30 kg",
+     "Vivait il y a 34 millions d’années",
+     "Sorti d’une mine thaïlandaise"
+    ],
+    "zh": [
+     "老鼠属于这一类",
+     "牙齿一辈子都在长",
+     "松鼠和河狸也是",
+     "只凭两颗牙齿化石发现",
+     "重约30公斤",
+     "生活在3400万年前",
+     "出土于泰国的煤矿"
+    ]
+   },
+   "fact": {
+    "en": "Two fossil teeth from a Thai coal mine revealed a giant rodent that lived 34 million years ago and weighed about 30 kg, twice as heavy as its peers.",
+    "ru": "По двум окаменелым зубам из угольной шахты в Таиланде учёные нашли гигантского грызуна: 34 млн лет назад он весил около 30 кг.",
+    "de": "Zwei fossile Zähne aus einer Kohlemine in Thailand zeigen ein Riesennagetier: Vor 34 Mio. Jahren wog es rund 30 kg.",
+    "es": "Dos dientes fósiles de una mina en Tailandia revelaron un roedor gigante de hace 34 millones de años que pesaba unos 30 kg.",
+    "fr": "Deux dents fossiles d’une mine thaïlandaise ont révélé un rongeur géant d’il y a 34 millions d’années, pesant environ 30 kg.",
+    "zh": "泰国煤矿出土的两颗牙齿化石揭示了一种3400万年前的巨型啮齿动物，体重约30公斤。"
+   },
+   "sources": [
+    {
+     "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
+     "outlet": "ScienceDaily",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261110042532.htm",
+     "date": "2026-11-10"
+    },
+    {
+     "title": "Giant rodents evolved earlier than thought",
+     "outlet": "Nature World News",
+     "url": "https://www.natureworldnews.com/articles/73832/20261113/giant-rodents-evolved-earlier-thought-southeast-asia-played-surprising-early-role-their-rise.htm",
+     "date": "2026-11-13"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "be as small as a mouse for a day",
+     "be as big as an elephant for a day"
+    ],
+    "ru": [
+     "день быть ростом с мышь",
+     "день быть размером со слона"
+    ],
+    "de": [
+     "einen Tag so klein wie eine Maus sein",
+     "einen Tag so groß wie ein Elefant sein"
+    ],
+    "es": [
+     "ser del tamaño de un ratón un día",
+     "ser del tamaño de un elefante un día"
+    ],
+    "fr": [
+     "être petit comme une souris un jour",
+     "être grand comme un éléphant un jour"
+    ],
+    "zh": [
+     "当一天老鼠那么小",
+     "当一天大象那么大"
+    ]
+   },
+   "daily": "2026-11-26"
+  },
+  {
+   "id": "f261119-04",
+   "cat": "culture",
+   "age": 0,
+   "emoji": "🖼️",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Closet",
+    "ru": "Шкаф",
+    "de": "Schrank",
+    "es": "Armario",
+    "fr": "Placard",
+    "zh": "衣柜"
+   },
+   "clues": {
+    "en": [
+     "👗 Where clothes hang",
+     "🚪 Usually has a door",
+     "🧥 Fur coats were hanging there",
+     "🖼️ A lost 1930 painting was inside",
+     "🏙️ In a Manhattan apartment",
+     "💰 The find sold for $4.9 million",
+     "🌸 Artist famed for giant flowers"
+    ],
+    "ru": [
+     "Там висит одежда",
+     "Обычно с дверцей",
+     "Там висели шубы",
+     "Внутри была потерянная картина 1930 г.",
+     "В квартире на Манхэттене",
+     "Находку продали за $4,9 млн",
+     "Художница, прославившая огромные цветы"
+    ],
+    "de": [
+     "Dort hängen Kleider",
+     "Hat meist eine Tür",
+     "Dort hingen Pelzmäntel",
+     "Darin: ein verschollenes Bild von 1930",
+     "In einer Wohnung in Manhattan",
+     "Der Fund brachte 4,9 Mio. $",
+     "Malerin riesiger Blumen"
+    ],
+    "es": [
+     "Donde cuelga la ropa",
+     "Suele tener puerta",
+     "Allí colgaban abrigos de piel",
+     "Dentro, un cuadro perdido de 1930",
+     "En un piso de Manhattan",
+     "El hallazgo se vendió por 4,9 M$",
+     "Pintora famosa por flores gigantes"
+    ],
+    "fr": [
+     "On y suspend les vêtements",
+     "A souvent une porte",
+     "Des fourrures y pendaient",
+     "Dedans, un tableau perdu de 1930",
+     "Dans un appartement de Manhattan",
+     "La trouvaille a fait 4,9 M$",
+     "Peintre célèbre pour ses fleurs géantes"
+    ],
+    "zh": [
+     "挂衣服的地方",
+     "通常有门",
+     "里面挂着皮大衣",
+     "里面藏着一幅1930年的失传画作",
+     "在曼哈顿一间公寓里",
+     "这件发现拍出490万美元",
+     "以巨幅花卉闻名的女画家"
+    ]
+   },
+   "fact": {
+    "en": "A lost 1930 Georgia O’Keeffe landscape, kept boxed in a Manhattan home, sold at auction for $4.88 million. The family had paid $3,800 for it in 1963.",
+    "ru": "Потерянный пейзаж Джорджии О’Кифф 1930 года, хранившийся в коробке на Манхэттене, продали за $4,88 млн. В 1963-м семья купила его за $3800.",
+    "de": "Eine verschollene O’Keeffe-Landschaft von 1930, verpackt in einer Wohnung in Manhattan, brachte 4,88 Mio. $. Die Familie zahlte 1963 nur 3.800 $.",
+    "es": "Un paisaje perdido de Georgia O’Keeffe de 1930, guardado en una caja en Manhattan, se vendió por 4,88 millones $. La familia pagó 3.800 $ en 1963.",
+    "fr": "Un paysage perdu de Georgia O’Keeffe (1930), rangé dans un carton à Manhattan, a été vendu 4,88 millions $. La famille l’avait payé 3 800 $ en 1963.",
+    "zh": "一幅失传的乔治亚·欧姬芙1930年风景画被装箱藏在曼哈顿公寓里，拍出488万美元；这家人1963年只花了3800美元。"
+   },
+   "sources": [
+    {
+     "title": "Georgia O'Keeffe painting found hidden behind fur coats fetches $4.9M at auction",
+     "outlet": "WSB-TV",
+     "url": "https://wsbtv.com/news/trending/georgia-okeeffe-painting-found-hidden-behind-fur-coats-fetches-49m-auction/3UJEXUJXQZAUHGALGT6LDUPTPQ",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Long-lost Georgia O'Keeffe painting sells at auction for $4.8 million",
+     "outlet": "KIRO 7",
+     "url": "https://www.kiro7.com/entertainment/long-lost-georgia/FBZAPSNWZI3JFDBVKQEHZ4YLQI/",
+     "date": "2026-11-17"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "find a lost painting at home",
+     "find an old letter at home"
+    ],
+    "ru": [
+     "найти дома потерянную картину",
+     "найти дома старое письмо"
+    ],
+    "de": [
+     "zu Hause ein verlorenes Gemälde finden",
+     "zu Hause einen alten Brief finden"
+    ],
+    "es": [
+     "hallar en casa un cuadro perdido",
+     "hallar en casa una carta antigua"
+    ],
+    "fr": [
+     "trouver chez soi un tableau perdu",
+     "trouver chez soi une vieille lettre"
+    ],
+    "zh": [
+     "在家里找到一幅失传的画",
+     "在家里找到一封旧信"
+    ]
+   },
+   "daily": "2026-11-27"
+  },
+  {
+   "id": "f261119-03",
+   "cat": "science",
+   "age": 0,
+   "emoji": "🦪",
+   "from": "2026-11-19",
+   "expires": "2027-01-18",
+   "answer": {
+    "en": "Pearl",
+    "ru": "Жемчуг",
+    "de": "Perle",
+    "es": "Perla",
+    "fr": "Perle",
+    "zh": "珍珠"
+   },
+   "clues": {
+    "en": [
+     "🦪 Grows inside an oyster",
+     "💍 A classic for necklaces",
+     "🤍 Shiny and usually white",
+     "🦴 Now used to repair bones",
+     "🇺🇸 Cleared by US medical regulators",
+     "🇦🇺 Shells from Western Australia",
+     "⚡ Ages-long process done in a day"
+    ],
+    "ru": [
+     "Растёт внутри устрицы",
+     "Классика для ожерелий",
+     "Блестящий и обычно белый",
+     "Теперь им чинят кости",
+     "Одобрен медрегулятором США",
+     "Створки устриц из Западной Австралии",
+     "Процесс миллионов лет — за сутки"
+    ],
+    "de": [
+     "Wächst in einer Auster",
+     "Klassiker für Halsketten",
+     "Glänzend und meist weiß",
+     "Jetzt zur Knochenreparatur genutzt",
+     "Von US-Behörden zugelassen",
+     "Schalen aus Westaustralien",
+     "Jahrmillionen-Prozess in einem Tag"
+    ],
+    "es": [
+     "Crece dentro de una ostra",
+     "Clásica en los collares",
+     "Brillante y casi siempre blanca",
+     "Ahora sirve para reparar huesos",
+     "Aprobada por el regulador de EE. UU.",
+     "Conchas de Australia Occidental",
+     "Millones de años en un solo día"
+    ],
+    "fr": [
+     "Pousse dans une huître",
+     "Classique des colliers",
+     "Brillante et souvent blanche",
+     "Sert désormais à réparer les os",
+     "Validée par le régulateur américain",
+     "Coquilles d’Australie-Occidentale",
+     "Des millions d’années en un jour"
+    ],
+    "zh": [
+     "在牡蛎里长成",
+     "项链的经典材料",
+     "闪亮，通常是白色",
+     "现在用来修复骨头",
+     "获美国药监部门批准",
+     "贝壳来自西澳大利亚",
+     "百万年的过程一天完成"
+    ]
+   },
+   "fact": {
+    "en": "US regulators cleared a first-of-its-kind bone graft made from pearl-oyster shell. Scientists sped up a process of millions of years to about a day.",
+    "ru": "В США одобрили первый в своём роде материал для лечения костей из створок жемчужных устриц. Процесс длиной в миллионы лет ускорили до суток.",
+    "de": "In den USA wurde ein neuartiges Knochenersatzmaterial aus Perlmuschel-Schalen zugelassen. Ein Prozess von Jahrmillionen dauert nun etwa einen Tag.",
+    "es": "EE. UU. aprobó un material único para reparar huesos hecho de conchas de ostra perlera. Un proceso de millones de años ahora tarda un día.",
+    "fr": "Les États-Unis ont validé un matériau inédit pour réparer les os, fait de coquilles d’huîtres perlières. Des millions d’années réduits à un jour.",
+    "zh": "美国批准了首个用珍珠贝壳制成的骨修复材料，科学家把需要数百万年的过程缩短到约一天。"
+   },
+   "sources": [
+    {
+     "title": "FDA clears first-of-its-kind bone repair material made from pearl shells",
+     "outlet": "ScienceAlert",
+     "url": "https://www.sciencealert.com/fda-clears-first-of-its-kind-bone-repair-material-made-from-pearl-shells",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "WA pearl-shell bone graft wins FDA clearance",
+     "outlet": "ABC News (Australia)",
+     "url": "https://www.abc.net.au/news/2026-11-14/pearlbone-receives-us-fda-clearance-wa-research-milestone/107355146",
+     "date": "2026-11-14"
+    }
+   ],
+   "checked": "2026-11-18",
+   "daily": "2026-11-28"
+  },
+  {
+   "id": "f261119-02",
+   "cat": "engineering",
+   "age": 0,
+   "emoji": "🥢",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Chopsticks",
+    "ru": "Палочки для еды",
+    "de": "Essstäbchen",
+    "es": "Palillos",
+    "fr": "Baguettes chinoises",
+    "zh": "筷子"
+   },
+   "clues": {
+    "en": [
+     "🍜 Used to eat noodles and sushi",
+     "✌️ Always come in a pair",
+     "🏮 Popular all over East Asia",
+     "🗼 Nickname of giant launch-tower arms",
+     "🚀 Caught a returning spaceship",
+     "⏱️ About 22 hours after liftoff",
+     "🤠 It happened in Texas"
+    ],
+    "ru": [
+     "Ими едят лапшу и суши",
+     "Всегда идут парой",
+     "Привычны во всей Восточной Азии",
+     "Прозвище рук стартовой башни",
+     "Поймали вернувшийся корабль",
+     "Через 22 часа после старта",
+     "Это было в Техасе"
+    ],
+    "de": [
+     "Damit isst man Nudeln und Sushi",
+     "Kommen immer im Paar",
+     "In ganz Ostasien beliebt",
+     "Spitzname riesiger Startturm-Arme",
+     "Fingen ein zurückkehrendes Raumschiff",
+     "Rund 22 Stunden nach dem Start",
+     "Es geschah in Texas"
+    ],
+    "es": [
+     "Con ellos se comen fideos y sushi",
+     "Siempre van en pareja",
+     "Populares en Asia oriental",
+     "Apodo de brazos de torre de lanzamiento",
+     "Atraparon una nave al volver",
+     "Unas 22 horas tras el despegue",
+     "Ocurrió en Texas"
+    ],
+    "fr": [
+     "On mange nouilles et sushis avec",
+     "Toujours par paire",
+     "Populaires en Asie de l’Est",
+     "Surnom des bras d’une tour de lancement",
+     "Ont attrapé un vaisseau de retour",
+     "Environ 22 h après le décollage",
+     "C’était au Texas"
+    ],
+    "zh": [
+     "用来吃面条和寿司",
+     "总是成双成对",
+     "东亚到处都在用",
+     "巨型发射塔机械臂的外号",
+     "接住了返回的飞船",
+     "起飞约22小时后",
+     "发生在得克萨斯州"
+    ]
+   },
+   "fact": {
+    "en": "For the first time, giant arms on a launch tower in Texas caught a spaceship’s upper stage as it came back from orbit, about 22 hours after launch.",
+    "ru": "Впервые огромные «руки» стартовой башни в Техасе поймали верхнюю ступень корабля, вернувшуюся с орбиты, примерно через 22 часа после старта.",
+    "de": "Erstmals fingen riesige Arme eines Startturms in Texas die Oberstufe eines Raumschiffs nach der Rückkehr aus dem Orbit – 22 Stunden nach dem Start.",
+    "es": "Por primera vez, los brazos gigantes de una torre en Texas atraparon la etapa superior de una nave al volver de órbita, 22 horas tras el despegue.",
+    "fr": "Pour la première fois, les bras géants d’une tour au Texas ont attrapé l’étage supérieur d’un vaisseau revenu d’orbite, 22 h après le décollage.",
+    "zh": "得克萨斯州发射塔的巨型机械臂首次接住了从轨道返回的飞船上面级，距起飞约22小时。"
+   },
+   "sources": [
+    {
+     "title": "Spaceship captured by launchpad arms in dramatic first",
+     "outlet": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/15/spacexs-starship-captured-by-launchpad-arms-in-dramatic-first",
+     "date": "2026-11-15"
+    },
+    {
+     "title": "Chopsticks catch upper stage for 1st time ever",
+     "outlet": "Space.com",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-chopsticks-catch-starship-upper-stage-flight-14",
+     "date": "2026-11-14"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "catch a falling star",
+     "catch a rainbow"
+    ],
+    "ru": [
+     "поймать падающую звезду",
+     "поймать радугу"
+    ],
+    "de": [
+     "eine Sternschnuppe fangen",
+     "einen Regenbogen fangen"
+    ],
+    "es": [
+     "atrapar una estrella fugaz",
+     "atrapar un arcoíris"
+    ],
+    "fr": [
+     "attraper une étoile filante",
+     "attraper un arc-en-ciel"
+    ],
+    "zh": [
+     "接住一颗流星",
+     "抓住一道彩虹"
+    ]
+   },
+   "daily": "2026-11-29"
+  },
+  {
+   "id": "f261119-01",
+   "cat": "nature",
+   "age": 0,
+   "emoji": "🦄",
+   "from": "2026-11-19",
+   "expires": "2027-01-03",
+   "answer": {
+    "en": "Unicorn",
+    "ru": "Единорог",
+    "de": "Einhorn",
+    "es": "Unicornio",
+    "fr": "Licorne",
+    "zh": "独角兽"
+   },
+   "clues": {
+    "en": [
+     "🌈 Magical horse of fairy tales",
+     "☝️ One single spike on its head",
+     "🏴 National animal of Scotland",
+     "🦌 This time it was a wild roe deer",
+     "📷 Caught on a trail camera",
+     "🇪🇪 Seen on an Estonian island",
+     "🦦 The camera was set up for mink"
+    ],
+    "ru": [
+     "Волшебная лошадь из сказок",
+     "У него один шип на лбу",
+     "Национальное животное Шотландии",
+     "На этот раз это была косуля",
+     "Попал в фотоловушку",
+     "Замечен на острове в Эстонии",
+     "Камеру ставили ради норки"
+    ],
+    "de": [
+     "Magisches Pferd aus Märchen",
+     "Ein einziger Stachel auf der Stirn",
+     "Nationaltier Schottlands",
+     "Diesmal ist es ein Reh",
+     "Von einer Wildkamera gefilmt",
+     "Auf einer Insel in Estland gesehen",
+     "Die Kamera sollte Nerze filmen"
+    ],
+    "es": [
+     "Caballo mágico de los cuentos",
+     "Una sola punta en la frente",
+     "Animal nacional de Escocia",
+     "Esta vez era un corzo",
+     "Grabado por una cámara trampa",
+     "Visto en una isla de Estonia",
+     "La cámara era para visones"
+    ],
+    "fr": [
+     "Cheval magique des contes",
+     "Une seule pointe sur le front",
+     "Animal national de l’Écosse",
+     "Cette fois, un chevreuil",
+     "Filmé par un piège photo",
+     "Vu sur une île d’Estonie",
+     "La caméra visait des visons"
+    ],
+    "zh": [
+     "童话里的神奇马",
+     "头上只有一根尖刺",
+     "苏格兰的国家动物",
+     "这次是一只狍子",
+     "被野外相机拍到",
+     "在爱沙尼亚一座岛上发现",
+     "相机本来是拍水貂的"
+    ]
+   },
+   "fact": {
+    "en": "A trail camera on Estonia’s Saaremaa island filmed a wild roe deer with one horn-like growth in the middle of its forehead. Experts can’t yet say what it is.",
+    "ru": "Фотоловушка на эстонском острове Сааремаа сняла дикую косулю с одним наростом, похожим на рог, посреди лба. Что это, учёные пока не знают.",
+    "de": "Eine Wildkamera auf Saaremaa (Estland) filmte ein Reh mit einem hornartigen Auswuchs mitten auf der Stirn. Was es ist, weiß noch niemand.",
+    "es": "Una cámara trampa en la isla estonia de Saaremaa grabó un corzo con un bulto como un cuerno en mitad de la frente. Aún no se sabe qué es.",
+    "fr": "Un piège photo sur l’île estonienne de Saaremaa a filmé un chevreuil avec une excroissance en forme de corne au milieu du front. Mystère.",
+    "zh": "爱沙尼亚萨雷马岛的野外相机拍到一只狍子，额头正中长着一个像角的突起，专家还不知道那是什么。"
+   },
+   "sources": [
+    {
+     "title": "'Unicorn' caught on Saaremaa wildlife camera",
+     "outlet": "ERR News",
+     "url": "https://news.err.ee/1610198344/unicorn-caught-on-saaremaa-wildlife-camera",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Watch: 'Unicorn' deer caught on trail camera in Estonia",
+     "outlet": "UPI (Yahoo News)",
+     "url": "https://www.yahoo.com/news/world/articles/watch-unicorn-deer-caught-trail-171314778.html",
+     "date": "2026-11-17"
+    }
+   ],
+   "checked": "2026-11-18",
+   "wyr": {
+    "en": [
+     "ride a horse with wings",
+     "ride a giant turtle"
+    ],
+    "ru": [
+     "прокатиться на крылатом коне",
+     "прокатиться на гигантской черепахе"
+    ],
+    "de": [
+     "auf einem geflügelten Pferd reiten",
+     "auf einer Riesenschildkröte reiten"
+    ],
+    "es": [
+     "montar un caballo con alas",
+     "montar una tortuga gigante"
+    ],
+    "fr": [
+     "monter un cheval ailé",
+     "monter une tortue géante"
+    ],
+    "zh": [
+     "骑一匹会飞的马",
+     "骑一只巨型乌龟"
+    ]
+   },
+   "daily": "2026-11-30"
+  },
   {
    "id": "f261112-12",
    "cat": "culture",
@@ -127,7 +1540,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-13"
+   "daily": "2026-12-01"
   },
   {
    "id": "f261112-11",
@@ -249,7 +1662,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-14"
+   "daily": "2026-12-02"
   },
   {
    "id": "f261112-10",
@@ -371,7 +1784,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-15"
+   "daily": "2026-12-03"
   },
   {
    "id": "f261112-09",
@@ -493,7 +1906,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-16"
+   "daily": "2026-12-04"
   },
   {
    "id": "f261112-08",
@@ -615,7 +2028,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-17"
+   "daily": "2026-12-05"
   },
   {
    "id": "f261112-07",
@@ -737,7 +2150,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-18"
+   "daily": "2026-12-06"
   },
   {
    "id": "f261112-06",
@@ -859,7 +2272,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-19"
+   "daily": "2026-12-07"
   },
   {
    "id": "f261112-05",
@@ -1102,7 +2515,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-20"
+   "daily": "2026-12-08"
   },
   {
    "id": "f261112-03",
@@ -1224,7 +2637,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-21"
+   "daily": "2026-12-09"
   },
   {
    "id": "f261112-02",
@@ -1346,7 +2759,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-22"
+   "daily": "2026-12-10"
   },
   {
    "id": "f261112-01",
@@ -1468,7 +2881,7 @@
     }
    ],
    "checked": "2026-11-11",
-   "daily": "2026-11-23"
+   "daily": "2026-12-11"
   },
   {
    "id": "f261107-12",
@@ -1564,7 +2977,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-11-24"
+   "daily": "2026-12-12"
   },
   {
    "id": "f261107-11",
@@ -1660,7 +3073,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-11-25"
+   "daily": "2026-12-13"
   },
   {
    "id": "f261107-10",
@@ -1781,8 +3194,7 @@
      "在纽约跑完42公里",
      "游过阿尔卑斯山的一个湖"
     ]
-   },
-   "daily": "2026-11-26"
+   }
   },
   {
    "id": "f261107-09",
@@ -1878,7 +3290,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-11-27"
+   "daily": "2026-12-14"
   },
   {
    "id": "f261107-08",
@@ -1999,8 +3411,7 @@
      "雕一个和汽车一样重的南瓜",
      "种出世界上最高的向日葵"
     ]
-   },
-   "daily": "2026-11-28"
+   }
   },
   {
    "id": "f261107-07",
@@ -2096,7 +3507,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-11-29"
+   "daily": "2026-12-15"
   },
   {
    "id": "f261107-06",
@@ -2192,7 +3603,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-11-30"
+   "daily": "2026-12-16"
   },
   {
    "id": "f261107-05",
@@ -2288,7 +3699,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-12-01"
+   "daily": "2026-12-17"
   },
   {
    "id": "f261107-04",
@@ -2409,8 +3820,7 @@
      "在空间站过一夜",
      "在深海基地过一夜"
     ]
-   },
-   "daily": "2026-12-02"
+   }
   },
   {
    "id": "f261107-03",
@@ -2532,7 +3942,7 @@
      "像猫头鹰一样在黑暗中看清"
     ]
    },
-   "daily": "2026-12-03"
+   "daily": "2026-12-18"
   },
   {
    "id": "f261107-02",
@@ -2628,7 +4038,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-12-04"
+   "daily": "2026-12-19"
   },
   {
    "id": "f261107-01",
@@ -2724,7 +4134,7 @@
     }
    ],
    "checked": "2026-11-06",
-   "daily": "2026-12-05"
+   "daily": "2026-12-20"
   }
  ]
 }
