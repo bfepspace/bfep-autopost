@@ -19,6 +19,7 @@ const OLD = /Bomi|Best Fun Evening(?! (Games FZE|Plan))/;
     for (const pg of pages) {
       if (lang === 'ru' && !pg.waitlist) continue;
       const c = await b.newContext({ ...devices['iPhone 13'], locale: lang });
+      await c.route(/(google-analytics\.com|analytics\.google\.com|googletagmanager\.com)\/([a-z]\/)?collect/, r => r.fulfill({ status: 204, body: '' }));  // робот не попадает в GA4
       const p = await c.newPage();
       const errs = [], bad = [];
       p.on('pageerror', e => errs.push(e.message.slice(0, 120)));

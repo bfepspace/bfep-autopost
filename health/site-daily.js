@@ -47,6 +47,7 @@ function soundHook() {
 async function ctx(b) {
   const c = await b.newContext({ ...devices['iPhone 13'], locale: 'en-US' });
   await c.addInitScript(soundHook);
+  await c.route(/(google-analytics\.com|analytics\.google\.com|googletagmanager\.com)\/([a-z]\/)?collect/, r => r.fulfill({ status: 204, body: '' }));  // робот не попадает в GA4 (иначе его отправки формы считаются записями)
   return c;
 }
 function watch(p, rec) {
