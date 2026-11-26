@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T01:07:46+00:00",
+ "checked_at": "2026-11-26T03:02:42+00:00",
  "counts": {
   "fail": 0,
   "warn": 2,
@@ -32,7 +32,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Discord: файлы на 14 дней (34 постов)",
+   "name": "Discord: файлы на 14 дней (32 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -50,7 +50,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Snapchat (OneUp): файлы на 14 дней (32 постов)",
+   "name": "Snapchat (OneUp): файлы на 14 дней (30 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -68,7 +68,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "Telegram: файлы на 14 дней (67 постов)",
+   "name": "Telegram: файлы на 14 дней (60 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -86,7 +86,7 @@
   },
   {
    "area": "Автопостинг",
-   "name": "X: файлы на 14 дней (37 постов)",
+   "name": "X: файлы на 14 дней (32 постов)",
    "status": "ok",
    "detail": ""
   },
@@ -100,7 +100,7 @@
    "area": "Автопостинг",
    "name": "Робот публикаций работает",
    "status": "ok",
-   "detail": "последний запуск 23.11 00:30 UTC, сбоев из 5: 0"
+   "detail": "последний запуск 26.11 01:04 UTC, сбоев из 5: 0"
   },
   {
    "area": "Автопостинг",
@@ -124,37 +124,37 @@
    "area": "Вид с телефона",
    "name": "Главная (гость из TikTok) [ru]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bfep/ [en]",
    "status": "ok",
-   "detail": "0.9 с"
+   "detail": "0.5 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/bluff/ [en]",
    "status": "ok",
-   "detail": "0.7 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/daily/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/kmg/ [en]",
    "status": "ok",
-   "detail": "0.5 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Игра /play/sayit/ [en]",
    "status": "ok",
-   "detail": "0.7 с"
+   "detail": "0.4 с"
   },
   {
    "area": "Вид с телефона",
@@ -166,55 +166,55 @@
    "area": "Вид с телефона",
    "name": "Умная ссылка /bfep/ [en]",
    "status": "ok",
-   "detail": "0.6 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /bluff/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /daily/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /kmg/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Вид с телефона",
    "name": "Умная ссылка /sayit/ [en]",
    "status": "ok",
-   "detail": "0.4 с"
+   "detail": "0.3 с"
   },
   {
    "area": "Домены",
    "name": "SSL bfep.space",
    "status": "ok",
-   "detail": "ещё 33 дн."
+   "detail": "ещё 89 дн."
   },
   {
    "area": "Домены",
    "name": "Регистрация beezoo.space",
    "status": "ok",
-   "detail": "до 05.11.2027, ещё 347 дн."
+   "detail": "до 05.11.2027, ещё 344 дн."
   },
   {
    "area": "Домены",
    "name": "Регистрация beezoospace.com",
    "status": "ok",
-   "detail": "до 05.11.2027, ещё 347 дн."
+   "detail": "до 05.11.2027, ещё 344 дн."
   },
   {
    "area": "Домены",
    "name": "Регистрация bfep.space",
    "status": "ok",
-   "detail": "до 18.09.2027, ещё 299 дн."
+   "detail": "до 18.09.2027, ещё 296 дн."
   },
   {
    "area": "Игры",
