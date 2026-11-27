@@ -1,0 +1,32 @@
+{
+ "telegram:poll-2026-11-25": {
+  "votes": {
+   "Bluff Night": 1,
+   "Kiss Marry Ghost": 0,
+   "Три подсказки": 0,
+   "Правда или действие": 0
+  },
+  "total": 1,
+  "at": "2026-11-27T15:16:37.907326+00:00"
+ },
+ "discord:poll-2026-11-25": {
+  "votes": {
+   "Bluff Night": 0,
+   "Kiss Marry Ghost": 0,
+   "Three Clues": 0,
+   "Truth or Dare": 0
+  },
+  "total": 0,
+  "at": "2026-11-27T15:16:37.907326+00:00"
+ },
+ "x:poll-2026-11-25": {
+  "votes": {
+   "Bluff Night": 0,
+   "Kiss Marry Ghost": 0,
+   "Three Clues": 0,
+   "Truth or Dare": 0
+  },
+  "total": 0,
+  "at": "2026-11-27T15:16:37.907326+00:00"
+ }
+}
